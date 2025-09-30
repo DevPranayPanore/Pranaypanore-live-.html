@@ -96,7 +96,7 @@
     .main-page {
         height: 55vw;
         width: 100%;
-        background-image: url('../../assets/image/DeWatermark.ai_1757740117691.jpeg');
+        background-image: url('image/DeWatermark.ai_1757740117691.jpeg');
         background-size: cover;
         background-position: center;
         position: relative;
@@ -249,7 +249,7 @@
         border-radius: 10px;
         box-shadow: 5px 5px 10px 10px rgba(105, 105, 105, 0.86);
         background: linear-gradient(to right, black, #716E6E, #D9D4D4);
-        background-image: url(../../assets/image/Screenshot\ 2025-09-21\ at\ 16.09.27.png);
+        background-image: url(image/Screenshot\ 2025-09-21\ at\ 16.09.27.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -261,7 +261,7 @@
         border-radius: 10px;
         box-shadow: 5px 5px 10px 10px rgba(105, 105, 105, 0.86);
         background: linear-gradient(to right, black, #716E6E, #D9D4D4);
-        background-image: url(../../assets/image/Media.jpeg);
+        background-image: url(image/Media.jpeg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -273,7 +273,7 @@
         border-radius: 10px;
         box-shadow: 5px 5px 10px 10px rgba(105, 105, 105, 0.86);
         background: linear-gradient(to right, black, #716E6E, #D9D4D4);
-        background-image: url(../../assets/image/Media\ copy.jpeg);
+        background-image: url(image/Media\ copy.jpeg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -616,7 +616,7 @@
         width: 25vw;
         background-color: #000000;
         border-radius: 10px;
-        background-image: url(../../assets/image/mobile-repairing.webp);
+        background-image: url(image/mobile-repairing.webp);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -628,7 +628,7 @@
         width: 25vw;
         background-color: #000000;
         border-radius: 10px;
-        background-image: url(../../assets/image/laptop\ repairing.png);
+        background-image: url(image/laptop\ repairing.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -639,7 +639,7 @@
         width: 25vw;
         background-color: #000000;
         border-radius: 10px;
-        background-image: url(../../assets/image/software.png);
+        background-image: url(image/software.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -664,7 +664,7 @@
         width: 25vw;
         background-color: #000000;
         border-radius: 10px;
-        background-image: url(../../assets/image/mobile-glass-01.png);
+        background-image: url(image/mobile-glass-01.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -675,7 +675,7 @@
         width: 25vw;
         background-color: #000000;
         border-radius: 10px;
-        background-image: url(../../assets/image/mobile-second\ hand-02.png);
+        background-image: url(image/mobile-second\ hand-02.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -686,7 +686,7 @@
         width: 25vw;
         background-color: #000000;
         border-radius: 10px;
-        background-image: url(../../assets/image/wmremove-transformed.jpeg);
+        background-image: url(image/wmremove-transformed.jpeg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -962,7 +962,7 @@
     .class-offer-001 {
         width: 22vw;
         height: 22vw;
-        background-image: url(../../assets/image/image-offer-1.webp);
+        background-image: url(image/image-offer-1.webp);
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
@@ -971,7 +971,7 @@
     .class-offer-002 {
         width: 22vw;
         height: 22vw;
-        background-image: url(../../assets/image/image-offer-2.webp);
+        background-image: url(image/image-offer-2.webp);
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
@@ -980,7 +980,7 @@
     .class-offer-003 {
         width: 22vw;
         height: 22vw;
-        background-image: url(../../assets/image/image-offer-3.webp);
+        background-image: url(image/image-offer-3.webp);
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
@@ -989,7 +989,7 @@
     .class-offer-004 {
         width: 22vw;
         height: 22vw;
-        background-image: url(../../assets/image/image-offer-4.webp);
+        background-image: url(image/image-offer-4.webp);
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
@@ -1356,7 +1356,7 @@
         .main-page {
             height: 100vw;
             width: 100%;
-            background-image: url(../../assets/image/DeWatermark\,ai_1759228485760-Picsart-AiImageEnhancer.jpeg);
+            background-image: url(image/DeWatermark\,ai_1759228485760-Picsart-AiImageEnhancer.jpeg);
         }
 
         .heading-01 {
