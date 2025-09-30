@@ -1350,5 +1350,10 @@
             display: flex;
       
         }
+        .main-page{
+            height: 100vw;
+            width: 100%;
+            background-image: url(../../assets/image/DeWatermark\,ai_1759228485760-Picsart-AiImageEnhancer.jpeg);
+        }
 
     }
