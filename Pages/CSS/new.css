@@ -1,0 +1,2079 @@
+/* Reset base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-family: "Gabarito", sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.main-container {
+    width: 100vw;
+}
+
+/* ========================================
+   HEADER SECTION
+   ======================================== */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 60px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px clamp(15px, 2vw, 40px);
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-logo {
+    height: clamp(40px, 3.5vw, 60px);
+    width: clamp(40px, 3.5vw, 60px);
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 50%;
+    background-color: black;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoQ6NNciN1iGBojfUeiYq9p19sRQlKrlyXVw&s);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo-heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: clamp(10px, 2vw, 20px);
+}
+
+.header-main-heading {
+    font-size: clamp(16px, 2vw, 32px);
+    font-family: "Gabriela", serif;
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+}
+
+.header-nav {
+    display: flex;
+    gap: clamp(15px, 2vw, 30px);
+}
+
+.header-link {
+    font-size: clamp(14px, 1.2vw, 18px);
+    cursor: pointer;
+    color: #333;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+}
+
+.header-link:hover,
+a:hover {
+    color: rgb(255, 252, 252);
+    background-color: rgb(165, 165, 165);
+    border-radius: 5px;
+}
+
+/* ========================================
+   MAIN PAGE / HERO SECTION
+   ======================================== */
+.main-page {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('../../assets/image/DeWatermark.ai_1757740117691.jpeg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-content {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: clamp(20px, 5vw, 60px);
+}
+
+.heading-01 {
+    font-size: clamp(28px, 4vw, 64px);
+    letter-spacing: 0.05em;
+    font-family: "Gabriela", serif;
+    color: white;
+    margin-bottom: clamp(15px, 2vw, 30px);
+}
+
+.heading-02 {
+    font-size: clamp(14px, 1.4vw, 24px);
+    letter-spacing: 0.05em;
+    color: white;
+    margin-bottom: clamp(20px, 2vw, 40px);
+    max-width: 800px;
+}
+
+.button-group {
+    display: flex;
+    gap: clamp(15px, 1.5vw, 30px);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.button-call,
+.button-explore {
+    height: clamp(45px, 3.4vw, 60px);
+    width: clamp(140px, 12vw, 200px);
+    border-radius: clamp(25px, 2vw, 40px);
+    font-size: clamp(14px, 1.3vw, 20px);
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button-call:hover,
+.button-explore:hover {
+    background-color: white;
+    color: black;
+    transform: translateY(-2px);
+}
+
+/* ========================================
+   BRAND LOGO SECTION
+   ======================================== */
+.brand-page {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    background-color: white;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.logo-track {
+    display: inline-flex;
+    animation: scrollLeft 20s linear infinite;
+}
+
+.log-company {
+    flex: 0 0 auto;
+    width: clamp(120px, 15vw, 200px);
+    margin-right: clamp(20px, 3vw, 50px);
+}
+
+.log-company img {
+    max-height: clamp(60px, 8vw, 120px);
+    width: auto;
+    display: block;
+}
+
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* ========================================
+   OFFER SECTION
+   ======================================== */
+.offer-page {
+    width: 100%;
+    min-height: 600px;
+    background: linear-gradient(to right, black, #716E6E, #D9D4D4);
+    padding: clamp(30px, 5vw, 80px) clamp(15px, 3vw, 60px);
+}
+
+.heading-offer {
+    min-height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: clamp(30px, 3vw, 50px);
+}
+
+.heading-main {
+    padding: clamp(12px, 1.5vw, 20px) clamp(30px, 3vw, 50px);
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    font-size: clamp(18px, 2vw, 32px);
+    background: linear-gradient(to right, black, #716E6E, #D9D4D4);
+}
+
+.main-offer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: clamp(20px, 3vw, 50px);
+    padding: clamp(15px, 2vw, 30px) 0;
+}
+
+.offer-page-1,
+.offer-page-2,
+.offer-page-3 {
+    width: 100%;
+    min-height: 400px;
+    aspect-ratio: 3/4;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(105, 105, 105, 0.5);
+    background: linear-gradient(to right, black, #716E6E, #D9D4D4);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 0.3s ease;
+}
+
+.offer-page-1 {
+    background-image: url(../../assets/image/Screenshot\ 2025-09-21\ at\ 16.09.27.png);
+}
+
+.offer-page-2 {
+    background-image: url(../../assets/image/Media.jpeg);
+}
+
+.offer-page-3 {
+    background-image: url(../../assets/image/Media\ copy.jpeg);
+}
+
+.offer-page-1:hover,
+.offer-page-2:hover,
+.offer-page-3:hover {
+    transform: scale(1.03);
+}
+
+/* ========================================
+   PRODUCT SECTION
+   ======================================== */
+.product-page {
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.selling-product {
+    width: 100%;
+    padding: clamp(20px, 3vw, 40px) clamp(15px, 2vw, 30px);
+}
+
+.heading-name {
+    font-size: clamp(20px, 2vw, 36px);
+    margin-bottom: clamp(10px, 1vw, 20px);
+}
+
+.line-under-that {
+    height: 2px;
+    width: 95%;
+    background-color: black;
+    margin: 0 auto clamp(15px, 2vw, 30px);
+}
+
+.selling-product-01 {
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, rgb(49, 49, 49), rgb(101, 101, 101), rgb(207, 207, 207));
+}
+
+.selling-section {
+    width: 100%;
+    background: linear-gradient(to right, rgb(169, 169, 169), rgb(101, 101, 101), rgb(29, 29, 29));
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(10px, 1.5vw, 20px);
+    padding: clamp(15px, 2vw, 30px);
+}
+
+.button-01 {
+    padding: clamp(8px, 1vw, 15px) clamp(20px, 2.5vw, 40px);
+    font-size: clamp(14px, 1.3vw, 20px);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.button-01:hover {
+    border-radius: 25px;
+    color: orange;
+    background-color: #000000;
+}
+
+.product-showing {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(20px, 3vw, 40px);
+    padding: clamp(20px, 3vw, 40px);
+}
+
+.product-selling-page-01,
+.product-selling-page-02 {
+    width: 100%;
+    background: linear-gradient(to right, rgb(49, 49, 49), rgb(101, 101, 101), rgb(189, 189, 189));
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: clamp(20px, 3vw, 40px);
+    padding: clamp(20px, 3vw, 40px);
+}
+
+.class-product-01,
+.class-product-02,
+.class-product-03,
+.class-product-11,
+.class-product-12,
+.class-product-13 {
+    width: 100%;
+    min-height: 300px;
+    background-color: white;
+    border-radius: 12px;
+    display: grid;
+    grid-template-rows: 2fr 0.5fr 0.5fr;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.product-page-photo-001,
+.product-page-photo-002,
+.product-page-photo-003,
+.product-page-photo-004,
+.product-page-photo-005,
+.product-page-photo-006 {
+    text-align: center;
+    padding: clamp(10px, 1.5vw, 20px);
+}
+
+.detail-of-product-001,
+.detail-of-product-002,
+.detail-of-product-003,
+.detail-of-product-004,
+.detail-of-product-005,
+.detail-of-product-006 {
+    font-size: clamp(14px, 1.3vw, 20px);
+    text-align: center;
+    padding: clamp(8px, 1vw, 15px);
+}
+
+/* ========================================
+   SERVICE CENTER SECTION
+   ======================================== */
+.service-center-page {
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading-service {
+    min-height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    padding: clamp(15px, 2vw, 30px);
+}
+
+.heading-one {
+    font-size: clamp(20px, 2vw, 36px);
+    color: white;
+    margin-bottom: clamp(10px, 1vw, 20px);
+}
+
+.service-page-line {
+    height: 2px;
+    width: 95%;
+    background-color: rgb(255, 255, 255);
+}
+
+.service-product-page {
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.new-page-of-service,
+.new-page-of-service-02 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: clamp(20px, 3vw, 40px);
+    padding: clamp(30px, 4vw, 60px) clamp(15px, 3vw, 40px);
+    font-family: "Judson", serif;
+    background-color: #000000;
+}
+
+.class-of-service {
+    width: 100%;
+    min-height: 400px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: rgba(240, 240, 240, 0.725) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: clamp(15px, 2vw, 30px);
+    transition: all 0.3s ease;
+}
+
+.photo-mobile-repair,
+.photo-laptop-repair,
+.photo-mobile-software,
+.mobile-dispaly-01,
+.Second-handmobile-01,
+.mobile-acceries-01 {
+    width: 100%;
+    aspect-ratio: 1;
+    max-width: 400px;
+    background-color: #000000;
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.photo-mobile-repair {
+    background-image: url(../../assets/image/mobile-repairing.webp);
+}
+
+.photo-laptop-repair {
+    background-image: url(../../assets/image/laptop\ repairing.png);
+}
+
+.photo-mobile-software {
+    background-image: url(../../assets/image/software.png);
+}
+
+.mobile-dispaly-01 {
+    background-image: url(../../assets/image/mobile-glass-01.png);
+}
+
+.Second-handmobile-01 {
+    background-image: url(../../assets/image/mobile-second\ hand-02.png);
+}
+
+.mobile-acceries-01 {
+    background-image: url(../../assets/image/wmremove-transformed.jpeg);
+}
+
+.hover-pair {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: clamp(18px, 2vw, 32px);
+    color: rgb(255, 213, 0);
+    padding-bottom: clamp(15px, 2vw, 30px);
+    letter-spacing: 0.05em;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.class-of-service:hover {
+    background: linear-gradient(to top, rgba(172, 243, 162, 0.916), rgba(0, 0, 0, 0));
+    transform: scale(1.03);
+}
+
+.hover-pair:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ff0000;
+}
+
+.mobile-acceries-01:hover,
+.mobile-dispaly-01:hover,
+.Second-handmobile-01:hover,
+.photo-laptop-repair:hover,
+.photo-mobile-repair:hover,
+.photo-mobile-software:hover {
+    opacity: 0.6;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(255, 255, 255, 0.23) 0px 6px 6px;
+}
+
+/* ========================================
+   JIO PHONE SECTION
+   ======================================== */
+.Phone-page-of-jio {
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(207, 207, 207);
+    padding: clamp(20px, 3vw, 40px) clamp(15px, 2vw, 30px);
+}
+
+.heading-phone-jio {
+    width: 100%;
+    margin-bottom: clamp(20px, 3vw, 40px);
+}
+
+.line-of-heading {
+    height: 2px;
+    width: 95%;
+    border: 1px black solid;
+    background-color: black;
+    margin: clamp(10px, 1vw, 20px) auto;
+}
+
+.phone-page-one {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: clamp(20px, 3vw, 40px);
+}
+
+.class-01-page,
+.class-02-page,
+.class-03-page,
+.class-04-page {
+    width: 100%;
+    min-height: 350px;
+    background: linear-gradient(to top, rgb(32, 32, 32), rgb(117, 117, 117), rgb(172, 172, 172));
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.682) 0px 6px 6px;
+    display: flex;
+    flex-direction: column;
+    padding: clamp(15px, 2vw, 30px);
+    transition: all 0.3s ease;
+}
+
+.class-01-page:hover,
+.class-02-page:hover,
+.class-03-page:hover,
+.class-04-page:hover {
+    transform: scale(1.04);
+    box-shadow: rgba(244, 244, 244, 0.476) 0px 10px 20px, rgba(0, 0, 0, 0.682) 0px 6px 6px;
+}
+
+.photo-of-jio-sellimg-product-01,
+.photo-of-jio-sellimg-product-02,
+.photo-of-jio-sellimg-product-03,
+.photo-of-jio-sellimg-product-04 {
+    width: 100%;
+    aspect-ratio: 1;
+    max-width: 250px;
+    margin: 0 auto clamp(15px, 2vw, 30px);
+    background-color: #000000;
+    border-radius: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.photo-of-jio-sellimg-product-01 {
+    background-image: url(https://cdn.jiostore.online/v2/jmd-asp/jdprod/wrkr/products/pictures/item/free/resize-w:250/ghWjg6EzfV-jiobharat-b2-581107385-i-1-1200wx1200h.jpeg);
+}
+
+.photo-of-jio-sellimg-product-02 {
+    background-image: url(https://cdn.jiostore.online/v2/jmd-asp/jdprod/wrkr/products/pictures/item/free/resize-w:250/3mA7cHfrQw-jiobharat-j1-581107398-i-1-1200wx1200h.jpeg);
+}
+
+.photo-of-jio-sellimg-product-03 {
+    background-image: url(https://cdn.jiostore.online/v2/jmd-asp/jdprod/wrkr/products/pictures/item/free/resize-w:250/fQQSgcjWNu-jiobharatbharat-v3-581107375-i-1-1200wx1200h.jpeg);
+}
+
+.photo-of-jio-sellimg-product-04 {
+    background-image: url(https://cdn.jiostore.online/v2/jmd-asp/jdprod/wrkr/products/pictures/item/free/resize-w:150/BTK8QZ140j-jiobharatbharat-v4-581107376-i-1-1200wx1200h.jpeg);
+}
+
+.name-of-jio-phone-001,
+.name-of-jio-phone-002,
+.name-of-jio-phone-003,
+.name-of-jio-phone-004 {
+    font-size: clamp(14px, 1.3vw, 20px);
+    text-align: center;
+    color: white;
+}
+
+/* ========================================
+   SHOP BY PRICE SECTION
+   ======================================== */
+.shop-by-price {
+    width: 100%;
+    min-height: 400px;
+    background: linear-gradient(to right, rgb(233, 233, 233), rgba(150, 150, 150, 0.673), rgba(62, 62, 62, 0.372));
+    padding: clamp(20px, 3vw, 40px) clamp(15px, 2vw, 30px);
+}
+
+.shop-by-price-01 {
+    margin-bottom: clamp(20px, 3vw, 40px);
+}
+
+.line-of-offer {
+    height: 2px;
+    width: 95%;
+    border: 1px solid black;
+    background-color: black;
+    margin: clamp(10px, 1vw, 20px) auto;
+}
+
+.photo-of-offer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: clamp(15px, 2.5vw, 40px);
+}
+
+.class-offer-001,
+.class-offer-002,
+.class-offer-003,
+.class-offer-004 {
+    width: 100%;
+    aspect-ratio: 1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: transform 0.4s ease;
+}
+
+.class-offer-001 {
+    background-image: url(../../assets/image/image-offer-1.webp);
+}
+
+.class-offer-002 {
+    background-image: url(../../assets/image/image-offer-2.webp);
+}
+
+.class-offer-003 {
+    background-image: url(../../assets/image/image-offer-3.webp);
+}
+
+.class-offer-004 {
+    background-image: url(../../assets/image/image-offer-4.webp);
+}
+
+.class-offer-001:hover,
+.class-offer-002:hover,
+.class-offer-003:hover,
+.class-offer-004:hover {
+    transform: scale(1.04);
+}
+
+/* ========================================
+   CONTACT SECTION
+   ======================================== */
+.contact-section-page {
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-heading {
+    width: 100%;
+    min-height: 80px;
+    background: linear-gradient(to right, #313131, #515151, #807E7D, #A19B9B);
+    padding: clamp(15px, 2vw, 30px);
+}
+
+.heading-name-contact {
+    font-size: clamp(20px, 2vw, 36px);
+    color: white;
+    margin-bottom: clamp(10px, 1vw, 20px);
+}
+
+.line-of-heading-contact {
+    height: 2px;
+    width: 95%;
+    background-color: rgb(255, 255, 255);
+}
+
+.main-section-of-contact {
+    width: 100%;
+    min-height: 400px;
+    background: linear-gradient(to right, #313131, #515151, #807E7D, #A19B9B);
+    padding: clamp(20px, 3vw, 40px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(30px, 4vw, 60px);
+}
+
+.container-of-main {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 200px;
+    background-color: #000000;
+    border-radius: clamp(20px, 3vw, 40px);
+    padding: clamp(20px, 3vw, 40px);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: clamp(20px, 3vw, 40px);
+}
+
+.email-page,
+.contact-page,
+.phone-page,
+.pranay,
+.pranay-01,
+.pranay-02 {
+    font-size: clamp(14px, 1.3vw, 20px);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-page-two {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(30px, 4vw, 60px);
+}
+
+.page-01 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: clamp(20px, 3vw, 40px);
+}
+
+.part-01,
+.part-02 {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(10px, 1.5vw, 20px);
+    align-items: center;
+    text-align: center;
+}
+
+.part-05,
+.part-09 {
+    font-size: clamp(14px, 1.4vw, 22px);
+}
+
+.page-02 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.iframe-tag {
+    width: 100%;
+    max-width: 800px;
+    height: clamp(250px, 40vw, 500px);
+    border-radius: 20px;
+    border: none;
+}
+
+/* ========================================
+   FOOTER SECTION
+   ======================================== */
+.footer-page {
+    width: 100%;
+    min-height: 400px;
+    background-color: #000000;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: clamp(20px, 3vw, 40px);
+    padding: clamp(30px, 4vw, 60px) clamp(20px, 3vw, 40px);
+}
+
+.PAGES-01,
+.PAGES-02,
+.PAGES-03 {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(20px, 2vw, 30px);
+}
+
+.firrst-part-of-project,
+.first-page-001,
+.first-page-012 {
+    font-size: clamp(20px, 2vw, 32px);
+    color: white;
+    text-align: center;
+}
+
+.Second-part-of-project,
+.Second-page-001,
+.Second-page-015 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(15px, 1.5vw, 25px);
+    color: white;
+    font-size: clamp(14px, 1.2vw, 18px);
+}
+
+.image-of-social-media {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: clamp(15px, 2vw, 30px);
+    justify-content: center;
+    font-size: clamp(20px, 2vw, 30px);
+}
+
+/* ========================================
+   LAST SECTION
+   ======================================== */
+.last-page-end {
+    min-height: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: clamp(10px, 1.5vw, 20px) clamp(15px, 2vw, 30px);
+    gap: clamp(10px, 1.5vw, 20px);
+    background-color: #f5f5f5;
+}
+
+/* Reset base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-family: "Gabarito", sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.main-container {
+    width: 100vw;
+}
+
+/* ========================================
+   HEADER SECTION
+   ======================================== */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 60px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px clamp(15px, 2vw, 40px);
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-logo {
+    height: clamp(40px, 3.5vw, 60px);
+    width: clamp(40px, 3.5vw, 60px);
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 50%;
+    background-color: black;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoQ6NNciN1iGBojfUeiYq9p19sRQlKrlyXVw&s);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo-heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: clamp(10px, 2vw, 20px);
+}
+
+.header-main-heading {
+    font-size: clamp(16px, 2vw, 32px);
+    font-family: "Gabriela", serif;
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+}
+
+.header-nav {
+    display: flex;
+    gap: clamp(15px, 2vw, 30px);
+}
+
+.header-link {
+    font-size: clamp(14px, 1.2vw, 18px);
+    cursor: pointer;
+    color: #333;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+}
+
+.header-link:hover,
+a:hover {
+    color: rgb(255, 252, 252);
+    background-color: rgb(165, 165, 165);
+    border-radius: 5px;
+}
+
+/* ========================================
+   MAIN PAGE / HERO SECTION
+   ======================================== */
+.main-page {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('../../assets/image/DeWatermark.ai_1757740117691.jpeg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-content {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: clamp(20px, 5vw, 60px);
+}
+
+.heading-01 {
+    font-size: clamp(28px, 4vw, 64px);
+    letter-spacing: 0.05em;
+    font-family: "Gabriela", serif;
+    color: white;
+    margin-bottom: clamp(15px, 2vw, 30px);
+}
+
+.heading-02 {
+    font-size: clamp(14px, 1.4vw, 24px);
+    letter-spacing: 0.05em;
+    color: white;
+    margin-bottom: clamp(20px, 2vw, 40px);
+    max-width: 800px;
+}
+
+.button-group {
+    display: flex;
+    gap: clamp(15px, 1.5vw, 30px);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.button-call,
+.button-explore {
+    height: clamp(45px, 3.4vw, 60px);
+    width: clamp(140px, 12vw, 200px);
+    border-radius: clamp(25px, 2vw, 40px);
+    font-size: clamp(14px, 1.3vw, 20px);
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button-call:hover,
+.button-explore:hover {
+    background-color: white;
+    color: black;
+    transform: translateY(-2px);
+}
+
+/* ========================================
+   BRAND LOGO SECTION
+   ======================================== */
+.brand-page {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    background-color: white;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.logo-track {
+    display: inline-flex;
+    animation: scrollLeft 20s linear infinite;
+}
+
+.log-company {
+    flex: 0 0 auto;
+    width: clamp(120px, 15vw, 200px);
+    margin-right: clamp(20px, 3vw, 50px);
+}
+
+.log-company img {
+    max-height: clamp(60px, 8vw, 120px);
+    width: auto;
+    display: block;
+}
+
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* ========================================
+   OFFER SECTION
+   ======================================== */
+.offer-page {
+    width: 100%;
+    min-height: 600px;
+    background: linear-gradient(to right, black, #716E6E, #D9D4D4);
+    padding: clamp(30px, 5vw, 80px) clamp(15px, 3vw, 60px);
+}
+
+.heading-offer {
+    min-height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: clamp(30px, 3vw, 50px);
+}
+
+.heading-main {
+    padding: clamp(12px, 1.5vw, 20px) clamp(30px, 3vw, 50px);
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    font-size: clamp(18px, 2vw, 32px);
+    background: linear-gradient(to right, black, #716E6E, #D9D4D4);
+}
+
+.main-offer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: clamp(20px, 3vw, 50px);
+    padding: clamp(15px, 2vw, 30px) 0;
+}
+
+.offer-page-1,
+.offer-page-2,
+.offer-page-3 {
+    width: 100%;
+    min-height: 400px;
+    aspect-ratio: 3/4;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(105, 105, 105, 0.5);
+    background: linear-gradient(to right, black, #716E6E, #D9D4D4);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 0.3s ease;
+}
+
+.offer-page-1 {
+    background-image: url(../../assets/image/Screenshot\ 2025-09-21\ at\ 16.09.27.png);
+}
+
+.offer-page-2 {
+    background-image: url(../../assets/image/Media.jpeg);
+}
+
+.offer-page-3 {
+    background-image: url(../../assets/image/Media\ copy.jpeg);
+}
+
+.offer-page-1:hover,
+.offer-page-2:hover,
+.offer-page-3:hover {
+    transform: scale(1.03);
+}
+
+/* ========================================
+   PRODUCT SECTION
+   ======================================== */
+.product-page {
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.selling-product {
+    width: 100%;
+    padding: clamp(20px, 3vw, 40px) clamp(15px, 2vw, 30px);
+}
+
+.heading-name {
+    font-size: clamp(20px, 2vw, 36px);
+    margin-bottom: clamp(10px, 1vw, 20px);
+}
+
+.line-under-that {
+    height: 2px;
+    width: 95%;
+    background-color: black;
+    margin: 0 auto clamp(15px, 2vw, 30px);
+}
+
+.selling-product-01 {
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, rgb(49, 49, 49), rgb(101, 101, 101), rgb(207, 207, 207));
+}
+
+.selling-section {
+    width: 100%;
+    background: linear-gradient(to right, rgb(169, 169, 169), rgb(101, 101, 101), rgb(29, 29, 29));
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(10px, 1.5vw, 20px);
+    padding: clamp(15px, 2vw, 30px);
+}
+
+.button-01 {
+    padding: clamp(8px, 1vw, 15px) clamp(20px, 2.5vw, 40px);
+    font-size: clamp(14px, 1.3vw, 20px);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.button-01:hover {
+    border-radius: 25px;
+    color: orange;
+    background-color: #000000;
+}
+
+.product-showing {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(20px, 3vw, 40px);
+    padding: clamp(20px, 3vw, 40px);
+}
+
+.product-selling-page-01,
+.product-selling-page-02 {
+    width: 100%;
+    background: linear-gradient(to right, rgb(49, 49, 49), rgb(101, 101, 101), rgb(189, 189, 189));
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: clamp(20px, 3vw, 40px);
+    padding: clamp(20px, 3vw, 40px);
+}
+
+.class-product-01,
+.class-product-02,
+.class-product-03,
+.class-product-11,
+.class-product-12,
+.class-product-13 {
+    width: 100%;
+    min-height: 300px;
+    background-color: white;
+    border-radius: 12px;
+    display: grid;
+    grid-template-rows: 2fr 0.5fr 0.5fr;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.product-page-photo-001,
+.product-page-photo-002,
+.product-page-photo-003,
+.product-page-photo-004,
+.product-page-photo-005,
+.product-page-photo-006 {
+    text-align: center;
+    padding: clamp(10px, 1.5vw, 20px);
+}
+
+.detail-of-product-001,
+.detail-of-product-002,
+.detail-of-product-003,
+.detail-of-product-004,
+.detail-of-product-005,
+.detail-of-product-006 {
+    font-size: clamp(14px, 1.3vw, 20px);
+    text-align: center;
+    padding: clamp(8px, 1vw, 15px);
+}
+
+/* ========================================
+   SERVICE CENTER SECTION
+   ======================================== */
+.service-center-page {
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading-service {
+    min-height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    padding: clamp(15px, 2vw, 30px);
+}
+
+.heading-one {
+    font-size: clamp(20px, 2vw, 36px);
+    color: white;
+    margin-bottom: clamp(10px, 1vw, 20px);
+}
+
+.service-page-line {
+    height: 2px;
+    width: 95%;
+    background-color: rgb(255, 255, 255);
+}
+
+.service-product-page {
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.new-page-of-service,
+.new-page-of-service-02 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: clamp(20px, 3vw, 40px);
+    padding: clamp(30px, 4vw, 60px) clamp(15px, 3vw, 40px);
+    font-family: "Judson", serif;
+    background-color: #000000;
+}
+
+.class-of-service {
+    width: 100%;
+    min-height: 400px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: rgba(240, 240, 240, 0.725) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: clamp(15px, 2vw, 30px);
+    transition: all 0.3s ease;
+}
+
+.photo-mobile-repair,
+.photo-laptop-repair,
+.photo-mobile-software,
+.mobile-dispaly-01,
+.Second-handmobile-01,
+.mobile-acceries-01 {
+    width: 100%;
+    aspect-ratio: 1;
+    max-width: 400px;
+    background-color: #000000;
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.photo-mobile-repair {
+    background-image: url(../../assets/image/mobile-repairing.webp);
+}
+
+.photo-laptop-repair {
+    background-image: url(../../assets/image/laptop\ repairing.png);
+}
+
+.photo-mobile-software {
+    background-image: url(../../assets/image/software.png);
+}
+
+.mobile-dispaly-01 {
+    background-image: url(../../assets/image/mobile-glass-01.png);
+}
+
+.Second-handmobile-01 {
+    background-image: url(../../assets/image/mobile-second\ hand-02.png);
+}
+
+.mobile-acceries-01 {
+    background-image: url(../../assets/image/wmremove-transformed.jpeg);
+}
+
+.hover-pair {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: clamp(18px, 2vw, 32px);
+    color: rgb(255, 213, 0);
+    padding-bottom: clamp(15px, 2vw, 30px);
+    letter-spacing: 0.05em;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.class-of-service:hover {
+    background: linear-gradient(to top, rgba(172, 243, 162, 0.916), rgba(0, 0, 0, 0));
+    transform: scale(1.03);
+}
+
+.hover-pair:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ff0000;
+}
+
+.mobile-acceries-01:hover,
+.mobile-dispaly-01:hover,
+.Second-handmobile-01:hover,
+.photo-laptop-repair:hover,
+.photo-mobile-repair:hover,
+.photo-mobile-software:hover {
+    opacity: 0.6;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(255, 255, 255, 0.23) 0px 6px 6px;
+}
+
+/* ========================================
+   JIO PHONE SECTION
+   ======================================== */
+.Phone-page-of-jio {
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(207, 207, 207);
+    padding: clamp(20px, 3vw, 40px) clamp(15px, 2vw, 30px);
+}
+
+.heading-phone-jio {
+    width: 100%;
+    margin-bottom: clamp(20px, 3vw, 40px);
+}
+
+.line-of-heading {
+    height: 2px;
+    width: 95%;
+    border: 1px black solid;
+    background-color: black;
+    margin: clamp(10px, 1vw, 20px) auto;
+}
+
+.phone-page-one {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: clamp(20px, 3vw, 40px);
+}
+
+.class-01-page,
+.class-02-page,
+.class-03-page,
+.class-04-page {
+    width: 100%;
+    min-height: 350px;
+    background: linear-gradient(to top, rgb(32, 32, 32), rgb(117, 117, 117), rgb(172, 172, 172));
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.682) 0px 6px 6px;
+    display: flex;
+    flex-direction: column;
+    padding: clamp(15px, 2vw, 30px);
+    transition: all 0.3s ease;
+}
+
+.class-01-page:hover,
+.class-02-page:hover,
+.class-03-page:hover,
+.class-04-page:hover {
+    transform: scale(1.04);
+    box-shadow: rgba(244, 244, 244, 0.476) 0px 10px 20px, rgba(0, 0, 0, 0.682) 0px 6px 6px;
+}
+
+.photo-of-jio-sellimg-product-01,
+.photo-of-jio-sellimg-product-02,
+.photo-of-jio-sellimg-product-03,
+.photo-of-jio-sellimg-product-04 {
+    width: 100%;
+    aspect-ratio: 1;
+    max-width: 250px;
+    margin: 0 auto clamp(15px, 2vw, 30px);
+    background-color: #000000;
+    border-radius: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.photo-of-jio-sellimg-product-01 {
+    background-image: url(https://cdn.jiostore.online/v2/jmd-asp/jdprod/wrkr/products/pictures/item/free/resize-w:250/ghWjg6EzfV-jiobharat-b2-581107385-i-1-1200wx1200h.jpeg);
+}
+
+.photo-of-jio-sellimg-product-02 {
+    background-image: url(https://cdn.jiostore.online/v2/jmd-asp/jdprod/wrkr/products/pictures/item/free/resize-w:250/3mA7cHfrQw-jiobharat-j1-581107398-i-1-1200wx1200h.jpeg);
+}
+
+.photo-of-jio-sellimg-product-03 {
+    background-image: url(https://cdn.jiostore.online/v2/jmd-asp/jdprod/wrkr/products/pictures/item/free/resize-w:250/fQQSgcjWNu-jiobharatbharat-v3-581107375-i-1-1200wx1200h.jpeg);
+}
+
+.photo-of-jio-sellimg-product-04 {
+    background-image: url(https://cdn.jiostore.online/v2/jmd-asp/jdprod/wrkr/products/pictures/item/free/resize-w:150/BTK8QZ140j-jiobharatbharat-v4-581107376-i-1-1200wx1200h.jpeg);
+}
+
+.name-of-jio-phone-001,
+.name-of-jio-phone-002,
+.name-of-jio-phone-003,
+.name-of-jio-phone-004 {
+    font-size: clamp(14px, 1.3vw, 20px);
+    text-align: center;
+    color: white;
+}
+
+/* ========================================
+   SHOP BY PRICE SECTION
+   ======================================== */
+.shop-by-price {
+    width: 100%;
+    min-height: 400px;
+    background: linear-gradient(to right, rgb(233, 233, 233), rgba(150, 150, 150, 0.673), rgba(62, 62, 62, 0.372));
+    padding: clamp(20px, 3vw, 40px) clamp(15px, 2vw, 30px);
+}
+
+.shop-by-price-01 {
+    margin-bottom: clamp(20px, 3vw, 40px);
+}
+
+.line-of-offer {
+    height: 2px;
+    width: 95%;
+    border: 1px solid black;
+    background-color: black;
+    margin: clamp(10px, 1vw, 20px) auto;
+}
+
+.photo-of-offer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: clamp(15px, 2.5vw, 40px);
+}
+
+.class-offer-001,
+.class-offer-002,
+.class-offer-003,
+.class-offer-004 {
+    width: 100%;
+    aspect-ratio: 1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: transform 0.4s ease;
+}
+
+.class-offer-001 {
+    background-image: url(../../assets/image/image-offer-1.webp);
+}
+
+.class-offer-002 {
+    background-image: url(../../assets/image/image-offer-2.webp);
+}
+
+.class-offer-003 {
+    background-image: url(../../assets/image/image-offer-3.webp);
+}
+
+.class-offer-004 {
+    background-image: url(../../assets/image/image-offer-4.webp);
+}
+
+.class-offer-001:hover,
+.class-offer-002:hover,
+.class-offer-003:hover,
+.class-offer-004:hover {
+    transform: scale(1.04);
+}
+
+/* ========================================
+   CONTACT SECTION
+   ======================================== */
+.contact-section-page {
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-heading {
+    width: 100%;
+    min-height: 80px;
+    background: linear-gradient(to right, #313131, #515151, #807E7D, #A19B9B);
+    padding: clamp(15px, 2vw, 30px);
+}
+
+.heading-name-contact {
+    font-size: clamp(20px, 2vw, 36px);
+    color: white;
+    margin-bottom: clamp(10px, 1vw, 20px);
+}
+
+.line-of-heading-contact {
+    height: 2px;
+    width: 95%;
+    background-color: rgb(255, 255, 255);
+}
+
+.main-section-of-contact {
+    width: 100%;
+    min-height: 400px;
+    background: linear-gradient(to right, #313131, #515151, #807E7D, #A19B9B);
+    padding: clamp(20px, 3vw, 40px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(30px, 4vw, 60px);
+}
+
+.container-of-main {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 200px;
+    background-color: #000000;
+    border-radius: clamp(20px, 3vw, 40px);
+    padding: clamp(20px, 3vw, 40px);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: clamp(20px, 3vw, 40px);
+}
+
+.email-page,
+.contact-page,
+.phone-page,
+.pranay,
+.pranay-01,
+.pranay-02 {
+    font-size: clamp(14px, 1.3vw, 20px);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-page-two {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(30px, 4vw, 60px);
+}
+
+.page-01 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: clamp(20px, 3vw, 40px);
+}
+
+.part-01,
+.part-02 {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(10px, 1.5vw, 20px);
+    align-items: center;
+    text-align: center;
+}
+
+.part-05,
+.part-09 {
+    font-size: clamp(14px, 1.4vw, 22px);
+}
+
+.page-02 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.iframe-tag {
+    width: 100%;
+    max-width: 800px;
+    height: clamp(250px, 40vw, 500px);
+    border-radius: 20px;
+    border: none;
+}
+
+/* ========================================
+   FOOTER SECTION
+   ======================================== */
+.footer-page {
+    width: 100%;
+    min-height: 400px;
+    background-color: #000000;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: clamp(20px, 3vw, 40px);
+    padding: clamp(30px, 4vw, 60px) clamp(20px, 3vw, 40px);
+}
+
+.PAGES-01,
+.PAGES-02,
+.PAGES-03 {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(20px, 2vw, 30px);
+}
+
+.firrst-part-of-project,
+.first-page-001,
+.first-page-012 {
+    font-size: clamp(20px, 2vw, 32px);
+    color: white;
+    text-align: center;
+}
+
+.Second-part-of-project,
+.Second-page-001,
+.Second-page-015 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(15px, 1.5vw, 25px);
+    color: white;
+    font-size: clamp(14px, 1.2vw, 18px);
+}
+
+.image-of-social-media {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: clamp(15px, 2vw, 30px);
+    justify-content: center;
+    font-size: clamp(20px, 2vw, 30px);
+}
+
+/* ========================================
+   LAST SECTION
+   ======================================== */
+.last-page-end {
+    min-height: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: clamp(10px, 1.5vw, 20px) clamp(15px, 2vw, 30px);
+    gap: clamp(10px, 1.5vw, 20px);
+    background-color: #f5f5f5;
+}
+
+.last-one,
+.last-two,
+.last-three {
+    font-size: clamp(12px, 1vw, 16px);
+    color: #000000;
+    letter-spacing: 1px;
+    text-align: center;
+    flex: 1 1 200px;
+}
+
+/* ========================================
+   MOBILE RESPONSIVE ADJUSTMENTS
+   ======================================== */
+
+/* Mobile Navigation - Hamburger Menu Alternative */
+@media (max-width: 768px) {
+    .header {
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+
+    .header-nav {
+        flex-direction: column;
+        width: 100%;
+        order: 3;
+        display: none;
+        margin-top: 15px;
+        gap: 10px;
+    }
+
+    .header-nav.active {
+        display: flex;
+    }
+
+    .header-link {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+        background-color: #f5f5f5;
+        border-radius: 5px;
+    }
+
+    .logo-heading {
+        flex: 1;
+    }
+
+    .main-page {
+        min-height: 70vh;
+    }
+
+    .selling-product-01 {
+        padding: 20px 10px;
+    }
+
+    .selling-section {
+        order: -1;
+        margin-bottom: 20px;
+    }
+
+    .button-01 {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
+
+/* Tablet Responsive */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .header-nav {
+        gap: 15px;
+    }
+
+    .main-offer,
+    .product-selling-page-01,
+    .product-selling-page-02 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .new-page-of-service,
+    .new-page-of-service-02 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .phone-page-one {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    .header {
+        padding: 12px;
+    }
+
+    .header-logo {
+        height: 35px;
+        width: 35px;
+    }
+
+    .header-main-heading {
+        font-size: 14px;
+        letter-spacing: 0.05em;
+    }
+
+    .heading-01 {
+        font-size: 24px;
+        letter-spacing: 0.03em;
+    }
+
+    .heading-02 {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .button-call,
+    .button-explore {
+        width: 130px;
+        height: 42px;
+        font-size: 13px;
+    }
+
+    .main-offer {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    .offer-page-1,
+    .offer-page-2,
+    .offer-page-3 {
+        min-height: 350px;
+    }
+
+    .product-selling-page-01,
+    .product-selling-page-02 {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    .new-page-of-service,
+    .new-page-of-service-02 {
+        grid-template-columns: 1fr;
+        padding: 20px 15px;
+    }
+
+    .phone-page-one {
+        grid-template-columns: 1fr;
+    }
+
+    .photo-of-offer {
+        grid-template-columns: 1fr;
+    }
+
+    .container-of-main {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .footer-page {
+        grid-template-columns: 1fr;
+        padding: 30px 20px;
+    }
+
+    .last-page-end {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .last-one,
+    .last-two,
+    .last-three {
+        width: 100%;
+    }
+}
+
+/* Large Desktop Screens */
+@media (min-width: 1920px) {
+    .header {
+        padding: 30px 60px;
+    }
+
+    .main-content {
+        padding: 80px;
+    }
+
+    .main-offer,
+    .product-selling-page-01,
+    .product-selling-page-02,
+    .new-page-of-service,
+    .new-page-of-service-02,
+    .phone-page-one {
+        max-width: 1800px;
+        margin: 0 auto;
+    }
+}
+
+/* Print Styles */
+@media print {
+
+    .header,
+    .button-call,
+    .button-explore,
+    .button-01 {
+        display: none;
+    }
+
+    * {
+        background: white !important;
+        color: black !important;
+    }
+}
+
+/* Accessibility Improvements */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    .logo-track {
+        animation: none;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+
+    .header-link:hover,
+    a:hover {
+        background-color: #000;
+        color: #fff;
+        border: 2px solid #fff;
+    }
+
+    .button-call,
+    .button-explore {
+        border-width: 3px;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1a1a1a;
+        color: #ffffff;
+    }
+
+    .header {
+        background-color: #2a2a2a;
+        box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+    }
+
+    .header-link {
+        color: #ffffff;
+    }
+
+    a {
+        color: #ffffff;
+    }
+}
+
+/* Landscape Orientation for Mobile */
+@media (max-width: 900px) and (orientation: landscape) {
+    .main-page {
+        min-height: 100vh;
+    }
+
+    .main-content {
+        padding: 30px 20px;
+    }
+
+    .heading-01 {
+        font-size: 28px;
+    }
+
+    .heading-02 {
+        font-size: 14px;
+    }
+}
+
+/* Container Max Width for Very Large Screens */
+.offer-page,
+.product-page,
+.service-center-page,
+.contact-section-page {
+    max-width: 2400px;
+    margin: 0 auto;
+}
+
+/* Flexible Images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Focus Visible for Accessibility */
+*:focus-visible {
+    outline: 3px solid #4A90E2;
+    outline-offset: 2px;
+}
+
+/* Smooth Transitions */
+a,
+button,
+.button-01,
+.button-call,
+.button-explore,
+.header-link {
+    transition: all 0.3s ease;
+}
+
+/* Ensure touch targets are at least 44x44px */
+@media (max-width: 768px) {
+
+    .header-link,
+    .button-01,
+    .button-call,
+    .button-explore {
+        min-height: 44px;
+        min-width: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* Loading State Optimization */
+.offer-page-1,
+.offer-page-2,
+.offer-page-3,
+.photo-mobile-repair,
+.photo-laptop-repair,
+.photo-mobile-software,
+.mobile-dispaly-01,
+.Second-handmobile-01,
+.mobile-acceries-01 {
+    background-color: #f0f0f0;
+}
+
+/* Prevent Text Selection on UI Elements */
+.button-01,
+.button-call,
+.button-explore,
+.header-link {
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Safe Area for Notched Devices */
+@supports (padding: max(0px)) {
+
+    .header,
+    .main-content,
+    .footer-page {
+        padding-left: max(env(safe-area-inset-left), 20px);
+        padding-right: max(env(safe-area-inset-right), 20px);
+    }
+}
