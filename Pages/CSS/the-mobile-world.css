@@ -533,6 +533,10 @@
         text-align: center;
     }
 
+    .photo-of-item{
+        height: 15vw;
+        width: 16vw;
+    }
 
     /* New Page  */
     /* service-center-page */
@@ -570,6 +574,7 @@
         margin-left: 30px;
 
     }
+
 
     /* New Class  */
     .service-product-page {
@@ -1315,136 +1320,4 @@
         padding-top: 0.5vw;
         width: 33%;
     }
-
-       /* ===========================
-   RESPONSIVE MEDIA QUERIES
-   =========================== */
-
-/* Extra Small Devices - Mobile Portrait */
-@media (max-width: 480px) {
-    .header {
-      flex-direction: column;
-      padding: 1rem;
-      height: auto;
-    }
-    .header-nav {
-      flex-direction: column;
-      gap: 1rem;
-    }
-    .main-content .heading-01 {
-      font-size: clamp(1.5rem, 6vw, 2rem);
-    }
-    .product-selling-page-01,
-    .product-selling-page-02,
-    .class-of-services {
-      flex-direction: column;
-      gap: 1.5rem;
-    }
-    .class-product,
-    .class-of-service {
-      width: 90%;
-    }
-    .contact-form {
-      width: 95%;
-      padding: 1rem;
-    }
-  }
-  
-  /* Small Devices - Mobiles Landscape / Small Tablets */
-  @media (max-width: 768px) {
-    .header {
-      flex-direction: column;
-      gap: 1rem;
-    }
-    .header-main-heading {
-      font-size: clamp(1.5rem, 5vw, 2rem);
-      margin-right: 0;
-    }
-    .main-content .heading-01 {
-      font-size: clamp(2rem, 6vw, 3rem);
-    }
-    .main-content p {
-      font-size: clamp(0.9rem, 3vw, 1rem);
-    }
-    .class-product {
-      width: 80%;
-    }
-    .offer-page {
-      flex-direction: column;
-      gap: 1rem;
-    }
-    .footer {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-  }
-  
-  /* Medium Devices - Tablets */
-  @media (max-width: 1024px) {
-    .header {
-      justify-content: space-between;
-    }
-    .header-nav {
-      gap: 1.2rem;
-    }
-    .main-content .heading-01 {
-      font-size: clamp(2.5rem, 5vw, 4rem);
-    }
-    .class-product {
-      width: 45%;
-    }
-    .class-of-services {
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .contact-form {
-      width: 80%;
-    }
-  }
-  
-  /* Large Devices - Laptops */
-  @media (max-width: 1280px) {
-    .header {
-      padding: 1rem 2rem;
-    }
-    .main-content .heading-01 {
-      font-size: clamp(3rem, 4vw, 4.5rem);
-    }
-    .class-product {
-      width: 30%;
-    }
-  }
-  
-  /* Extra Large Devices - Desktops */
-  @media (min-width: 1440px) {
-    .main-content .heading-01 {
-      font-size: clamp(3.5rem, 3vw, 5rem);
-    }
-  }
-  
-  /* Ultra-Wide Screens */
-  @media (min-width: 1920px) {
-    .container,
-    .header,
-    .footer,
-    .main-page,
-    .offer-page,
-    .contact-form {
-      max-width: 1600px;
-      margin: 0 auto;
-    }
-  }
-  
-  /* Orientation Handling */
-  @media (max-width: 900px) and (orientation: landscape) {
-    .header {
-      flex-direction: row;
-      justify-content: space-between;
-    }
-    .main-content .heading-01 {
-      font-size: clamp(2rem, 4vw, 3rem);
-    }
-  }
-  
-  
+    

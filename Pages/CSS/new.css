@@ -1,3 +1,4 @@
+
 /* Reset base styles */
 * {
     margin: 0;
@@ -17,34 +18,33 @@ html {
     font-family: "Gabarito", sans-serif;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    scrollbar-width: 50px;
 }
 
 .main-container {
     width: 100vw;
 }
 
-/* ========================================
-   HEADER SECTION
-   ======================================== */
+/* Header */
 .header {
     position: fixed;
     top: 0;
     width: 100%;
-    min-height: 60px;
+    height: 3vw;
+    min-height: 50px;
     background-color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px clamp(15px, 2vw, 40px);
+    padding: 2.1vw;
     z-index: 10;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .header-logo {
-    height: clamp(40px, 3.5vw, 60px);
-    width: clamp(40px, 3.5vw, 60px);
-    min-width: 40px;
+    height: 3.5vw;
+    width: 3.5vw;
     min-height: 40px;
+    min-width: 40px;
     border-radius: 50%;
     background-color: black;
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoQ6NNciN1iGBojfUeiYq9p19sRQlKrlyXVw&s);
@@ -57,50 +57,45 @@ html {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: clamp(10px, 2vw, 20px);
+    gap: 20px;
+    width: 100%;
+    height: auto;
 }
 
 .header-main-heading {
-    font-size: clamp(16px, 2vw, 32px);
+    font-size: 2vw;
     font-family: "Gabriela", serif;
-    letter-spacing: 0.1em;
-    white-space: nowrap;
+    letter-spacing: 0.3vw;
+    margin-right: 34vw;
 }
 
 .header-nav {
     display: flex;
-    gap: clamp(15px, 2vw, 30px);
+    gap: 2vw;
 }
 
 .header-link {
-    font-size: clamp(14px, 1.2vw, 18px);
+    font-size: 1.2vw;
     cursor: pointer;
     color: #333;
-    padding: 8px 12px;
-    transition: all 0.3s ease;
 }
 
 .header-link:hover,
 a:hover {
     color: rgb(255, 252, 252);
     background-color: rgb(165, 165, 165);
-    border-radius: 5px;
 }
 
-/* ========================================
-   MAIN PAGE / HERO SECTION
-   ======================================== */
+/* Main Page */
 .main-page {
-    min-height: 100vh;
+    height: 55vw;
+    min-height: 400px;
     width: 100%;
-    background-image: url('../../assets/image/DeWatermark.ai_1757740117691.jpeg');
+    background-image: url('https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=1200');
     background-size: cover;
     background-position: center;
     position: relative;
-    padding-top: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding-top: 4vw;
 }
 
 .main-content {
@@ -112,39 +107,40 @@ a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: clamp(20px, 5vw, 60px);
+    padding: 3vw;
 }
 
 .heading-01 {
-    font-size: clamp(28px, 4vw, 64px);
-    letter-spacing: 0.05em;
+    font-size: 4vw;
+    letter-spacing: 0.7vw;
     font-family: "Gabriela", serif;
     color: white;
-    margin-bottom: clamp(15px, 2vw, 30px);
+    margin-bottom: 1.8vw;
 }
 
 .heading-02 {
-    font-size: clamp(14px, 1.4vw, 24px);
-    letter-spacing: 0.05em;
+    font-size: 1.4vw;
+    letter-spacing: 0.25vw;
     color: white;
-    margin-bottom: clamp(20px, 2vw, 40px);
-    max-width: 800px;
+    margin-bottom: 2vw;
 }
 
 .button-group {
     display: flex;
-    gap: clamp(15px, 1.5vw, 30px);
+    gap: 1.2vw;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .button-call,
 .button-explore {
-    height: clamp(45px, 3.4vw, 60px);
-    width: clamp(140px, 12vw, 200px);
-    border-radius: clamp(25px, 2vw, 40px);
-    font-size: clamp(14px, 1.3vw, 20px);
-    border: 2px solid white;
+    height: 3.4vw;
+    min-height: 45px;
+    width: 12vw;
+    min-width: 120px;
+    border-radius: 2vw;
+    font-size: 1.3vw;
+    border: 1px solid white;
     background-color: transparent;
     color: white;
     cursor: pointer;
@@ -155,17 +151,15 @@ a:hover {
 .button-explore:hover {
     background-color: white;
     color: black;
-    transform: translateY(-2px);
 }
 
-/* ========================================
-   BRAND LOGO SECTION
-   ======================================== */
+/* Brand Page */
 .brand-page {
     overflow: hidden;
     white-space: nowrap;
     width: 100%;
     background-color: white;
+    height: 6vw;
     min-height: 80px;
     display: flex;
     align-items: center;
@@ -174,17 +168,17 @@ a:hover {
 
 .logo-track {
     display: inline-flex;
-    animation: scrollLeft 20s linear infinite;
+    animation: scrollLeft 5s linear infinite;
 }
 
 .log-company {
     flex: 0 0 auto;
-    width: clamp(120px, 15vw, 200px);
-    margin-right: clamp(20px, 3vw, 50px);
+    width: 200px;
+    margin-right: 2vw;
 }
 
 .log-company img {
-    max-height: clamp(60px, 8vw, 120px);
+    max-height: 9vw;
     width: auto;
     display: block;
 }
@@ -199,153 +193,175 @@ a:hover {
     }
 }
 
-/* ========================================
-   OFFER SECTION
-   ======================================== */
+/* Offer page */
 .offer-page {
     width: 100%;
-    min-height: 600px;
+    min-height: 400px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
     background: linear-gradient(to right, black, #716E6E, #D9D4D4);
-    padding: clamp(30px, 5vw, 80px) clamp(15px, 3vw, 60px);
+    padding: 2vw;
 }
 
 .heading-offer {
+    height: 4vw;
     min-height: 60px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: clamp(30px, 3vw, 50px);
 }
 
 .heading-main {
-    padding: clamp(12px, 1.5vw, 20px) clamp(30px, 3vw, 50px);
+    height: 80%;
+    width: 20vw;
+    min-width: 200px;
     text-align: center;
     color: white;
+    padding-top: 0.4vw;
     border-radius: 20px;
-    font-size: clamp(18px, 2vw, 32px);
+    font-size: 1.9vw;
     background: linear-gradient(to right, black, #716E6E, #D9D4D4);
 }
 
 .main-offer {
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: clamp(20px, 3vw, 50px);
-    padding: clamp(15px, 2vw, 30px) 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2vw;
+    padding: 2vw 0;
 }
 
 .offer-page-1,
 .offer-page-2,
 .offer-page-3 {
-    width: 100%;
-    min-height: 400px;
-    aspect-ratio: 3/4;
+    width: 30%;
+    min-width: 280px;
+    height: 40vw;
+    min-height: 350px;
     border-radius: 10px;
-    box-shadow: 5px 5px 20px rgba(105, 105, 105, 0.5);
+    box-shadow: 5px 5px 10px 10px rgba(105, 105, 105, 0.86);
     background: linear-gradient(to right, black, #716E6E, #D9D4D4);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    transition: transform 0.3s ease;
 }
 
 .offer-page-1 {
-    background-image: url(../../assets/image/Screenshot\ 2025-09-21\ at\ 16.09.27.png);
+    background-image: url(https://images.unsplash.com/photo-1556656793-08538906a9f8?w=500);
 }
 
 .offer-page-2 {
-    background-image: url(../../assets/image/Media.jpeg);
+    background-image: url(https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=500);
 }
 
 .offer-page-3 {
-    background-image: url(../../assets/image/Media\ copy.jpeg);
+    background-image: url(https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=500);
 }
 
 .offer-page-1:hover,
 .offer-page-2:hover,
 .offer-page-3:hover {
     transform: scale(1.03);
+    transition: transform 0.3s ease;
 }
 
-/* ========================================
-   PRODUCT SECTION
-   ======================================== */
+/* Product section */
 .product-page {
     width: 100%;
-    min-height: 600px;
     display: flex;
     flex-direction: column;
+    padding: 2vw;
 }
 
 .selling-product {
     width: 100%;
-    padding: clamp(20px, 3vw, 40px) clamp(15px, 2vw, 30px);
+    height: 6vw;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .heading-name {
-    font-size: clamp(20px, 2vw, 36px);
-    margin-bottom: clamp(10px, 1vw, 20px);
+    height: 90%;
+    width: 100%;
+    font-size: 2vw;
 }
 
 .line-under-that {
     height: 2px;
     width: 95%;
     background-color: black;
-    margin: 0 auto clamp(15px, 2vw, 30px);
+    margin-bottom: 1vw;
+    margin-left: 1.3vw;
+    border: 1px black solid;
 }
 
 .selling-product-01 {
     width: 100%;
-    min-height: 600px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background: linear-gradient(to right, rgb(49, 49, 49), rgb(101, 101, 101), rgb(207, 207, 207));
+    flex-wrap: wrap;
 }
 
 .selling-section {
-    width: 100%;
+    width: 20%;
+    min-width: 200px;
     background: linear-gradient(to right, rgb(169, 169, 169), rgb(101, 101, 101), rgb(29, 29, 29));
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    gap: clamp(10px, 1.5vw, 20px);
-    padding: clamp(15px, 2vw, 30px);
+    gap: 1vw;
+    padding-top: 2vw;
 }
 
 .button-01 {
-    padding: clamp(8px, 1vw, 15px) clamp(20px, 2.5vw, 40px);
-    font-size: clamp(14px, 1.3vw, 20px);
+    height: 2.1vw;
+    min-height: 35px;
+    width: 55%;
+    text-align: center;
+    font-size: 1.5vw;
     color: white;
     cursor: pointer;
-    transition: all 0.3s ease;
-    white-space: nowrap;
 }
 
 .button-01:hover {
     border-radius: 25px;
     color: orange;
+    display: block;
     background-color: #000000;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .product-showing {
-    width: 100%;
+    width: 80%;
+    min-width: 280px;
     display: flex;
     flex-direction: column;
-    gap: clamp(20px, 3vw, 40px);
-    padding: clamp(20px, 3vw, 40px);
+    flex: 1;
 }
 
 .product-selling-page-01,
 .product-selling-page-02 {
     width: 100%;
     background: linear-gradient(to right, rgb(49, 49, 49), rgb(101, 101, 101), rgb(189, 189, 189));
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: clamp(20px, 3vw, 40px);
-    padding: clamp(20px, 3vw, 40px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2vw;
+    flex-wrap: wrap;
+    gap: 2vw;
 }
 
 .class-product-01,
@@ -354,13 +370,17 @@ a:hover {
 .class-product-11,
 .class-product-12,
 .class-product-13 {
-    width: 100%;
+    width: 30%;
+    min-width: 250px;
+    height: auto;
     min-height: 300px;
     background-color: white;
     border-radius: 12px;
     display: grid;
     grid-template-rows: 2fr 0.5fr 0.5fr;
+    grid-template-columns: 1fr;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    padding: 1vw;
 }
 
 .product-page-photo-001,
@@ -370,7 +390,10 @@ a:hover {
 .product-page-photo-005,
 .product-page-photo-006 {
     text-align: center;
-    padding: clamp(10px, 1.5vw, 20px);
+    font-size: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .detail-of-product-001,
@@ -379,45 +402,45 @@ a:hover {
 .detail-of-product-004,
 .detail-of-product-005,
 .detail-of-product-006 {
-    font-size: clamp(14px, 1.3vw, 20px);
+    font-size: 1.5vw;
     text-align: center;
-    padding: clamp(8px, 1vw, 15px);
 }
 
-/* ========================================
-   SERVICE CENTER SECTION
-   ======================================== */
+/* Service center page */
 .service-center-page {
     width: 100%;
-    min-height: 600px;
     display: flex;
     flex-direction: column;
 }
 
 .heading-service {
+    height: 6vw;
     min-height: 80px;
     width: 100%;
     display: flex;
     flex-direction: column;
     background-color: #000000;
-    padding: clamp(15px, 2vw, 30px);
 }
 
 .heading-one {
-    font-size: clamp(20px, 2vw, 36px);
+    height: 90%;
+    width: 100%;
+    font-size: 2vw;
+    padding-left: 2vw;
+    padding-top: 1.2vw;
     color: white;
-    margin-bottom: clamp(10px, 1vw, 20px);
 }
 
 .service-page-line {
-    height: 2px;
+    height: 0.1vw;
     width: 95%;
     background-color: rgb(255, 255, 255);
+    margin-bottom: 15px;
+    margin-left: 30px;
 }
 
 .service-product-page {
     width: 100%;
-    min-height: 600px;
     display: flex;
     flex-direction: column;
 }
@@ -425,17 +448,22 @@ a:hover {
 .new-page-of-service,
 .new-page-of-service-02 {
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: clamp(20px, 3vw, 40px);
-    padding: clamp(30px, 4vw, 60px) clamp(15px, 3vw, 40px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
     font-family: "Judson", serif;
     background-color: #000000;
+    padding: 2vw;
+    flex-wrap: wrap;
+    gap: 2vw;
 }
 
 .class-of-service {
-    width: 100%;
-    min-height: 400px;
+    width: 30%;
+    min-width: 280px;
+    height: auto;
+    min-height: 350px;
     background-color: white;
     border-radius: 15px;
     box-shadow: rgba(240, 240, 240, 0.725) 0px 5px 15px;
@@ -443,8 +471,7 @@ a:hover {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    padding: clamp(15px, 2vw, 30px);
-    transition: all 0.3s ease;
+    padding: 1vw;
 }
 
 .photo-mobile-repair,
@@ -453,64 +480,69 @@ a:hover {
 .mobile-dispaly-01,
 .Second-handmobile-01,
 .mobile-acceries-01 {
+    height: 26vw;
+    min-height: 200px;
     width: 100%;
-    aspect-ratio: 1;
-    max-width: 400px;
+    max-width: 25vw;
     background-color: #000000;
     border-radius: 10px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    overflow: hidden;
 }
 
 .photo-mobile-repair {
-    background-image: url(../../assets/image/mobile-repairing.webp);
+    background-image: url(https://images.unsplash.com/photo-1531482615713-2afd69097998?w=500);
 }
 
 .photo-laptop-repair {
-    background-image: url(../../assets/image/laptop\ repairing.png);
+    background-image: url(https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=500);
 }
 
 .photo-mobile-software {
-    background-image: url(../../assets/image/software.png);
+    background-image: url(https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=500);
 }
 
 .mobile-dispaly-01 {
-    background-image: url(../../assets/image/mobile-glass-01.png);
+    background-image: url(https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?w=500);
 }
 
 .Second-handmobile-01 {
-    background-image: url(../../assets/image/mobile-second\ hand-02.png);
+    background-image: url(https://images.unsplash.com/photo-1580910051074-3eb694886505?w=500);
 }
 
 .mobile-acceries-01 {
-    background-image: url(../../assets/image/wmremove-transformed.jpeg);
+    background-image: url(https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=500);
+    opacity: 100%;
 }
 
 .hover-pair {
     height: 100%;
     width: 100%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    font-size: clamp(18px, 2vw, 32px);
+    text-align: center;
+    font-size: 2.2vw;
     color: rgb(255, 213, 0);
-    padding-bottom: clamp(15px, 2vw, 30px);
-    letter-spacing: 0.05em;
-    border-radius: 10px;
-    transition: all 0.3s ease;
+    padding-top: 22vw;
+    padding-left: 0.7vw;
+    letter-spacing: 0.2vw;
+    word-spacing: 0.1vw;
+    border-radius: 1vw;
 }
 
 .class-of-service:hover {
     background: linear-gradient(to top, rgba(172, 243, 162, 0.916), rgba(0, 0, 0, 0));
     transform: scale(1.03);
+    transition: transform 0.3s ease;
+    opacity: 100%;
 }
 
 .hover-pair:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    background-color: #00000000;
     color: #ff0000;
+    opacity: 100%;
+    z-index: 5;
 }
 
 .mobile-acceries-01:hover,
@@ -519,55 +551,61 @@ a:hover {
 .photo-laptop-repair:hover,
 .photo-mobile-repair:hover,
 .photo-mobile-software:hover {
-    opacity: 0.6;
+    opacity: 60%;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(255, 255, 255, 0.23) 0px 6px 6px;
 }
 
-/* ========================================
-   JIO PHONE SECTION
-   ======================================== */
+/* Jio Phone Page */
 .Phone-page-of-jio {
     width: 100%;
-    min-height: 500px;
     display: flex;
     flex-direction: column;
     background-color: rgb(207, 207, 207);
-    padding: clamp(20px, 3vw, 40px) clamp(15px, 2vw, 30px);
+    padding: 2vw;
 }
 
 .heading-phone-jio {
     width: 100%;
-    margin-bottom: clamp(20px, 3vw, 40px);
+    height: 6vw;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
 }
 
 .line-of-heading {
-    height: 2px;
+    height: 0.1vw;
     width: 95%;
     border: 1px black solid;
     background-color: black;
-    margin: clamp(10px, 1vw, 20px) auto;
+    margin-bottom: 0.5vw;
+    margin-left: 1vw;
 }
 
 .phone-page-one {
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: clamp(20px, 3vw, 40px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2vw;
 }
 
 .class-01-page,
 .class-02-page,
 .class-03-page,
 .class-04-page {
-    width: 100%;
-    min-height: 350px;
+    width: 22%;
+    min-width: 200px;
+    height: auto;
+    min-height: 300px;
     background: linear-gradient(to top, rgb(32, 32, 32), rgb(117, 117, 117), rgb(172, 172, 172));
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.682) 0px 6px 6px;
-    display: flex;
-    flex-direction: column;
-    padding: clamp(15px, 2vw, 30px);
-    transition: all 0.3s ease;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+    padding: 1vw;
 }
 
 .class-01-page:hover,
@@ -575,6 +613,7 @@ a:hover {
 .class-03-page:hover,
 .class-04-page:hover {
     transform: scale(1.04);
+    transition: transform 0.4s ease;
     box-shadow: rgba(244, 244, 244, 0.476) 0px 10px 20px, rgba(0, 0, 0, 0.682) 0px 6px 6px;
 }
 
@@ -582,15 +621,16 @@ a:hover {
 .photo-of-jio-sellimg-product-02,
 .photo-of-jio-sellimg-product-03,
 .photo-of-jio-sellimg-product-04 {
+    height: 18vw;
+    min-height: 180px;
     width: 100%;
-    aspect-ratio: 1;
-    max-width: 250px;
-    margin: 0 auto clamp(15px, 2vw, 30px);
     background-color: #000000;
-    border-radius: 15px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 15px;
+    margin-top: 1vw;
+    text-align: center;
 }
 
 .photo-of-jio-sellimg-product-01 {
@@ -613,925 +653,72 @@ a:hover {
 .name-of-jio-phone-002,
 .name-of-jio-phone-003,
 .name-of-jio-phone-004 {
-    font-size: clamp(14px, 1.3vw, 20px);
+    font-size: 1.3vw;
     text-align: center;
     color: white;
 }
 
-/* ========================================
-   SHOP BY PRICE SECTION
-   ======================================== */
+/* Shop by Price */
 .shop-by-price {
     width: 100%;
-    min-height: 400px;
     background: linear-gradient(to right, rgb(233, 233, 233), rgba(150, 150, 150, 0.673), rgba(62, 62, 62, 0.372));
-    padding: clamp(20px, 3vw, 40px) clamp(15px, 2vw, 30px);
+    padding: 2vw;
 }
 
 .shop-by-price-01 {
-    margin-bottom: clamp(20px, 3vw, 40px);
+    height: 5vw;
+    min-height: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .line-of-offer {
-    height: 2px;
+    height: 0.1vw;
     width: 95%;
     border: 1px solid black;
     background-color: black;
-    margin: clamp(10px, 1vw, 20px) auto;
+    margin-left: 30px;
 }
 
 .photo-of-offer {
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: clamp(15px, 2.5vw, 40px);
-}
-
-.class-offer-001,
-.class-offer-002,
-.class-offer-003,
-.class-offer-004 {
-    width: 100%;
-    aspect-ratio: 1;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    transition: transform 0.4s ease;
-}
-
-.class-offer-001 {
-    background-image: url(../../assets/image/image-offer-1.webp);
-}
-
-.class-offer-002 {
-    background-image: url(../../assets/image/image-offer-2.webp);
-}
-
-.class-offer-003 {
-    background-image: url(../../assets/image/image-offer-3.webp);
-}
-
-.class-offer-004 {
-    background-image: url(../../assets/image/image-offer-4.webp);
-}
-
-.class-offer-001:hover,
-.class-offer-002:hover,
-.class-offer-003:hover,
-.class-offer-004:hover {
-    transform: scale(1.04);
-}
-
-/* ========================================
-   CONTACT SECTION
-   ======================================== */
-.contact-section-page {
-    width: 100%;
-    min-height: 500px;
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-heading {
-    width: 100%;
-    min-height: 80px;
-    background: linear-gradient(to right, #313131, #515151, #807E7D, #A19B9B);
-    padding: clamp(15px, 2vw, 30px);
-}
-
-.heading-name-contact {
-    font-size: clamp(20px, 2vw, 36px);
-    color: white;
-    margin-bottom: clamp(10px, 1vw, 20px);
-}
-
-.line-of-heading-contact {
-    height: 2px;
-    width: 95%;
-    background-color: rgb(255, 255, 255);
-}
-
-.main-section-of-contact {
-    width: 100%;
-    min-height: 400px;
-    background: linear-gradient(to right, #313131, #515151, #807E7D, #A19B9B);
-    padding: clamp(20px, 3vw, 40px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: clamp(30px, 4vw, 60px);
-}
-
-.container-of-main {
-    width: 100%;
-    max-width: 1200px;
-    min-height: 200px;
-    background-color: #000000;
-    border-radius: clamp(20px, 3vw, 40px);
-    padding: clamp(20px, 3vw, 40px);
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: clamp(20px, 3vw, 40px);
-}
-
-.email-page,
-.contact-page,
-.phone-page,
-.pranay,
-.pranay-01,
-.pranay-02 {
-    font-size: clamp(14px, 1.3vw, 20px);
-    color: white;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.contact-page-two {
-    width: 100%;
-    max-width: 1200px;
-    display: flex;
-    flex-direction: column;
-    gap: clamp(30px, 4vw, 60px);
-}
-
-.page-01 {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: clamp(20px, 3vw, 40px);
-}
-
-.part-01,
-.part-02 {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    gap: clamp(10px, 1.5vw, 20px);
-    align-items: center;
-    text-align: center;
-}
-
-.part-05,
-.part-09 {
-    font-size: clamp(14px, 1.4vw, 22px);
-}
-
-.page-02 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.iframe-tag {
-    width: 100%;
-    max-width: 800px;
-    height: clamp(250px, 40vw, 500px);
-    border-radius: 20px;
-    border: none;
-}
-
-/* ========================================
-   FOOTER SECTION
-   ======================================== */
-.footer-page {
-    width: 100%;
-    min-height: 400px;
-    background-color: #000000;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: clamp(20px, 3vw, 40px);
-    padding: clamp(30px, 4vw, 60px) clamp(20px, 3vw, 40px);
-}
-
-.PAGES-01,
-.PAGES-02,
-.PAGES-03 {
-    display: flex;
-    flex-direction: column;
-    gap: clamp(20px, 2vw, 30px);
-}
-
-.firrst-part-of-project,
-.first-page-001,
-.first-page-012 {
-    font-size: clamp(20px, 2vw, 32px);
-    color: white;
-    text-align: center;
-}
-
-.Second-part-of-project,
-.Second-page-001,
-.Second-page-015 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: clamp(15px, 1.5vw, 25px);
-    color: white;
-    font-size: clamp(14px, 1.2vw, 18px);
-}
-
-.image-of-social-media {
-    width: 100%;
     display: flex;
     flex-direction: row;
-    gap: clamp(15px, 2vw, 30px);
-    justify-content: center;
-    font-size: clamp(20px, 2vw, 30px);
-}
-
-/* ========================================
-   LAST SECTION
-   ======================================== */
-.last-page-end {
-    min-height: 50px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: clamp(10px, 1.5vw, 20px) clamp(15px, 2vw, 30px);
-    gap: clamp(10px, 1.5vw, 20px);
-    background-color: #f5f5f5;
-}
-
-/* Reset base styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-a {
-    text-decoration: none;
-    color: #333;
-}
-
-body,
-html {
-    width: 100%;
-    height: 100%;
-    font-family: "Gabarito", sans-serif;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-}
-
-.main-container {
-    width: 100vw;
-}
-
-/* ========================================
-   HEADER SECTION
-   ======================================== */
-.header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    min-height: 60px;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px clamp(15px, 2vw, 40px);
-    z-index: 10;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.header-logo {
-    height: clamp(40px, 3.5vw, 60px);
-    width: clamp(40px, 3.5vw, 60px);
-    min-width: 40px;
-    min-height: 40px;
-    border-radius: 50%;
-    background-color: black;
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoQ6NNciN1iGBojfUeiYq9p19sRQlKrlyXVw&s);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.logo-heading {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: clamp(10px, 2vw, 20px);
-}
-
-.header-main-heading {
-    font-size: clamp(16px, 2vw, 32px);
-    font-family: "Gabriela", serif;
-    letter-spacing: 0.1em;
-    white-space: nowrap;
-}
-
-.header-nav {
-    display: flex;
-    gap: clamp(15px, 2vw, 30px);
-}
-
-.header-link {
-    font-size: clamp(14px, 1.2vw, 18px);
-    cursor: pointer;
-    color: #333;
-    padding: 8px 12px;
-    transition: all 0.3s ease;
-}
-
-.header-link:hover,
-a:hover {
-    color: rgb(255, 252, 252);
-    background-color: rgb(165, 165, 165);
-    border-radius: 5px;
-}
-
-/* ========================================
-   MAIN PAGE / HERO SECTION
-   ======================================== */
-.main-page {
-    min-height: 100vh;
-    width: 100%;
-    background-image: url('../../assets/image/DeWatermark.ai_1757740117691.jpeg');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    padding-top: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.main-content {
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: clamp(20px, 5vw, 60px);
-}
-
-.heading-01 {
-    font-size: clamp(28px, 4vw, 64px);
-    letter-spacing: 0.05em;
-    font-family: "Gabriela", serif;
-    color: white;
-    margin-bottom: clamp(15px, 2vw, 30px);
-}
-
-.heading-02 {
-    font-size: clamp(14px, 1.4vw, 24px);
-    letter-spacing: 0.05em;
-    color: white;
-    margin-bottom: clamp(20px, 2vw, 40px);
-    max-width: 800px;
-}
-
-.button-group {
-    display: flex;
-    gap: clamp(15px, 1.5vw, 30px);
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.button-call,
-.button-explore {
-    height: clamp(45px, 3.4vw, 60px);
-    width: clamp(140px, 12vw, 200px);
-    border-radius: clamp(25px, 2vw, 40px);
-    font-size: clamp(14px, 1.3vw, 20px);
-    border: 2px solid white;
-    background-color: transparent;
-    color: white;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.button-call:hover,
-.button-explore:hover {
-    background-color: white;
-    color: black;
-    transform: translateY(-2px);
-}
-
-/* ========================================
-   BRAND LOGO SECTION
-   ======================================== */
-.brand-page {
-    overflow: hidden;
-    white-space: nowrap;
-    width: 100%;
-    background-color: white;
-    min-height: 80px;
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-.logo-track {
-    display: inline-flex;
-    animation: scrollLeft 20s linear infinite;
-}
-
-.log-company {
-    flex: 0 0 auto;
-    width: clamp(120px, 15vw, 200px);
-    margin-right: clamp(20px, 3vw, 50px);
-}
-
-.log-company img {
-    max-height: clamp(60px, 8vw, 120px);
-    width: auto;
-    display: block;
-}
-
-@keyframes scrollLeft {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-50%);
-    }
-}
-
-/* ========================================
-   OFFER SECTION
-   ======================================== */
-.offer-page {
-    width: 100%;
-    min-height: 600px;
-    background: linear-gradient(to right, black, #716E6E, #D9D4D4);
-    padding: clamp(30px, 5vw, 80px) clamp(15px, 3vw, 60px);
-}
-
-.heading-offer {
-    min-height: 60px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: clamp(30px, 3vw, 50px);
-}
-
-.heading-main {
-    padding: clamp(12px, 1.5vw, 20px) clamp(30px, 3vw, 50px);
-    text-align: center;
-    color: white;
-    border-radius: 20px;
-    font-size: clamp(18px, 2vw, 32px);
-    background: linear-gradient(to right, black, #716E6E, #D9D4D4);
-}
-
-.main-offer {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: clamp(20px, 3vw, 50px);
-    padding: clamp(15px, 2vw, 30px) 0;
-}
-
-.offer-page-1,
-.offer-page-2,
-.offer-page-3 {
-    width: 100%;
-    min-height: 400px;
-    aspect-ratio: 3/4;
-    border-radius: 10px;
-    box-shadow: 5px 5px 20px rgba(105, 105, 105, 0.5);
-    background: linear-gradient(to right, black, #716E6E, #D9D4D4);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition: transform 0.3s ease;
-}
-
-.offer-page-1 {
-    background-image: url(../../assets/image/Screenshot\ 2025-09-21\ at\ 16.09.27.png);
-}
-
-.offer-page-2 {
-    background-image: url(../../assets/image/Media.jpeg);
-}
-
-.offer-page-3 {
-    background-image: url(../../assets/image/Media\ copy.jpeg);
-}
-
-.offer-page-1:hover,
-.offer-page-2:hover,
-.offer-page-3:hover {
-    transform: scale(1.03);
-}
-
-/* ========================================
-   PRODUCT SECTION
-   ======================================== */
-.product-page {
-    width: 100%;
-    min-height: 600px;
-    display: flex;
-    flex-direction: column;
-}
-
-.selling-product {
-    width: 100%;
-    padding: clamp(20px, 3vw, 40px) clamp(15px, 2vw, 30px);
-}
-
-.heading-name {
-    font-size: clamp(20px, 2vw, 36px);
-    margin-bottom: clamp(10px, 1vw, 20px);
-}
-
-.line-under-that {
-    height: 2px;
-    width: 95%;
-    background-color: black;
-    margin: 0 auto clamp(15px, 2vw, 30px);
-}
-
-.selling-product-01 {
-    width: 100%;
-    min-height: 600px;
-    display: flex;
-    flex-direction: column;
-    background: linear-gradient(to right, rgb(49, 49, 49), rgb(101, 101, 101), rgb(207, 207, 207));
-}
-
-.selling-section {
-    width: 100%;
-    background: linear-gradient(to right, rgb(169, 169, 169), rgb(101, 101, 101), rgb(29, 29, 29));
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: clamp(10px, 1.5vw, 20px);
-    padding: clamp(15px, 2vw, 30px);
-}
-
-.button-01 {
-    padding: clamp(8px, 1vw, 15px) clamp(20px, 2.5vw, 40px);
-    font-size: clamp(14px, 1.3vw, 20px);
-    color: white;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    white-space: nowrap;
-}
-
-.button-01:hover {
-    border-radius: 25px;
-    color: orange;
-    background-color: #000000;
-}
-
-.product-showing {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: clamp(20px, 3vw, 40px);
-    padding: clamp(20px, 3vw, 40px);
-}
-
-.product-selling-page-01,
-.product-selling-page-02 {
-    width: 100%;
-    background: linear-gradient(to right, rgb(49, 49, 49), rgb(101, 101, 101), rgb(189, 189, 189));
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: clamp(20px, 3vw, 40px);
-    padding: clamp(20px, 3vw, 40px);
-}
-
-.class-product-01,
-.class-product-02,
-.class-product-03,
-.class-product-11,
-.class-product-12,
-.class-product-13 {
-    width: 100%;
-    min-height: 300px;
-    background-color: white;
-    border-radius: 12px;
-    display: grid;
-    grid-template-rows: 2fr 0.5fr 0.5fr;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-}
-
-.product-page-photo-001,
-.product-page-photo-002,
-.product-page-photo-003,
-.product-page-photo-004,
-.product-page-photo-005,
-.product-page-photo-006 {
-    text-align: center;
-    padding: clamp(10px, 1.5vw, 20px);
-}
-
-.detail-of-product-001,
-.detail-of-product-002,
-.detail-of-product-003,
-.detail-of-product-004,
-.detail-of-product-005,
-.detail-of-product-006 {
-    font-size: clamp(14px, 1.3vw, 20px);
-    text-align: center;
-    padding: clamp(8px, 1vw, 15px);
-}
-
-/* ========================================
-   SERVICE CENTER SECTION
-   ======================================== */
-.service-center-page {
-    width: 100%;
-    min-height: 600px;
-    display: flex;
-    flex-direction: column;
-}
-
-.heading-service {
-    min-height: 80px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: #000000;
-    padding: clamp(15px, 2vw, 30px);
-}
-
-.heading-one {
-    font-size: clamp(20px, 2vw, 36px);
-    color: white;
-    margin-bottom: clamp(10px, 1vw, 20px);
-}
-
-.service-page-line {
-    height: 2px;
-    width: 95%;
-    background-color: rgb(255, 255, 255);
-}
-
-.service-product-page {
-    width: 100%;
-    min-height: 600px;
-    display: flex;
-    flex-direction: column;
-}
-
-.new-page-of-service,
-.new-page-of-service-02 {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: clamp(20px, 3vw, 40px);
-    padding: clamp(30px, 4vw, 60px) clamp(15px, 3vw, 40px);
-    font-family: "Judson", serif;
-    background-color: #000000;
-}
-
-.class-of-service {
-    width: 100%;
-    min-height: 400px;
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: rgba(240, 240, 240, 0.725) 0px 5px 15px;
-    display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    padding: clamp(15px, 2vw, 30px);
-    transition: all 0.3s ease;
-}
-
-.photo-mobile-repair,
-.photo-laptop-repair,
-.photo-mobile-software,
-.mobile-dispaly-01,
-.Second-handmobile-01,
-.mobile-acceries-01 {
-    width: 100%;
-    aspect-ratio: 1;
-    max-width: 400px;
-    background-color: #000000;
-    border-radius: 10px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    overflow: hidden;
-}
-
-.photo-mobile-repair {
-    background-image: url(../../assets/image/mobile-repairing.webp);
-}
-
-.photo-laptop-repair {
-    background-image: url(../../assets/image/laptop\ repairing.png);
-}
-
-.photo-mobile-software {
-    background-image: url(../../assets/image/software.png);
-}
-
-.mobile-dispaly-01 {
-    background-image: url(../../assets/image/mobile-glass-01.png);
-}
-
-.Second-handmobile-01 {
-    background-image: url(../../assets/image/mobile-second\ hand-02.png);
-}
-
-.mobile-acceries-01 {
-    background-image: url(../../assets/image/wmremove-transformed.jpeg);
-}
-
-.hover-pair {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    font-size: clamp(18px, 2vw, 32px);
-    color: rgb(255, 213, 0);
-    padding-bottom: clamp(15px, 2vw, 30px);
-    letter-spacing: 0.05em;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-}
-
-.class-of-service:hover {
-    background: linear-gradient(to top, rgba(172, 243, 162, 0.916), rgba(0, 0, 0, 0));
-    transform: scale(1.03);
-}
-
-.hover-pair:hover {
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #ff0000;
-}
-
-.mobile-acceries-01:hover,
-.mobile-dispaly-01:hover,
-.Second-handmobile-01:hover,
-.photo-laptop-repair:hover,
-.photo-mobile-repair:hover,
-.photo-mobile-software:hover {
-    opacity: 0.6;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(255, 255, 255, 0.23) 0px 6px 6px;
-}
-
-/* ========================================
-   JIO PHONE SECTION
-   ======================================== */
-.Phone-page-of-jio {
-    width: 100%;
-    min-height: 500px;
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(207, 207, 207);
-    padding: clamp(20px, 3vw, 40px) clamp(15px, 2vw, 30px);
-}
-
-.heading-phone-jio {
-    width: 100%;
-    margin-bottom: clamp(20px, 3vw, 40px);
-}
-
-.line-of-heading {
-    height: 2px;
-    width: 95%;
-    border: 1px black solid;
-    background-color: black;
-    margin: clamp(10px, 1vw, 20px) auto;
-}
-
-.phone-page-one {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: clamp(20px, 3vw, 40px);
-}
-
-.class-01-page,
-.class-02-page,
-.class-03-page,
-.class-04-page {
-    width: 100%;
-    min-height: 350px;
-    background: linear-gradient(to top, rgb(32, 32, 32), rgb(117, 117, 117), rgb(172, 172, 172));
-    border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.682) 0px 6px 6px;
-    display: flex;
-    flex-direction: column;
-    padding: clamp(15px, 2vw, 30px);
-    transition: all 0.3s ease;
-}
-
-.class-01-page:hover,
-.class-02-page:hover,
-.class-03-page:hover,
-.class-04-page:hover {
-    transform: scale(1.04);
-    box-shadow: rgba(244, 244, 244, 0.476) 0px 10px 20px, rgba(0, 0, 0, 0.682) 0px 6px 6px;
-}
-
-.photo-of-jio-sellimg-product-01,
-.photo-of-jio-sellimg-product-02,
-.photo-of-jio-sellimg-product-03,
-.photo-of-jio-sellimg-product-04 {
-    width: 100%;
-    aspect-ratio: 1;
-    max-width: 250px;
-    margin: 0 auto clamp(15px, 2vw, 30px);
-    background-color: #000000;
-    border-radius: 15px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.photo-of-jio-sellimg-product-01 {
-    background-image: url(https://cdn.jiostore.online/v2/jmd-asp/jdprod/wrkr/products/pictures/item/free/resize-w:250/ghWjg6EzfV-jiobharat-b2-581107385-i-1-1200wx1200h.jpeg);
-}
-
-.photo-of-jio-sellimg-product-02 {
-    background-image: url(https://cdn.jiostore.online/v2/jmd-asp/jdprod/wrkr/products/pictures/item/free/resize-w:250/3mA7cHfrQw-jiobharat-j1-581107398-i-1-1200wx1200h.jpeg);
-}
-
-.photo-of-jio-sellimg-product-03 {
-    background-image: url(https://cdn.jiostore.online/v2/jmd-asp/jdprod/wrkr/products/pictures/item/free/resize-w:250/fQQSgcjWNu-jiobharatbharat-v3-581107375-i-1-1200wx1200h.jpeg);
-}
-
-.photo-of-jio-sellimg-product-04 {
-    background-image: url(https://cdn.jiostore.online/v2/jmd-asp/jdprod/wrkr/products/pictures/item/free/resize-w:150/BTK8QZ140j-jiobharatbharat-v4-581107376-i-1-1200wx1200h.jpeg);
-}
-
-.name-of-jio-phone-001,
-.name-of-jio-phone-002,
-.name-of-jio-phone-003,
-.name-of-jio-phone-004 {
-    font-size: clamp(14px, 1.3vw, 20px);
-    text-align: center;
-    color: white;
-}
-
-/* ========================================
-   SHOP BY PRICE SECTION
-   ======================================== */
-.shop-by-price {
-    width: 100%;
-    min-height: 400px;
-    background: linear-gradient(to right, rgb(233, 233, 233), rgba(150, 150, 150, 0.673), rgba(62, 62, 62, 0.372));
-    padding: clamp(20px, 3vw, 40px) clamp(15px, 2vw, 30px);
-}
-
-.shop-by-price-01 {
-    margin-bottom: clamp(20px, 3vw, 40px);
-}
-
-.line-of-offer {
-    height: 2px;
-    width: 95%;
-    border: 1px solid black;
-    background-color: black;
-    margin: clamp(10px, 1vw, 20px) auto;
-}
-
-.photo-of-offer {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: clamp(15px, 2.5vw, 40px);
+    flex-wrap: wrap;
+    gap: 2vw;
+    padding: 2vw 0;
 }
 
 .class-offer-001,
 .class-offer-002,
 .class-offer-003,
 .class-offer-004 {
-    width: 100%;
-    aspect-ratio: 1;
+    width: 22vw;
+    min-width: 200px;
+    height: 22vw;
+    min-height: 200px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    transition: transform 0.4s ease;
 }
 
 .class-offer-001 {
-    background-image: url(../../assets/image/image-offer-1.webp);
+    background-image: url(https://images.unsplash.com/photo-1556656793-08538906a9f8?w=400);
 }
 
 .class-offer-002 {
-    background-image: url(../../assets/image/image-offer-2.webp);
+    background-image: url(https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=400);
 }
 
 .class-offer-003 {
-    background-image: url(../../assets/image/image-offer-3.webp);
+    background-image: url(https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=400);
 }
 
 .class-offer-004 {
-    background-image: url(../../assets/image/image-offer-4.webp);
+    background-image: url(https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=400);
 }
 
 .class-offer-001:hover,
@@ -1539,58 +726,62 @@ a:hover {
 .class-offer-003:hover,
 .class-offer-004:hover {
     transform: scale(1.04);
+    transition: transform 0.4s ease;
 }
 
-/* ========================================
-   CONTACT SECTION
-   ======================================== */
+/* Contact Section */
 .contact-section-page {
     width: 100%;
-    min-height: 500px;
     display: flex;
     flex-direction: column;
 }
 
 .contact-heading {
     width: 100%;
+    height: 6vw;
     min-height: 80px;
+    display: flex;
+    flex-direction: column;
     background: linear-gradient(to right, #313131, #515151, #807E7D, #A19B9B);
-    padding: clamp(15px, 2vw, 30px);
 }
 
 .heading-name-contact {
-    font-size: clamp(20px, 2vw, 36px);
+    height: 90%;
+    width: 100%;
+    font-size: 2vw;
+    padding-left: 2vw;
+    padding-top: 1vw;
     color: white;
-    margin-bottom: clamp(10px, 1vw, 20px);
 }
 
 .line-of-heading-contact {
     height: 2px;
     width: 95%;
     background-color: rgb(255, 255, 255);
+    margin-bottom: 15px;
+    margin-left: 30px;
+    color: white;
 }
 
 .main-section-of-contact {
     width: 100%;
-    min-height: 400px;
     background: linear-gradient(to right, #313131, #515151, #807E7D, #A19B9B);
-    padding: clamp(20px, 3vw, 40px);
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: clamp(30px, 4vw, 60px);
+    padding: 2vw;
 }
 
 .container-of-main {
-    width: 100%;
-    max-width: 1200px;
+    width: 90%;
     min-height: 200px;
     background-color: #000000;
-    border-radius: clamp(20px, 3vw, 40px);
-    padding: clamp(20px, 3vw, 40px);
+    border-radius: 4vw;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: clamp(20px, 3vw, 40px);
+    grid-template-rows: auto auto;
+    gap: 1vw;
+    padding: 2vw;
 }
 
 .email-page,
@@ -1599,481 +790,1449 @@ a:hover {
 .pranay,
 .pranay-01,
 .pranay-02 {
-    font-size: clamp(14px, 1.3vw, 20px);
+    font-size: 1.3vw;
     color: white;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 1vw;
 }
 
 .contact-page-two {
     width: 100%;
-    max-width: 1200px;
     display: flex;
-    flex-direction: column;
-    gap: clamp(30px, 4vw, 60px);
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2vw;
 }
 
 .page-01 {
-    width: 100%;
+    width: 50%;
+    min-width: 300px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: clamp(20px, 3vw, 40px);
+    grid-template-rows: 1fr 1fr;
 }
 
 .part-01,
 .part-02 {
     color: white;
-    display: flex;
-    flex-direction: column;
-    gap: clamp(10px, 1.5vw, 20px);
-    align-items: center;
-    text-align: center;
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    padding: 1vw;
 }
 
 .part-05,
 .part-09 {
-    font-size: clamp(14px, 1.4vw, 22px);
+    font-size: 1.4vw;
+    padding-top: 2vw;
 }
 
 .page-02 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    width: 50%;
+    min-width: 300px;
+    flex: 1;
 }
 
 .iframe-tag {
     width: 100%;
-    max-width: 800px;
-    height: clamp(250px, 40vw, 500px);
+    height: 18vw;
+    min-height: 300px;
+    margin-top: 3px;
     border-radius: 20px;
-    border: none;
 }
 
-/* ========================================
-   FOOTER SECTION
-   ======================================== */
+/* Footer */
 .footer-page {
     width: 100%;
-    min-height: 400px;
     background-color: #000000;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: clamp(20px, 3vw, 40px);
-    padding: clamp(30px, 4vw, 60px) clamp(20px, 3vw, 40px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 3vw 2vw;
 }
 
 .PAGES-01,
 .PAGES-02,
 .PAGES-03 {
+    width: 30%;
+    min-width: 250px;
     display: flex;
     flex-direction: column;
-    gap: clamp(20px, 2vw, 30px);
+    margin-bottom: 2vw;
 }
 
 .firrst-part-of-project,
 .first-page-001,
 .first-page-012 {
-    font-size: clamp(20px, 2vw, 32px);
-    color: white;
+    width: 100%;
     text-align: center;
+    font-size: 2vw;
+    color: white;
+    padding: 2vw 0;
 }
 
 .Second-part-of-project,
 .Second-page-001,
 .Second-page-015 {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: clamp(15px, 1.5vw, 25px);
+    justify-content: flex-start;
+    gap: 2vw;
     color: white;
-    font-size: clamp(14px, 1.2vw, 18px);
+    font-size: 1.2vw;
 }
 
 .image-of-social-media {
     width: 100%;
+    color: rgb(255, 255, 255);
     display: flex;
     flex-direction: row;
-    gap: clamp(15px, 2vw, 30px);
+    gap: 2vw;
+    font-size: 1vw;
+    text-align: center;
     justify-content: center;
-    font-size: clamp(20px, 2vw, 30px);
 }
 
-/* ========================================
-   LAST SECTION
-   ======================================== */
 .last-page-end {
-    min-height: 50px;
+    height: 2.3vw;
+    min-height: 40px;
     width: 100%;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: clamp(10px, 1.5vw, 20px) clamp(15px, 2vw, 30px);
-    gap: clamp(10px, 1.5vw, 20px);
-    background-color: #f5f5f5;
+    background-color: white;
 }
 
 .last-one,
 .last-two,
 .last-three {
-    font-size: clamp(12px, 1vw, 16px);
-    color: #000000;
-    letter-spacing: 1px;
-    text-align: center;
-    flex: 1 1 200px;
+    width: 33%;
+    min-width: 200px;
+    font-size:12;
 }
 
-/* ========================================
-   MOBILE RESPONSIVE ADJUSTMENTS
-   ======================================== */
+/* Reset base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-/* Mobile Navigation - Hamburger Menu Alternative */
-@media (max-width: 768px) {
-    .header {
-        flex-wrap: wrap;
-        padding: 15px;
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-family: "Gabarito", sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: 50px;
+}
+
+.main-container {
+    width: 100vw;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 3vw;
+    min-height: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.1vw;
+    z-index: 10;
+}
+
+.header-logo {
+    height: 3.5vw;
+    width: 3.5vw;
+    min-height: 40px;
+    min-width: 40px;
+    border-radius: 50%;
+    background-color: black;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoQ6NNciN1iGBojfUeiYq9p19sRQlKrlyXVw&s);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo-heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.header-main-heading {
+    font-size: 2vw;
+    font-family: "Gabriela", serif;
+    letter-spacing: 0.3vw;
+    margin-right: 34vw;
+}
+
+.header-nav {
+    display: flex;
+    gap: 2vw;
+}
+
+.header-link {
+    font-size: 1.2vw;
+    cursor: pointer;
+    color: #333;
+}
+
+.header-link:hover,
+a:hover {
+    color: rgb(255, 252, 252);
+    background-color: rgb(165, 165, 165);
+}
+
+/* Main Page */
+.main-page {
+    height: 55vw;
+    min-height: 400px;
+    width: 100%;
+    background-image: url('https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=1200');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding-top: 4vw;
+}
+
+.main-content {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3vw;
+}
+
+.heading-01 {
+    font-size: 4vw;
+    letter-spacing: 0.7vw;
+    font-family: "Gabriela", serif;
+    color: white;
+    margin-bottom: 1.8vw;
+}
+
+.heading-02 {
+    font-size: 1.4vw;
+    letter-spacing: 0.25vw;
+    color: white;
+    margin-bottom: 2vw;
+}
+
+.button-group {
+    display: flex;
+    gap: 1.2vw;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.button-call,
+.button-explore {
+    height: 3.4vw;
+    min-height: 45px;
+    width: 12vw;
+    min-width: 120px;
+    border-radius: 2vw;
+    font-size: 1.3vw;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button-call:hover,
+.button-explore:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Brand Page */
+.brand-page {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    background-color: white;
+    height: 6vw;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.logo-track {
+    display: inline-flex;
+    animation: scrollLeft 5s linear infinite;
+}
+
+.log-company {
+    flex: 0 0 auto;
+    width: 200px;
+    margin-right: 2vw;
+}
+
+.log-company img {
+    max-height: 9vw;
+    width: auto;
+    display: block;
+}
+
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0);
     }
 
-    .header-nav {
-        flex-direction: column;
-        width: 100%;
-        order: 3;
-        display: none;
-        margin-top: 15px;
-        gap: 10px;
+    100% {
+        transform: translateX(-50%);
     }
+}
 
-    .header-nav.active {
-        display: flex;
+/* Offer page */
+.offer-page {
+    width: 100%;
+    min-height: 400px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, black, #716E6E, #D9D4D4);
+    padding: 2vw;
+}
+
+.heading-offer {
+    height: 4vw;
+    min-height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading-main {
+    height: 80%;
+    width: 20vw;
+    min-width: 200px;
+    text-align: center;
+    color: white;
+    padding-top: 0.4vw;
+    border-radius: 20px;
+    font-size: 1.9vw;
+    background: linear-gradient(to right, black, #716E6E, #D9D4D4);
+}
+
+.main-offer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2vw;
+    padding: 2vw 0;
+}
+
+.offer-page-1,
+.offer-page-2,
+.offer-page-3 {
+    width: 30%;
+    min-width: 280px;
+    height: 40vw;
+    min-height: 350px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 10px rgba(105, 105, 105, 0.86);
+    background: linear-gradient(to right, black, #716E6E, #D9D4D4);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.offer-page-1 {
+    background-image: url(https://images.unsplash.com/photo-1556656793-08538906a9f8?w=500);
+}
+
+.offer-page-2 {
+    background-image: url(https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=500);
+}
+
+.offer-page-3 {
+    background-image: url(https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=500);
+}
+
+.offer-page-1:hover,
+.offer-page-2:hover,
+.offer-page-3:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s ease;
+}
+
+/* Product section */
+.product-page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw;
+}
+
+.selling-product {
+    width: 100%;
+    height: 6vw;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.heading-name {
+    height: 90%;
+    width: 100%;
+    font-size: 2vw;
+}
+
+.line-under-that {
+    height: 2px;
+    width: 95%;
+    background-color: black;
+    margin-bottom: 1vw;
+    margin-left: 1.3vw;
+    border: 1px black solid;
+}
+
+.selling-product-01 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(to right, rgb(49, 49, 49), rgb(101, 101, 101), rgb(207, 207, 207));
+    flex-wrap: wrap;
+}
+
+.selling-section {
+    width: 20%;
+    min-width: 200px;
+    background: linear-gradient(to right, rgb(169, 169, 169), rgb(101, 101, 101), rgb(29, 29, 29));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1vw;
+    padding-top: 2vw;
+}
+
+.button-01 {
+    height: 2.1vw;
+    min-height: 35px;
+    width: 55%;
+    text-align: center;
+    font-size: 1.5vw;
+    color: white;
+    cursor: pointer;
+}
+
+.button-01:hover {
+    border-radius: 25px;
+    color: orange;
+    display: block;
+    background-color: #000000;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-showing {
+    width: 80%;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.product-selling-page-01,
+.product-selling-page-02 {
+    width: 100%;
+    background: linear-gradient(to right, rgb(49, 49, 49), rgb(101, 101, 101), rgb(189, 189, 189));
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2vw;
+    flex-wrap: wrap;
+    gap: 2vw;
+}
+
+.class-product-01,
+.class-product-02,
+.class-product-03,
+.class-product-11,
+.class-product-12,
+.class-product-13 {
+    width: 30%;
+    min-width: 250px;
+    height: auto;
+    min-height: 300px;
+    background-color: white;
+    border-radius: 12px;
+    display: grid;
+    grid-template-rows: 2fr 0.5fr 0.5fr;
+    grid-template-columns: 1fr;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    padding: 1vw;
+}
+
+.product-page-photo-001,
+.product-page-photo-002,
+.product-page-photo-003,
+.product-page-photo-004,
+.product-page-photo-005,
+.product-page-photo-006 {
+    text-align: center;
+    font-size: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail-of-product-001,
+.detail-of-product-002,
+.detail-of-product-003,
+.detail-of-product-004,
+.detail-of-product-005,
+.detail-of-product-006 {
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+/* Service center page */
+.service-center-page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading-service {
+    height: 6vw;
+    min-height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+}
+
+.heading-one {
+    height: 90%;
+    width: 100%;
+    font-size: 2vw;
+    padding-left: 2vw;
+    padding-top: 1.2vw;
+    color: white;
+}
+
+.service-page-line {
+    height: 0.1vw;
+    width: 95%;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 15px;
+    margin-left: 30px;
+}
+
+.service-product-page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.new-page-of-service,
+.new-page-of-service-02 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "Judson", serif;
+    background-color: #000000;
+    padding: 2vw;
+    flex-wrap: wrap;
+    gap: 2vw;
+}
+
+.class-of-service {
+    width: 30%;
+    min-width: 280px;
+    height: auto;
+    min-height: 350px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: rgba(240, 240, 240, 0.725) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1vw;
+}
+
+.photo-mobile-repair,
+.photo-laptop-repair,
+.photo-mobile-software,
+.mobile-dispaly-01,
+.Second-handmobile-01,
+.mobile-acceries-01 {
+    height: 26vw;
+    min-height: 200px;
+    width: 100%;
+    max-width: 25vw;
+    background-color: #000000;
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.photo-mobile-repair {
+    background-image: url(https://images.unsplash.com/photo-1531482615713-2afd69097998?w=500);
+}
+
+.photo-laptop-repair {
+    background-image: url(https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=500);
+}
+
+.photo-mobile-software {
+    background-image: url(https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=500);
+}
+
+.mobile-dispaly-01 {
+    background-image: url(https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?w=500);
+}
+
+.Second-handmobile-01 {
+    background-image: url(https://images.unsplash.com/photo-1580910051074-3eb694886505?w=500);
+}
+
+.mobile-acceries-01 {
+    background-image: url(https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=500);
+    opacity: 100%;
+}
+
+.hover-pair {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: 2.2vw;
+    color: rgb(255, 213, 0);
+    padding-top: 22vw;
+    padding-left: 0.7vw;
+    letter-spacing: 0.2vw;
+    word-spacing: 0.1vw;
+    border-radius: 1vw;
+}
+
+.class-of-service:hover {
+    background: linear-gradient(to top, rgba(172, 243, 162, 0.916), rgba(0, 0, 0, 0));
+    transform: scale(1.03);
+    transition: transform 0.3s ease;
+    opacity: 100%;
+}
+
+.hover-pair:hover {
+    height: 100%;
+    width: 100%;
+    background-color: #00000000;
+    color: #ff0000;
+    opacity: 100%;
+    z-index: 5;
+}
+
+.mobile-acceries-01:hover,
+.mobile-dispaly-01:hover,
+.Second-handmobile-01:hover,
+.photo-laptop-repair:hover,
+.photo-mobile-repair:hover,
+.photo-mobile-software:hover {
+    opacity: 60%;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(255, 255, 255, 0.23) 0px 6px 6px;
+}
+
+/* Jio Phone Page */
+.Phone-page-of-jio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(207, 207, 207);
+    padding: 2vw;
+}
+
+.heading-phone-jio {
+    width: 100%;
+    height: 6vw;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.line-of-heading {
+    height: 0.1vw;
+    width: 95%;
+    border: 1px black solid;
+    background-color: black;
+    margin-bottom: 0.5vw;
+    margin-left: 1vw;
+}
+
+.phone-page-one {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2vw;
+}
+
+.class-01-page,
+.class-02-page,
+.class-03-page,
+.class-04-page {
+    width: 22%;
+    min-width: 200px;
+    height: auto;
+    min-height: 300px;
+    background: linear-gradient(to top, rgb(32, 32, 32), rgb(117, 117, 117), rgb(172, 172, 172));
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.682) 0px 6px 6px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+    padding: 1vw;
+}
+
+.class-01-page:hover,
+.class-02-page:hover,
+.class-03-page:hover,
+.class-04-page:hover {
+    transform: scale(1.04);
+    transition: transform 0.4s ease;
+    box-shadow: rgba(244, 244, 244, 0.476) 0px 10px 20px, rgba(0, 0, 0, 0.682) 0px 6px 6px;
+}
+
+.photo-of-jio-sellimg-product-01,
+.photo-of-jio-sellimg-product-02,
+.photo-of-jio-sellimg-product-03,
+.photo-of-jio-sellimg-product-04 {
+    height: 18vw;
+    min-height: 180px;
+    width: 100%;
+    background-color: #000000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    margin-top: 1vw;
+    text-align: center;
+}
+
+.photo-of-jio-sellimg-product-01 {
+    background-image: url(https://cdn.jiostore.online/v2/jmd-asp/jdprod/wrkr/products/pictures/item/free/resize-w:250/ghWjg6EzfV-jiobharat-b2-581107385-i-1-1200wx1200h.jpeg);
+}
+
+.photo-of-jio-sellimg-product-02 {
+    background-image: url(https://cdn.jiostore.online/v2/jmd-asp/jdprod/wrkr/products/pictures/item/free/resize-w:250/3mA7cHfrQw-jiobharat-j1-581107398-i-1-1200wx1200h.jpeg);
+}
+
+.photo-of-jio-sellimg-product-03 {
+    background-image: url(https://cdn.jiostore.online/v2/jmd-asp/jdprod/wrkr/products/pictures/item/free/resize-w:250/fQQSgcjWNu-jiobharatbharat-v3-581107375-i-1-1200wx1200h.jpeg);
+}
+
+.photo-of-jio-sellimg-product-04 {
+    background-image: url(https://cdn.jiostore.online/v2/jmd-asp/jdprod/wrkr/products/pictures/item/free/resize-w:150/BTK8QZ140j-jiobharatbharat-v4-581107376-i-1-1200wx1200h.jpeg);
+}
+
+.name-of-jio-phone-001,
+.name-of-jio-phone-002,
+.name-of-jio-phone-003,
+.name-of-jio-phone-004 {
+    font-size: 1.3vw;
+    text-align: center;
+    color: white;
+}
+
+/* Shop by Price */
+.shop-by-price {
+    width: 100%;
+    background: linear-gradient(to right, rgb(233, 233, 233), rgba(150, 150, 150, 0.673), rgba(62, 62, 62, 0.372));
+    padding: 2vw;
+}
+
+.shop-by-price-01 {
+    height: 5vw;
+    min-height: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.line-of-offer {
+    height: 0.1vw;
+    width: 95%;
+    border: 1px solid black;
+    background-color: black;
+    margin-left: 30px;
+}
+
+.photo-of-offer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2vw;
+    padding: 2vw 0;
+}
+
+.class-offer-001,
+.class-offer-002,
+.class-offer-003,
+.class-offer-004 {
+    width: 22vw;
+    min-width: 200px;
+    height: 22vw;
+    min-height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.class-offer-001 {
+    background-image: url(https://images.unsplash.com/photo-1556656793-08538906a9f8?w=400);
+}
+
+.class-offer-002 {
+    background-image: url(https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=400);
+}
+
+.class-offer-003 {
+    background-image: url(https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=400);
+}
+
+.class-offer-004 {
+    background-image: url(https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=400);
+}
+
+.class-offer-001:hover,
+.class-offer-002:hover,
+.class-offer-003:hover,
+.class-offer-004:hover {
+    transform: scale(1.04);
+    transition: transform 0.4s ease;
+}
+
+/* Contact Section */
+.contact-section-page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-heading {
+    width: 100%;
+    height: 6vw;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #313131, #515151, #807E7D, #A19B9B);
+}
+
+.heading-name-contact {
+    height: 90%;
+    width: 100%;
+    font-size: 2vw;
+    padding-left: 2vw;
+    padding-top: 1vw;
+    color: white;
+}
+
+.line-of-heading-contact {
+    height: 2px;
+    width: 95%;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 15px;
+    margin-left: 30px;
+    color: white;
+}
+
+.main-section-of-contact {
+    width: 100%;
+    background: linear-gradient(to right, #313131, #515151, #807E7D, #A19B9B);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vw;
+}
+
+.container-of-main {
+    width: 90%;
+    min-height: 200px;
+    background-color: #000000;
+    border-radius: 4vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: auto auto;
+    gap: 1vw;
+    padding: 2vw;
+}
+
+.email-page,
+.contact-page,
+.phone-page,
+.pranay,
+.pranay-01,
+.pranay-02 {
+    font-size: 1.3vw;
+    color: white;
+    text-align: center;
+    padding: 1vw;
+}
+
+.contact-page-two {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2vw;
+}
+
+.page-01 {
+    width: 50%;
+    min-width: 300px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.part-01,
+.part-02 {
+    color: white;
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    padding: 1vw;
+}
+
+.part-05,
+.part-09 {
+    font-size: 1.4vw;
+    padding-top: 2vw;
+}
+
+.page-02 {
+    width: 50%;
+    min-width: 300px;
+    flex: 1;
+}
+
+.iframe-tag {
+    width: 100%;
+    height: 18vw;
+    min-height: 300px;
+    margin-top: 3px;
+    border-radius: 20px;
+}
+
+/* Footer */
+.footer-page {
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 3vw 2vw;
+}
+
+.PAGES-01,
+.PAGES-02,
+.PAGES-03 {
+    width: 30%;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2vw;
+}
+
+.firrst-part-of-project,
+.first-page-001,
+.first-page-012 {
+    width: 100%;
+    text-align: center;
+    font-size: 2vw;
+    color: white;
+    padding: 2vw 0;
+}
+
+.Second-part-of-project,
+.Second-page-001,
+.Second-page-015 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2vw;
+    color: white;
+    font-size: 1.2vw;
+}
+
+.image-of-social-media {
+    width: 100%;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    font-size: 1vw;
+    text-align: center;
+    justify-content: center;
+}
+
+.last-page-end {
+    height: 2.3vw;
+    min-height: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+.last-one,
+.last-two,
+.last-three {
+    width: 33%;
+    min-width: 200px;
+    font-size: 1vw;
+    color: #000000;
+    letter-spacing: 2px;
+    padding: 0.5vw 1vw;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1024px) {
+    .header-main-heading {
+        font-size: 2.5vw;
+        margin-right: 10vw;
     }
 
     .header-link {
-        width: 100%;
-        text-align: center;
-        padding: 12px;
-        background-color: #f5f5f5;
-        border-radius: 5px;
-    }
-
-    .logo-heading {
-        flex: 1;
-    }
-
-    .main-page {
-        min-height: 70vh;
-    }
-
-    .selling-product-01 {
-        padding: 20px 10px;
-    }
-
-    .selling-section {
-        order: -1;
-        margin-bottom: 20px;
-    }
-
-    .button-01 {
-        font-size: 14px;
-        padding: 10px 15px;
-    }
-}
-
-/* Tablet Responsive */
-@media (max-width: 1024px) and (min-width: 769px) {
-    .header-nav {
-        gap: 15px;
-    }
-
-    .main-offer,
-    .product-selling-page-01,
-    .product-selling-page-02 {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .new-page-of-service,
-    .new-page-of-service-02 {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .phone-page-one {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* Small Mobile Devices */
-@media (max-width: 480px) {
-    .header {
-        padding: 12px;
-    }
-
-    .header-logo {
-        height: 35px;
-        width: 35px;
-    }
-
-    .header-main-heading {
-        font-size: 14px;
-        letter-spacing: 0.05em;
+        font-size: 1.8vw;
     }
 
     .heading-01 {
-        font-size: 24px;
-        letter-spacing: 0.03em;
+        font-size: 5vw;
     }
 
     .heading-02 {
-        font-size: 14px;
-        padding: 0 10px;
+        font-size: 2vw;
     }
 
     .button-call,
     .button-explore {
-        width: 130px;
-        height: 42px;
-        font-size: 13px;
-    }
-
-    .main-offer {
-        grid-template-columns: 1fr;
-        padding: 15px;
+        font-size: 1.8vw;
     }
 
     .offer-page-1,
     .offer-page-2,
     .offer-page-3 {
-        min-height: 350px;
+        width: 45%;
     }
 
-    .product-selling-page-01,
-    .product-selling-page-02 {
-        grid-template-columns: 1fr;
-        padding: 15px;
+    .selling-section {
+        width: 100%;
     }
 
-    .new-page-of-service,
-    .new-page-of-service-02 {
-        grid-template-columns: 1fr;
-        padding: 20px 15px;
+    .product-showing {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 1rem;
+        height: auto;
     }
 
-    .phone-page-one {
-        grid-template-columns: 1fr;
+    .header-main-heading {
+        font-size: 4vw;
+        margin-right: 0;
     }
 
-    .photo-of-offer {
-        grid-template-columns: 1fr;
+    .header-nav {
+        gap: 3vw;
     }
 
-    .container-of-main {
-        grid-template-columns: 1fr;
-        padding: 20px;
+    .header-link {
+        font-size: 2.5vw;
     }
 
-    .footer-page {
-        grid-template-columns: 1fr;
-        padding: 30px 20px;
+    .main-page {
+        height: auto;
+        min-height: 500px;
     }
 
-    .last-page-end {
-        flex-direction: column;
-        text-align: center;
+    .heading-01 {
+        font-size: 6vw;
+        letter-spacing: 0.3vw;
+    }
+
+    .heading-02 {
+        font-size: 3vw;
+    }
+
+    .button-call,
+    .button-explore {
+        font-size: 2.5vw;
+        width: 20vw;
+        height: 5vw;
+    }
+
+    .heading-main {
+        font-size: 3vw;
+        width: 40vw;
+    }
+
+    .offer-page-1,
+    .offer-page-2,
+    .offer-page-3 {
+        width: 80%;
+        height: 60vw;
+    }
+
+    .heading-name {
+        font-size: 3vw;
+    }
+
+    .button-01 {
+        font-size: 2vw;
+    }
+
+    .class-product-01,
+    .class-product-02,
+    .class-product-03,
+    .class-product-11,
+    .class-product-12,
+    .class-product-13 {
+        width: 45%;
+    }
+
+    .detail-of-product-001,
+    .detail-of-product-002,
+    .detail-of-product-003,
+    .detail-of-product-004,
+    .detail-of-product-005,
+    .detail-of-product-006 {
+        font-size: 2vw;
+    }
+
+    .heading-one {
+        font-size: 3vw;
+    }
+
+    .class-of-service {
+        width: 45%;
+    }
+
+    .photo-mobile-repair,
+    .photo-laptop-repair,
+    .photo-mobile-software,
+    .mobile-dispaly-01,
+    .Second-handmobile-01,
+    .mobile-acceries-01 {
+        max-width: 100%;
+        height: 35vw;
+    }
+
+    .hover-pair {
+        font-size: 3vw;
+        padding-top: 30vw;
+    }
+
+    .class-01-page,
+    .class-02-page,
+    .class-03-page,
+    .class-04-page {
+        width: 45%;
+    }
+
+    .photo-of-jio-sellimg-product-01,
+    .photo-of-jio-sellimg-product-02,
+    .photo-of-jio-sellimg-product-03,
+    .photo-of-jio-sellimg-product-04 {
+        height: 25vw;
+    }
+
+    .name-of-jio-phone-001,
+    .name-of-jio-phone-002,
+    .name-of-jio-phone-003,
+    .name-of-jio-phone-004 {
+        font-size: 2vw;
+    }
+
+    .class-offer-001,
+    .class-offer-002,
+    .class-offer-003,
+    .class-offer-004 {
+        width: 45%;
+        height: 45vw;
+    }
+
+    .heading-name-contact {
+        font-size: 3vw;
+    }
+
+    .email-page,
+    .contact-page,
+    .phone-page,
+    .pranay,
+    .pranay-01,
+    .pranay-02 {
+        font-size: 2vw;
+    }
+
+    .part-05,
+    .part-09 {
+        font-size: 2vw;
+    }
+
+    .page-01,
+    .page-02 {
+        width: 100%;
+    }
+
+    .iframe-tag {
+        height: 40vw;
+    }
+
+    .PAGES-01,
+    .PAGES-02,
+    .PAGES-03 {
+        width: 100%;
+    }
+
+    .firrst-part-of-project,
+    .first-page-001,
+    .first-page-012 {
+        font-size: 4vw;
+    }
+
+    .Second-part-of-project,
+    .Second-page-001,
+    .Second-page-015 {
+        font-size: 2.5vw;
     }
 
     .last-one,
     .last-two,
     .last-three {
         width: 100%;
+        font-size: 2vw;
+        text-align: center;
     }
 }
 
-/* Large Desktop Screens */
-@media (min-width: 1920px) {
-    .header {
-        padding: 30px 60px;
+@media (max-width: 480px) {
+    .header-logo {
+        height: 40px;
+        width: 40px;
     }
 
-    .main-content {
-        padding: 80px;
+    .header-main-heading {
+        font-size: 5vw;
     }
 
-    .main-offer,
-    .product-selling-page-01,
-    .product-selling-page-02,
-    .new-page-of-service,
-    .new-page-of-service-02,
-    .phone-page-one {
-        max-width: 1800px;
-        margin: 0 auto;
-    }
-}
-
-/* Print Styles */
-@media print {
-
-    .header,
-    .button-call,
-    .button-explore,
-    .button-01 {
-        display: none;
-    }
-
-    * {
-        background: white !important;
-        color: black !important;
-    }
-}
-
-/* Accessibility Improvements */
-@media (prefers-reduced-motion: reduce) {
-
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-    }
-
-    .logo-track {
-        animation: none;
-    }
-}
-
-/* High Contrast Mode */
-@media (prefers-contrast: high) {
-
-    .header-link:hover,
-    a:hover {
-        background-color: #000;
-        color: #fff;
-        border: 2px solid #fff;
-    }
-
-    .button-call,
-    .button-explore {
-        border-width: 3px;
-    }
-}
-
-/* Dark Mode Support */
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #1a1a1a;
-        color: #ffffff;
-    }
-
-    .header {
-        background-color: #2a2a2a;
-        box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+    .header-nav {
+        flex-direction: row;
+        gap: 1rem;
     }
 
     .header-link {
-        color: #ffffff;
-    }
-
-    a {
-        color: #ffffff;
-    }
-}
-
-/* Landscape Orientation for Mobile */
-@media (max-width: 900px) and (orientation: landscape) {
-    .main-page {
-        min-height: 100vh;
-    }
-
-    .main-content {
-        padding: 30px 20px;
+        font-size: 3vw;
     }
 
     .heading-01 {
-        font-size: 28px;
+        font-size: 8vw;
     }
 
     .heading-02 {
-        font-size: 14px;
+        font-size: 4vw;
     }
-}
 
-/* Container Max Width for Very Large Screens */
-.offer-page,
-.product-page,
-.service-center-page,
-.contact-section-page {
-    max-width: 2400px;
-    margin: 0 auto;
-}
-
-/* Flexible Images */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* Focus Visible for Accessibility */
-*:focus-visible {
-    outline: 3px solid #4A90E2;
-    outline-offset: 2px;
-}
-
-/* Smooth Transitions */
-a,
-button,
-.button-01,
-.button-call,
-.button-explore,
-.header-link {
-    transition: all 0.3s ease;
-}
-
-/* Ensure touch targets are at least 44x44px */
-@media (max-width: 768px) {
-
-    .header-link,
-    .button-01,
     .button-call,
     .button-explore {
-        min-height: 44px;
-        min-width: 44px;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
+        font-size: 4vw;
+        width: 35vw;
+        height: 8vw;
     }
-}
 
-/* Loading State Optimization */
-.offer-page-1,
-.offer-page-2,
-.offer-page-3,
-.photo-mobile-repair,
-.photo-laptop-repair,
-.photo-mobile-software,
-.mobile-dispaly-01,
-.Second-handmobile-01,
-.mobile-acceries-01 {
-    background-color: #f0f0f0;
-}
+    .heading-main {
+        font-size: 5vw;
+        width: 60vw;
+    }
 
-/* Prevent Text Selection on UI Elements */
-.button-01,
-.button-call,
-.button-explore,
-.header-link {
-    user-select: none;
-    -webkit-user-select: none;
-}
+    .offer-page-1,
+    .offer-page-2,
+    .offer-page-3 {
+        width: 90%;
+        height: 80vw;
+    }
 
-/* Safe Area for Notched Devices */
-@supports (padding: max(0px)) {
+    .heading-name {
+        font-size: 5vw;
+    }
 
-    .header,
-    .main-content,
-    .footer-page {
-        padding-left: max(env(safe-area-inset-left), 20px);
-        padding-right: max(env(safe-area-inset-right), 20px);
+    .button-01 {
+        font-size: 3vw;
+        width: 80%;
+    }
+
+    .selling-section {
+        width: 100%;
+    }
+
+    .class-product-01,
+    .class-product-02,
+    .class-product-03,
+    .class-product-11,
+    .class-product-12,
+    .class-product-13 {
+        width: 90%;
+    }
+
+    .product-page-photo-001,
+    .product-page-photo-002,
+    .product-page-photo-003,
+    .product-page-photo-004,
+    .product-page-photo-005,
+    .product-page-photo-006 {
+        font-size: 8vw;
+    }
+
+    .detail-of-product-001,
+    .detail-of-product-002,
+    .detail-of-product-003,
+    .detail-of-product-004,
+    .detail-of-product-005,
+    .detail-of-product-006 {
+        font-size: 3.5vw;
+    }
+
+    .heading-one {
+        font-size: 5vw;
+    }
+
+    .class-of-service {
+        width: 90%;
+    }
+
+    .photo-mobile-repair,
+    .photo-laptop-repair,
+    .photo-mobile-software,
+    .mobile-dispaly-01,
+    .Second-handmobile-01,
+    .mobile-acceries-01 {
+        height: 50vw;
+    }
+
+    .hover-pair {
+        font-size: 5vw;
+        padding-top: 40vw;
+    }
+
+    .class-01-page,
+    .class-02-page,
+    .class-03-page,
+    .class-04-page {
+        width: 90%;
+    }
+
+    .photo-of-jio-sellimg-product-01,
+    .photo-of-jio-sellimg-product-02,
+    .photo-of-jio-sellimg-product-03,
+    .photo-of-jio-sellimg-product-04 {
+        height: 40vw;
+    }
+
+    .name-of-jio-phone-001,
+    .name-of-jio-phone-002,
+    .name-of-jio-phone-003,
+    .name-of-jio-phone-004 {
+        font-size: 3.5vw;
+    }
+
+    .class-offer-001,
+    .class-offer-002,
+    .class-offer-003,
+    .class-offer-004 {
+        width: 90%;
+        height: 90vw;
+    }
+
+    .heading-name-contact {
+        font-size: 5vw;
+    }
+
+    .container-of-main {
+        grid-template-columns: 1fr;
+    }
+
+    .email-page,
+    .contact-page,
+    .phone-page,
+    .pranay,
+    .pranay-01,
+    .pranay-02 {
+        font-size: 3.5vw;
+    }
+
+    .part-05,
+    .part-09 {
+        font-size: 3.5vw;
+    }
+
+    .iframe-tag {
+        height: 60vw;
+    }
+
+    .firrst-part-of-project,
+    .first-page-001,
+    .first-page-012 {
+        font-size: 6vw;
+    }
+
+    .Second-part-of-project,
+    .Second-page-001,
+    .Second-page-015 {
+        font-size: 4vw;
+    }
+
+    .image-of-social-media {
+        font-size: 3vw;
+    }
+
+    .last-one,
+    .last-two,
+    .last-three {
+        font-size: 3vw;
     }
 }
