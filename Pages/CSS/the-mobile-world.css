@@ -7,7 +7,11 @@
 
     a {
         text-decoration: none;
-        color: #333;
+        color: rgb(126, 126, 126);
+    }
+
+    a:hover {
+        color: white;
     }
 
     body,
@@ -78,13 +82,12 @@
     .header-link {
         font-size: 1.2vw;
         cursor: pointer;
-        color: #333;
+        color: #000000;
 
     }
 
     /* Hover  */
-    .header-link:hover,
-    a:hover {
+    .header-link:hover {
         color: rgb(255, 252, 252);
         background-color: rgb(165, 165, 165);
 
@@ -304,6 +307,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        background: linear-gradient(to right, rgb(49, 49, 49), rgb(101, 101, 101), rgb(207, 207, 207));
 
     }
 
@@ -311,16 +315,17 @@
         height: 90%;
         width: 100%;
         font-size: 2vw;
+        color: white;
 
     }
 
     .line-under-that {
         height: 2px;
         width: 95%;
-        background-color: black;
+        background-color: rgb(255, 255, 255);
         margin-bottom: 1vw;
         margin-left: 1.3vw;
-        border: 1px black solid;
+        border: 1px rgb(255, 255, 255) solid;
     }
 
     /* New section-part-02 */
@@ -336,7 +341,8 @@
     .selling-section {
         height: 100%;
         width: 20%;
-        background: linear-gradient(to right, rgb(169, 169, 169), rgb(101, 101, 101), rgb(29, 29, 29));
+        background-color: #000000;
+        /* background: linear-gradient(to right, rgb(169, 169, 169), rgb(101, 101, 101), rgb(29, 29, 29)); */
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -352,16 +358,16 @@
         width: 55%;
         text-align: center;
         font-size: 1.5vw;
-        color: white;
+        color: rgb(255, 255, 255);
         cursor: pointer;
 
     }
 
     .button-01:hover {
         border-radius: 25px;
-        color: orange;
+
         display: block;
-        background-color: #000000;
+        background-color: #a0a0a0;
         text-align: center;
         display: flex;
         justify-content: center;
@@ -533,7 +539,7 @@
         text-align: center;
     }
 
-    .photo-of-item{
+    .photo-of-item {
         height: 15vw;
         width: 16vw;
     }
@@ -1167,7 +1173,7 @@
         height: 18vw;
         width: 40vw;
         margin-top: 3px;
-        border-radius: 20px;
+        border-radius: 10px;
         margin-left: 1vw;
     }
 
@@ -1320,4 +1326,826 @@
         padding-top: 0.5vw;
         width: 33%;
     }
-    
+
+    /* Tablets and Small Laptops (768px - 1024px) */
+    @media screen and (max-width: 1024px) {
+        .header {
+            height: 5vw;
+            padding: 3vw;
+        }
+
+        .header-logo {
+            height: 5vw;
+            width: 5vw;
+        }
+
+        .header-main-heading {
+            font-size: 3vw;
+            margin-right: 10vw;
+        }
+
+        .header-link {
+            font-size: 2vw;
+        }
+
+        .main-page {
+            height: 70vw;
+        }
+
+        .heading-01 {
+            font-size: 5vw;
+        }
+
+        .heading-02 {
+            font-size: 2.5vw;
+        }
+
+        .button-call,
+        .button-explore {
+            height: 5vw;
+            width: 18vw;
+            font-size: 2vw;
+        }
+
+        .main-offer {
+            flex-wrap: wrap;
+            height: auto;
+            padding: 2vw 0;
+        }
+
+        .offer-page-1,
+        .offer-page-2,
+        .offer-page-3 {
+            width: 45%;
+            height: 40vw;
+            margin-bottom: 2vw;
+        }
+
+        .selling-section {
+            width: 25%;
+        }
+
+        .product-showing {
+            width: 75%;
+        }
+
+        .button-01 {
+            font-size: 1.8vw;
+            height: 3vw;
+        }
+
+        .phone-page-one {
+            flex-wrap: wrap;
+            height: auto;
+        }
+
+        .class-01-page,
+        .class-02-page,
+        .class-03-page,
+        .class-04-page {
+            width: 45%;
+            margin-bottom: 3vw;
+        }
+
+        .photo-of-offer {
+            flex-wrap: wrap;
+            height: auto;
+        }
+
+        .class-offer-001,
+        .class-offer-002,
+        .class-offer-003,
+        .class-offer-004 {
+            width: 45vw;
+            height: 45vw;
+            margin-bottom: 2vw;
+        }
+
+        .container-of-main {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            height: auto;
+            padding: 3vw;
+        }
+
+        .footer-page {
+            height: auto;
+            padding: 5vw 0;
+        }
+    }
+
+    /* Mobile Devices (481px - 767px) */
+    @media screen and (max-width: 767px) {
+        .header {
+            height: 12vw;
+            padding: 4vw 2vw;
+            flex-wrap: wrap;
+        }
+
+        .header-logo {
+            height: 10vw;
+            width: 10vw;
+        }
+
+        .logo-heading {
+            gap: 10px;
+        }
+
+        .header-main-heading {
+            font-size: 4vw;
+            margin-right: 5vw;
+            letter-spacing: 0.1vw;
+        }
+
+        .header-nav {
+            gap: 3vw;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: center;
+            margin-top: 2vw;
+        }
+
+        .header-link {
+            font-size: 3.5vw;
+            padding: 1vw 2vw;
+        }
+
+        .main-page {
+            height: 100vw;
+            padding-top: 15vw;
+        }
+
+        .main-content {
+            padding: 5vw;
+        }
+
+        .heading-01 {
+            font-size: 7vw;
+            letter-spacing: 0.3vw;
+        }
+
+        .heading-02 {
+            font-size: 4vw;
+            letter-spacing: 0.1vw;
+        }
+
+        .button-call,
+        .button-explore {
+            height: 10vw;
+            width: 35vw;
+            font-size: 3.5vw;
+            border-radius: 5vw;
+        }
+
+        .brand-page {
+            height: 15vw;
+        }
+
+        .log-company img {
+            max-height: 12vw;
+        }
+
+        .offer-page {
+            height: auto;
+            padding: 5vw 0;
+        }
+
+        .heading-offer {
+            height: 10vw;
+        }
+
+        .heading-main {
+            width: 50vw;
+            font-size: 4vw;
+            padding-top: 2vw;
+        }
+
+        .main-offer {
+            flex-direction: column;
+            height: auto;
+            gap: 5vw;
+            padding: 5vw;
+        }
+
+        .offer-page-1,
+        .offer-page-2,
+        .offer-page-3 {
+            width: 90%;
+            height: 60vw;
+        }
+
+        .product-page {
+            height: auto;
+        }
+
+        .selling-product {
+            height: 12vw;
+        }
+
+        .heading-name {
+            font-size: 5vw;
+            padding-left: 3vw;
+            padding-top: 2vw;
+        }
+
+        .selling-product-01 {
+            flex-direction: column;
+            height: auto;
+        }
+
+        .selling-section {
+            width: 100%;
+            height: auto;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 3vw;
+            gap: 2vw;
+        }
+
+        .button-01 {
+            height: 8vw;
+            width: 25vw;
+            font-size: 3vw;
+        }
+
+        .product-showing {
+            width: 100%;
+        }
+
+        .product-selling-page-01,
+        .product-selling-page-02 {
+            flex-direction: column;
+            height: auto;
+            gap: 5vw;
+            padding: 5vw;
+        }
+
+        .class-product-01,
+        .class-product-02,
+        .class-product-03,
+        .class-product-11,
+        .class-product-12,
+        .class-product-13 {
+            width: 90%;
+            height: auto;
+            min-height: 80vw;
+        }
+
+        .photo-of-item {
+            height: 50vw;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .detail-of-product-001,
+        .detail-of-product-002,
+        .detail-of-product-003,
+        .detail-of-product-004,
+        .detail-of-product-005,
+        .detail-of-product-006 {
+            font-size: 4vw;
+            padding: 2vw;
+        }
+
+        .service-center-page {
+            height: auto;
+        }
+
+        .heading-service {
+            height: 12vw;
+        }
+
+        .heading-one {
+            font-size: 5vw;
+            padding-top: 3vw;
+        }
+
+        .service-product-page {
+            height: auto;
+        }
+
+        .new-page-of-service,
+        .new-page-of-service-02 {
+            flex-direction: column;
+            height: auto;
+            gap: 5vw;
+            padding: 5vw;
+        }
+
+        .class-of-service {
+            width: 90%;
+            height: auto;
+            min-height: 70vw;
+        }
+
+        .photo-mobile-repair,
+        .photo-laptop-repair,
+        .photo-mobile-software,
+        .mobile-dispaly-01,
+        .Second-handmobile-01,
+        .mobile-acceries-01 {
+            height: 60vw;
+            width: 80vw;
+        }
+
+        .hover-pair {
+            font-size: 5vw;
+            padding-top: 50vw;
+        }
+
+        .Phone-page-of-jio {
+            height: auto;
+        }
+
+        .heading-phone-jio {
+            height: 12vw;
+        }
+
+        .phone-page-one {
+            flex-direction: column;
+            height: auto;
+            gap: 5vw;
+            padding: 5vw;
+        }
+
+        .class-01-page,
+        .class-02-page,
+        .class-03-page,
+        .class-04-page {
+            width: 90%;
+            height: auto;
+            min-height: 70vw;
+        }
+
+        .photo-of-jio-sellimg-product-01,
+        .photo-of-jio-sellimg-product-02,
+        .photo-of-jio-sellimg-product-03,
+        .photo-of-jio-sellimg-product-04 {
+            height: 50vw;
+            width: 70vw;
+            margin-left: 10vw;
+        }
+
+        .name-of-jio-phone-001,
+        .name-of-jio-phone-002,
+        .name-of-jio-phone-003,
+        .name-of-jio-phone-004 {
+            font-size: 4vw;
+        }
+
+        .shop-by-price {
+            height: auto;
+        }
+
+        .shop-by-price-01 {
+            height: 12vw;
+        }
+
+        .photo-of-offer {
+            flex-direction: column;
+            height: auto;
+            gap: 5vw;
+            padding: 5vw;
+        }
+
+        .class-offer-001,
+        .class-offer-002,
+        .class-offer-003,
+        .class-offer-004 {
+            width: 90vw;
+            height: 90vw;
+        }
+
+        .contact-section-page {
+            height: auto;
+        }
+
+        .contact-heading {
+            height: 12vw;
+        }
+
+        .heading-name-contact {
+            font-size: 5vw;
+            padding-top: 3vw;
+        }
+
+        .main-section-of-contact {
+            height: auto;
+            padding: 5vw;
+        }
+
+        .container-of-main {
+            width: 95%;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6, auto);
+            height: auto;
+            padding: 5vw;
+            border-radius: 5vw;
+        }
+
+        .email-page,
+        .contact-page,
+        .phone-page {
+            padding-left: 5vw;
+            font-size: 4vw;
+            padding-top: 3vw;
+        }
+
+        .pranay,
+        .pranay-01,
+        .pranay-02 {
+            padding-left: 5vw;
+            font-size: 3.5vw;
+            padding-top: 2vw;
+        }
+
+        .contact-page-two {
+            flex-direction: column;
+            height: auto;
+        }
+
+        .page-01 {
+            width: 100%;
+            height: auto;
+        }
+
+        .part-01,
+        .part-02 {
+            grid-template-columns: 1fr;
+            padding: 3vw;
+        }
+
+        .part-05,
+        .part-09 {
+            font-size: 4vw;
+            padding-top: 2vw;
+        }
+
+        .page-02 {
+            width: 100%;
+            height: auto;
+            margin-top: 5vw;
+        }
+
+        .iframe-tag {
+            height: 60vw;
+            width: 90vw;
+            margin-left: 5vw;
+        }
+
+        .footer-page {
+            flex-direction: column;
+            height: auto;
+            padding: 5vw;
+            gap: 5vw;
+        }
+
+        .PAGES-01,
+        .PAGES-02,
+        .PAGES-03 {
+            width: 100%;
+            height: auto;
+        }
+
+        .firrst-part-of-project,
+        .first-page-001,
+        .first-page-012 {
+            font-size: 5vw;
+            height: auto;
+            padding-top: 3vw;
+            padding-bottom: 3vw;
+        }
+
+        .Second-part-of-project,
+        .Second-page-001,
+        .Second-page-015 {
+            font-size: 4vw;
+            gap: 3vw;
+        }
+
+        .image-of-social-media {
+            font-size: 3vw;
+            height: auto;
+        }
+
+        .last-page-end {
+            flex-direction: column;
+            height: auto;
+            padding: 3vw;
+            gap: 2vw;
+        }
+
+        .last-one,
+        .last-two,
+        .last-three {
+            width: 100%;
+            font-size: 3vw;
+            padding-left: 2vw;
+            padding-top: 1vw;
+        }
+    }
+
+    /* Small Mobile Devices (320px - 480px) */
+    @media screen and (max-width: 480px) {
+        .header {
+            height: 15vw;
+            padding: 5vw 2vw;
+        }
+
+        .header-logo {
+            height: 12vw;
+            width: 12vw;
+        }
+
+        .header-main-heading {
+            font-size: 5vw;
+            margin-right: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        .header-nav {
+            gap: 4vw;
+            margin-top: 3vw;
+        }
+
+        .header-link {
+            font-size: 4vw;
+            padding: 1.5vw 3vw;
+        }
+
+        .main-page {
+            height: 120vw;
+            padding-top: 18vw;
+        }
+
+        .heading-01 {
+            font-size: 8vw;
+        }
+
+        .heading-02 {
+            font-size: 5vw;
+        }
+
+        .button-call,
+        .button-explore {
+            height: 12vw;
+            width: 40vw;
+            font-size: 4vw;
+        }
+
+        .brand-page {
+            height: 20vw;
+        }
+
+        .heading-main {
+            width: 70vw;
+            font-size: 5vw;
+        }
+
+        .heading-name {
+            font-size: 6vw;
+        }
+
+        .button-01 {
+            height: 10vw;
+            width: 30vw;
+            font-size: 3.5vw;
+        }
+
+        .class-product-01,
+        .class-product-02,
+        .class-product-03,
+        .class-product-11,
+        .class-product-12,
+        .class-product-13 {
+            width: 95%;
+            min-height: 90vw;
+        }
+
+        .photo-of-item {
+            height: 60vw;
+            width: 85%;
+        }
+
+        .detail-of-product-001,
+        .detail-of-product-002,
+        .detail-of-product-003,
+        .detail-of-product-004,
+        .detail-of-product-005,
+        .detail-of-product-006 {
+            font-size: 5vw;
+        }
+
+        .class-of-service {
+            width: 95%;
+            min-height: 80vw;
+        }
+
+        .photo-mobile-repair,
+        .photo-laptop-repair,
+        .photo-mobile-software,
+        .mobile-dispaly-01,
+        .Second-handmobile-01,
+        .mobile-acceries-01 {
+            height: 70vw;
+            width: 85vw;
+        }
+
+        .hover-pair {
+            font-size: 6vw;
+            padding-top: 55vw;
+        }
+
+        .class-01-page,
+        .class-02-page,
+        .class-03-page,
+        .class-04-page {
+            width: 95%;
+            min-height: 80vw;
+        }
+
+        .photo-of-jio-sellimg-product-01,
+        .photo-of-jio-sellimg-product-02,
+        .photo-of-jio-sellimg-product-03,
+        .photo-of-jio-sellimg-product-04 {
+            height: 60vw;
+            width: 75vw;
+            margin-left: 10vw;
+        }
+
+        .name-of-jio-phone-001,
+        .name-of-jio-phone-002,
+        .name-of-jio-phone-003,
+        .name-of-jio-phone-004 {
+            font-size: 5vw;
+        }
+
+        .class-offer-001,
+        .class-offer-002,
+        .class-offer-003,
+        .class-offer-004 {
+            width: 95vw;
+            height: 95vw;
+        }
+
+        .container-of-main {
+            padding: 8vw 3vw;
+        }
+
+        .email-page,
+        .contact-page,
+        .phone-page {
+            font-size: 5vw;
+            padding-left: 3vw;
+        }
+
+        .pranay,
+        .pranay-01,
+        .pranay-02 {
+            font-size: 4.5vw;
+            padding-left: 3vw;
+        }
+
+        .part-05,
+        .part-09 {
+            font-size: 5vw;
+        }
+
+        .iframe-tag {
+            height: 70vw;
+            width: 95vw;
+            margin-left: 2.5vw;
+        }
+
+        .firrst-part-of-project,
+        .first-page-001,
+        .first-page-012 {
+            font-size: 6vw;
+        }
+
+        .Second-part-of-project,
+        .Second-page-001,
+        .Second-page-015 {
+            font-size: 5vw;
+        }
+
+        .image-of-social-media {
+            font-size: 4vw;
+            gap: 3vw;
+        }
+
+        .last-one,
+        .last-two,
+        .last-three {
+            font-size: 3.5vw;
+        }
+    }
+
+
+    /* Large Desktops (1441px and above) */
+    @media screen and (min-width: 1441px) {
+        .header {
+            padding: 1.5vw;
+        }
+
+        .header-logo {
+            height: 60px;
+            width: 60px;
+        }
+
+        .header-main-heading {
+            font-size: 28px;
+        }
+
+        .header-link {
+            font-size: 18px;
+        }
+
+        .heading-01 {
+            font-size: 56px;
+        }
+
+        .heading-02 {
+            font-size: 22px;
+        }
+
+        .button-call,
+        .button-explore {
+            height: 50px;
+            width: 180px;
+            font-size: 18px;
+        }
+
+        .heading-name {
+            font-size: 32px;
+        }
+
+        .button-01 {
+            font-size: 20px;
+        }
+
+        .detail-of-product-001,
+        .detail-of-product-002,
+        .detail-of-product-003,
+        .detail-of-product-004,
+        .detail-of-product-005,
+        .detail-of-product-006 {
+            font-size: 22px;
+        }
+
+        .heading-one {
+            font-size: 32px;
+        }
+
+        .hover-pair {
+            font-size: 32px;
+        }
+
+        .name-of-jio-phone-001,
+        .name-of-jio-phone-002,
+        .name-of-jio-phone-003,
+        .name-of-jio-phone-004 {
+            font-size: 20px;
+        }
+
+        .heading-name-contact {
+            font-size: 32px;
+        }
+
+        .email-page,
+        .contact-page,
+        .phone-page {
+            font-size: 20px;
+        }
+
+        .pranay,
+        .pranay-01,
+        .pranay-02 {
+            font-size: 22px;
+        }
+
+        .part-05,
+        .part-09 {
+            font-size: 22px;
+        }
+
+        .firrst-part-of-project,
+        .first-page-001,
+        .first-page-012 {
+            font-size: 32px;
+        }
+
+        .Second-part-of-project,
+        .Second-page-001,
+        .Second-page-015 {
+            font-size: 20px;
+        }
+
+        .last-one,
+        .last-two,
+        .last-three {
+            font-size: 16px;
+        }
+    }

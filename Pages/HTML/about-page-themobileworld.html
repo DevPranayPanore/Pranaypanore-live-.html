@@ -1,27 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="https://sdmntpreastus.oaiusercontent.com/files/00000000-8984-61f9-aab9-503e70b93d42/raw?se=2025-09-30T13%3A24%3A56Z&sp=r&sv=2024-08-04&sr=b&scid=0ffbd42f-7761-5c2d-bbd1-db4b96dc509c&skoid=1e4bb9ed-6bb5-424a-a3aa-79f21566e722&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-09-29T23%3A23%3A34Z&ske=2025-09-30T23%3A23%3A34Z&sks=b&skv=2024-08-04&sig=KX%2BtUaJVwZ8ZVV%2BUwkYVDuoE96bGRov57Y449rVSj%2BA%3D"    >
+    <link rel="icon" type="image/x-icon"
+        href="https://sdmntpreastus.oaiusercontent.com/files/00000000-8984-61f9-aab9-503e70b93d42/raw?se=2025-09-30T13%3A24%3A56Z&sp=r&sv=2024-08-04&sr=b&scid=0ffbd42f-7761-5c2d-bbd1-db4b96dc509c&skoid=1e4bb9ed-6bb5-424a-a3aa-79f21566e722&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-09-29T23%3A23%3A34Z&ske=2025-09-30T23%3A23%3A34Z&sks=b&skv=2024-08-04&sig=KX%2BtUaJVwZ8ZVV%2BUwkYVDuoE96bGRov57Y449rVSj%2BA%3D">
     <link rel="stylesheet" href="../CSS/the-mobile-world.css">
     <title>About Page</title>
     <style>
-    body{
-        height: 100vw;
-        width: 100vw;
-        padding: 0;
-        margin: 0;
-    }
-.main-container{
-    height: 100vw;
-    width: 100vw;
-    padding: 0;
-    margin: 0;
-}
+        body {
+            height: 100vh;
+            width: 100vw;
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            background-color: aliceblue;
+        }
+
+        /* main container */
+        .main-container {
+            height: 100vh;
+            width: 100vw;
+            padding: 0;
+            margin: 0;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        /* page-one  */
+
+        .about-section-01 {
+            height: 7%;
+            width: 100%;
+            background-color: aliceblue;
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .part-of-back {
+            height: 100%;
+            width: 10%;
+            text-align: center;
+            padding-top: 0.6vw;
+
+        }
+
+
+
+
+        /* page-two  */
+        .about-section-02 {
+            height: 93%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        /* class one */
+        .class-01 {
+            height: 100%;
+            width: 50%;
+           
+        }
+
+        /* class two  */
+        .class-02 {
+            height: 100%;
+            width: 50%;
+           
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        /* one-01 */
+        .photo-page {
+            height: 26vw;
+            width: 26vw;
+            border-radius: 50%;
+            background-color: black;
+            position: absolute;
+            margin-bottom: 14vw;
+            background-image: url(https://media.istockphoto.com/id/1327592506/vector/default-avatar-photo-placeholder-icon-grey-profile-picture-business-man.jpg?s=612x612&w=0&k=20&c=BpR0FVaEa5F24GIw7K8nMWiiGmbb8qmhfkpXcp1dhQg=);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        /* Two-02 */
+        .photo-name-page {
+            height: 5vw;
+            width: 20vw;
+            background-color: rgb(195, 195, 195);
+            position: absolute;
+            margin-top: 20vw;
+            border-radius: 1vw;
+
+            display: flex;
+            flex-direction: row;
+        }
     </style>
 </head>
+
 <body>
-    
+    <!-- main container -->
+    <div class="main-container">
+        <!-- class one -->
+        <div class="about-section-01">
+            <div class="part-of-back"> <a href="./the-mobile-world-three.html"><img
+                        src="https://cdn-icons-png.flaticon.com/128/54/54476.png" width="40vw" height="40vw" alt=""></a>
+            </div>
+        </div>
+        <!-- class two  -->
+        <div class="about-section-02">
+            <!--class one -->
+            <div class="class-01"></div>
+            <!--class  two  -->
+            <div class="class-02">
+                <!-- one -->
+                <div class="photo-page"></div>
+                <!-- two  -->
+                <div class="photo-name-page ">
+                    <div style="width: 30%; text-align: center; padding-top: 1vw;">
+                        <img src="https://cdn-icons-png.flaticon.com/128/7710/7710521.png" height="40vw" width="40vw"
+                            alt="">
+                    </div>
+                    <div style="font-size: 2vw; padding-top: 1.3vw"> Shakir Shaha</div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
