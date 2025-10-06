@@ -612,25 +612,23 @@
         background-color: white;
         border-radius: 15px;
         box-shadow: rgba(240, 240, 240, 0.725) 0px 5px 15px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr;
 
+    }
+    .part-of-service{
+        height: ;
+        width: ;
     }
 
 
     /* inner class of photo */
 
     .photo-mobile-repair {
-        height: 26vw;
-        width: 25vw;
         background-color: #000000;
         border-radius: 10px;
-        background-image: url(../../assets/image/mobile-repairing.webp);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+
 
     }
 
