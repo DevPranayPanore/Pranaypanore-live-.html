@@ -315,6 +315,8 @@
         height: 90%;
         width: 100%;
         font-size: 2vw;
+        padding-left: 2vw;
+        padding-top: 1.2vw;
         color: white;
 
     }
@@ -617,41 +619,28 @@
         grid-template-rows: 2fr 1fr;
 
     }
-    .part-of-service{
-        height: ;
-        width: ;
+
+    .part-of-service {
+        height: 22vw;
+        width: 25vw;
+        border-radius: ;
+        padding-left: 1vw;
+        padding-top: 1vw;
     }
 
 
     /* inner class of photo */
 
     .photo-mobile-repair {
-        background-color: #000000;
         border-radius: 10px;
-
-
     }
 
     .photo-laptop-repair {
-        height: 26vw;
-        width: 25vw;
-        background-color: #000000;
         border-radius: 10px;
-        background-image: url(../../assets/image/laptop\ repairing.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
     }
 
     .photo-mobile-software {
-        height: 26vw;
-        width: 25vw;
-        background-color: #000000;
         border-radius: 10px;
-        background-image: url(../../assets/image/software.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
     }
 
     /* Class New One -002*/
@@ -669,37 +658,15 @@
 
     /* inner class of photo */
     .mobile-dispaly-01 {
-        height: 26vw;
-        width: 25vw;
-        background-color: #000000;
         border-radius: 10px;
-        background-image: url(../../assets/image/mobile-glass-01.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
     }
 
     .Second-handmobile-01 {
-        height: 26vw;
-        width: 25vw;
-        background-color: #000000;
         border-radius: 10px;
-        background-image: url(../../assets/image/mobile-second\ hand-02.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
     }
 
     .mobile-acceries-01 {
-        height: 26vw;
-        width: 25vw;
-        background-color: #000000;
         border-radius: 10px;
-        background-image: url(../../assets/image/wmremove-transformed.jpeg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        opacity: 100%;
     }
 
     .hover-pair {
@@ -708,8 +675,6 @@
         text-align: center;
         font-size: 2.2vw;
         color: rgb(255, 213, 0);
-        padding-top: 22vw;
-        padding-left: 0.7vw;
         letter-spacing: 0.2vw;
         word-spacing: 0.1vw;
         border-radius: 1vw;
@@ -945,6 +910,7 @@
         font-size: 2vw;
         padding-left: 2vw;
         padding-top: 0.9vw;
+        color: #000000;
     }
 
     .line-of-offer {
