@@ -308,14 +308,14 @@
         flex-direction: column;
         justify-content: space-around;
         background: linear-gradient(to right, rgb(49, 49, 49), rgb(101, 101, 101), rgb(207, 207, 207));
-
+        color: white;
     }
 
     .heading-name {
         height: 90%;
         width: 100%;
         font-size: 2vw;
-     color: white;
+        color: rgb(255, 255, 255);
     }
 
     .line-under-that {
@@ -568,7 +568,7 @@
         font-size: 2vw;
         padding-left: 2vw;
         padding-top: 1.2vw;
-        color: white;
+        color: rgb(255, 255, 255);
     }
 
     .service-page-line {
@@ -620,7 +620,7 @@
     .part-of-service {
         height: 22vw;
         width: 25vw;
-        border-radius: ;
+        border-radius: 10px;
         padding-left: 1vw;
         padding-top: 1vw;
     }
@@ -675,6 +675,7 @@
         letter-spacing: 0.2vw;
         word-spacing: 0.1vw;
         border-radius: 1vw;
+        padding-top: 0.5vw;
 
     }
 
@@ -683,18 +684,18 @@
         transform: scale(1.03);
         transition: transform 0.3s ease;
         opacity: 100%;
+
     }
 
     .hover-pair:hover {
         height: 100%;
         width: 100%;
-        background-color: #00000000;
         color: #ff0000;
         opacity: 100%;
         z-index: 5;
     }
 
-    .mobile-acceries-01:hover,
+    /* .mobile-acceries-01:hover,
     .mobile-dispaly-01:hover,
     .Second-handmobile-01:hover,
     .photo-laptop-repair:hover,
@@ -702,7 +703,7 @@
     .photo-mobile-software:hover {
         opacity: 60%;
         box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(255, 255, 255, 0.23) 0px 6px 6px;
-    }
+    } */
 
     /* New Class jio */
     /* New Page of Jio Phone */
@@ -711,7 +712,7 @@
         height: 43vw;
         display: flex;
         flex-direction: column;
-        background-color: rgb(207, 207, 207);
+        background: linear-gradient(to left, rgb(211, 211, 211), rgba(100, 100, 100, 0.673), rgba(10, 10, 10, 0.372));
     }
 
     /* new class */
@@ -728,13 +729,14 @@
         font-size: 1.5vw;
         padding-left: 1.2vw;
         padding-top: 1vw;
+        color: whitesmoke;
     }
 
     .line-of-heading {
         height: 0.1vw;
         width: 95%;
-        border: 1px black solid;
-        background-color: black;
+        border: 1px rgb(255, 255, 255) solid;
+        background-color: rgb(255, 255, 255);
         margin-bottom: 0.5vw;
         margin-left: 1vw;
 
@@ -758,7 +760,7 @@
         box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.682) 0px 6px 6px;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 2fr 1fr;
+        grid-template-rows: 2fr 1fr 0.3fr;
 
     }
 
@@ -770,7 +772,7 @@
         box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.682) 0px 6px 6px;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 2fr 1fr;
+        grid-template-rows: 2fr 1fr 0.3fr;
     }
 
     .class-03-page {
@@ -781,7 +783,7 @@
         box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.682) 0px 6px 6px;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 2fr 1fr;
+        grid-template-rows: 2fr 1fr 0.3fr;
     }
 
     .class-04-page {
@@ -792,7 +794,7 @@
         box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.682) 0px 6px 6px;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 2fr 1fr;
+        grid-template-rows: 2fr 1fr 0.3fr;
     }
 
     .class-01-page:hover,
@@ -802,6 +804,18 @@
         transform: scale(1.04);
         transition: transform 0.4s ease;
         box-shadow: rgba(244, 244, 244, 0.476) 0px 10px 20px, rgba(0, 0, 0, 0.682) 0px 6px 6px;
+    }
+
+    .name-of-jio-phone {
+        font-size: 1.45vw;
+        text-align: center;
+        color: white;
+        padding-top: 1vw;
+    }
+
+    .price-of-jio {
+        font-size: 1.4vw;
+        color: rgb(245, 0, 0);
     }
 
     /* Photo of jio phone */
@@ -819,11 +833,7 @@
         text-align: center;
     }
 
-    .name-of-jio-phone-001 {
-        font-size: 1.3vw;
-        text-align: center;
-        color: white;
-    }
+
 
     .photo-of-jio-sellimg-product-02 {
         height: 18vw;
@@ -838,11 +848,7 @@
         margin-top: 1vw;
     }
 
-    .name-of-jio-phone-002 {
-        font-size: 1.3vw;
-        text-align: center;
-        color: white;
-    }
+
 
     .photo-of-jio-sellimg-product-03 {
         height: 18vw;
@@ -857,11 +863,7 @@
         margin-top: 1vw;
     }
 
-    .name-of-jio-phone-003 {
-        font-size: 1.3vw;
-        text-align: center;
-        color: white;
-    }
+
 
     .photo-of-jio-sellimg-product-04 {
         height: 18vw;
@@ -876,11 +878,7 @@
         margin-top: 1vw;
     }
 
-    .name-of-jio-phone-004 {
-        font-size: 1.3vw;
-        text-align: center;
-        color: white;
-    }
+
 
 
     /* New Page */
@@ -888,7 +886,7 @@
     .shop-by-price {
         width: 100%;
         height: 28vw;
-        background: linear-gradient(to right, rgb(233, 233, 233), rgba(150, 150, 150, 0.673), rgba(62, 62, 62, 0.372));
+        background: linear-gradient(to left, rgb(211, 211, 211), rgba(100, 100, 100, 0.673), rgba(10, 10, 10, 0.372));
     }
 
     /* new  class */
@@ -907,14 +905,14 @@
         font-size: 2vw;
         padding-left: 2vw;
         padding-top: 0.9vw;
-        color: #000000;
+        color: #ffffff;
     }
 
     .line-of-offer {
         height: 0.1vw;
         width: 95%;
-        border: 1px solid black;
-        background-color: black;
+        border: 1px solid rgb(255, 255, 255);
+        background-color: rgb(255, 255, 255);
         margin-left: 30px;
 
     }
@@ -938,6 +936,8 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
+        border-radius: 3px;
+
     }
 
     .class-offer-002 {
@@ -947,6 +947,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
+        border-radius: 3px;
     }
 
     .class-offer-003 {
@@ -956,6 +957,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
+        border-radius: 3px;
     }
 
     .class-offer-004 {
@@ -965,6 +967,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
+        border-radius: 3px;
     }
 
     .class-offer-001:hover,
@@ -973,7 +976,7 @@
     .class-offer-004:hover {
         transform: scale(1.04);
         transition: transform 0.4s ease;
-
+        border-radius: 3px;
     }
 
     /* New page */
@@ -2109,4 +2112,4 @@
         .last-three {
             font-size: 16px;
         }
-    }
+    } 
