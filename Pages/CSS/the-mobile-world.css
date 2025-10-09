@@ -760,7 +760,7 @@
         box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.682) 0px 6px 6px;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 2fr 1fr 0.3fr;
+        grid-template-rows: 2fr 0.7fr 0.4fr;
 
     }
 
@@ -772,7 +772,7 @@
         box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.682) 0px 6px 6px;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 2fr 1fr 0.3fr;
+        grid-template-rows: 2fr 0.7fr 0.4fr;
     }
 
     .class-03-page {
@@ -783,7 +783,7 @@
         box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.682) 0px 6px 6px;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 2fr 1fr 0.3fr;
+        grid-template-rows: 2fr 0.7fr 0.4fr;
     }
 
     .class-04-page {
@@ -794,7 +794,7 @@
         box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.682) 0px 6px 6px;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 2fr 1fr 0.3fr;
+        grid-template-rows: 2fr 0.7fr 0.4fr;
     }
 
     .class-01-page:hover,
@@ -814,8 +814,27 @@
     }
 
     .price-of-jio {
+        /* color: rgb(245, 0, 0); */
+        padding-bottom: 1vw;
+    }
+
+    .price-time {
+        color: rgb(184, 22, 238);
+        font-size: 1.5vw;
+        margin-left: 4vw;
+
+    }
+
+    .price-two {
+        color: rgb(0, 130, 0);
         font-size: 1.4vw;
-        color: rgb(245, 0, 0);
+        margin-left: 2vw;
+    }
+
+    .mans-wild {
+        color: rgb(223, 33, 0);
+        margin-left: 4.5vw;
+       
     }
 
     /* Photo of jio phone */
@@ -2112,4 +2131,4 @@
         .last-three {
             font-size: 16px;
         }
-    } 
+    }
