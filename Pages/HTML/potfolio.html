@@ -12,7 +12,7 @@
 
         body {
             width: 100vw;
-            height: 100vh;
+            height: auto;
             padding: 0;
             margin: 0;
             font-family: 'Poppins', sans-serif;
@@ -22,27 +22,8 @@
             overflow-x: hidden;
         }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
 
-        }
-
-        td {
-            text-align: center;
-        }
-
-        .Icon {
-            width: 50px;
-            height: 50px;
-            text-decoration: none;
-        }
-
-        img {
-            width: 350px;
-            height: 300px;
-            border: solid black 2px;
-        }
+     
 
         /* heading page */
 
@@ -85,9 +66,9 @@
         /* Home page */
 
         .Home {
-            height: 780px;
+            height: 50vw;
             width: 100%;
-            background-image: url(https://images.prismic.io//intuzwebsite/d394de11-2b7f-4a72-a3e0-c876f7356a40_Main.png?w=1200&q=75&auto=format,compress&fm=png8);
+            background-image: url(https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg?semt=ais_hybrid&w=740&q=80);
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -161,9 +142,9 @@
         /* about page */
 
         .About {
-            background: linear-gradient(to right, black, rgb(68, 129, 164));
+            background: linear-gradient(to right, rgb(228, 228, 228), rgb(255, 255, 255));
             padding: 80px 20px;
-            color: #ffffffbf;
+            color: #000000bf;
             font-family: 'Poppins', sans-serif;
 
         }
@@ -179,11 +160,11 @@
         }
 
         .about-image img {
-            width: 250px;
-            height: 250px;
+            width: 20vw;
+            height: 20vw;
             border-radius: 50%;
             object-fit: cover;
-            box-shadow: 0 4px 15px rgba(249, 248, 248, 0.569);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.569);
         }
 
         .about-content {
@@ -195,14 +176,15 @@
             padding-left: 120px;
             font-size: 36px;
             margin-bottom: 50px;
-            color: #ffffff;
+            color: #000000;
+        }
+        .project{
+            width: 100%;
+            height: 40vw;
+            background-color: #000;
         }
 
-        .about-content p {
-            font-size: 18px;
-            line-height: 1.4;
-            margin-bottom: 15px;
-        }
+       
 
         /* contact page */
         .Contact {
@@ -211,6 +193,17 @@
             color: #fff;
             font-family: 'Poppins', sans-serif;
             margin-bottom: 0;
+        }
+        .Icon {
+            width: 50px;
+            height: 50px;
+            text-decoration: none;
+        }
+
+        img {
+            width: 350px;
+            height: 300px;
+            border: solid black 2px;
         }
 
         .contact-tag {
@@ -368,79 +361,7 @@
     <!-- Third project page -->
     <div class="Project" id="Project">
         <span class="project-tags">My HTML and CSS Project</span>
-        <table>
-            <tr class="projectone">
-                <!--First Row -->
-                <td><a href="../HTML/Table-tags/project-of-table-tags/chess.html">
-                        <img src="https://www.shutterstock.com/image-photo/copan-ruinas-copanhonduras-september-222018-600nw-1531006559.jpg"
-                            alt="">
-                        <h3 class="project-name"> Chess Layout</h3>
-                    </a>
-                </td>
-                <td>
-                    <a href="../HTML/other-tags/project-list/Newtag-2 -list.html">
-                        <img src="https://i.ytimg.com/vi/FjtevHN3jwk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBevHC7QAo-I52cz1P7iX2kWLlQzg"
-                            alt="">
-                        <h3 class="project-name">Computer Science Student Guide
-                        </h3>
-                    </a>
-                </td>
-                <td>
-                    <a href="../HTML/other-tags/project-list/Newtag-list.html">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1pOfTZ0drUzhLghmy3jPYCr2568tcl-kEcA&s"
-                            alt="">
-                        <h3 class="project-name">Superhero Training Manual
-                        </h3>
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <!--Second Row -->
-                <td>
-                    <a href="../HTML/Table-tags/project-of-table-tags/calender.html">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzv-7heDIWHK2jVG29SVjPliCkI2g8ach2Uw&s"
-                            alt="">
-                        <h3 class="project-name">Calender</h3>
-                    </a>
-                </td>
-                <td>
-                    <a href="../HTML/Table-tags/project-of-table-tags/report-card.html">
-                        <img src="https://i.pinimg.com/564x/ef/5a/e5/ef5ae5351ec19785e8086ae2301abc51.jpg" alt="">
-                        <h3 class="project-name">Report Card</h3>
-                    </a>
-                </td>
-                <td>
-                    <a href="../HTML/other-tags/project-list/index-three.html">
-                        <img src="https://static.toiimg.com/thumb/resizemode-4,width-1280,height-720,msid-119639110/119639110.jpg"
-                            alt="">
-                        <h3 class="project-name">Top 5 Richest People</h3>
-                    </a>
-                </td>
-            </tr>
-            <!-- Third Row -->
-            <tr>
-                <td>
-                    <a href="../HTML/other-tags/project-list/LED-bulbs.html">
-                        <img src="https://www.projectsmonitor.com/wp-content/uploads/2016/04/EESL-LED.jpg" alt="">
-                        <h3 class="project-name">LED Project</h3>
-                    </a>
-                </td>
-                <td>
-                    <a href="../HTML/other-tags/project-list/keyboard-page.html">
-                        <img src="https://i.pinimg.com/474x/49/58/53/495853712b486e626d8fe1ecde0284d7.jpg" alt="">
-                        <h3 class="project-name">Keyboard Project</h3>
-                    </a>
-                </td>
-                <td>
-                    <a href="../HTML/other-tags/project-list/Memory-Ram-Rom.html">
-                        <img src="https://static.wixstatic.com/media/6b4aca_5c5c48c0573e4e77a7a1bc3f02ede9a9~mv2.jpg/v1/fill/w_592,h_401,al_c,lg_1,q_80/6b4aca_5c5c48c0573e4e77a7a1bc3f02ede9a9~mv2.jpg"
-                            alt="">
-                        <h3 class="project-name">Memory Ram, Rom Project</h3>
-                    </a>
-                </td>
-            </tr>
-
-        </table>
+      
 
     </div>
 
