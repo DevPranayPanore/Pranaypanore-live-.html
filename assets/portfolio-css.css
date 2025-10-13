@@ -142,7 +142,7 @@ a {
 /* new page */
 /* skills-section */
 .skills-page {
-    height: 40vw;
+    height: 75vw;
     width: 100%;
     background-color: #ffffff;
     display: flex;
@@ -150,7 +150,7 @@ a {
 }
 
 .project-display {
-    height: 15%;
+    height: 5%;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -171,7 +171,15 @@ a {
 }
 
 .part-one-of-project {
-    height: 85%;
+    height: 95%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   margin-top: 1vw;
+}
+
+.part-002 {
+    height: 45%;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -180,7 +188,7 @@ a {
 }
 
 .part-of-time-009 {
-    height: 94%;
+    height: 92%;
     width: 28%;
     background-color: rgb(164, 164, 164);
     border-radius: 10px;
@@ -190,6 +198,15 @@ a {
     grid-template-rows: 1.4fr 1fr 0.5fr;
 
 }
+/* new class */
+.part-oftime-008 {
+    height: 45%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+}
 
 .part-of-time-009:hover {
     transform: scale(1.03);
@@ -197,21 +214,24 @@ a {
 }
 
 .part-two-off-this-section {
-   
-   text-align: center;
+
+    text-align: center;
     color: black;
 }
-.second-part{
+
+.second-part {
     display: flex;
     justify-content: center;
     flex-direction: row;
     gap: 1vw;
-    
+
 }
-.project-button{
+
+.project-button {
     height: 3.1vw;
-    width:8vw;
+    width: 8vw;
     border-radius: 5px;
+    font-size: 1.1vw;
 }
 
 /* Innside the page */
@@ -236,6 +256,14 @@ a {
 .inside-card-003 {
     background-color: #000000;
     background-image: url(https://w0.peakpx.com/wallpaper/951/915/HD-wallpaper-javascript-fiery-logo-programming-language-orange-stone-background-creative-javascript-logo-programming-language-signs-javascript.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+.inside-card-004 {
+    background-color: #000000;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAbGhJJCDC-L27qSTZuLFWaSnOdwFShWdA3Q&s);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -294,17 +322,47 @@ a {
 .part-of-time-001 {
     height: 90%;
     width: 28%;
-    background-color: rgb(178, 178, 178);
+    background-color: rgb(192, 192, 192);
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 0.5fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
 
 }
 
 .part-of-time-001:hover {
     transition: all 0.3s ease;
+}
+
+.class-0ne-point-zero-001 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.class-0ne-point-zero-002 {
+    font-size: 1.5vw;
+    padding-left: 3vw;
+    font-weight: 600;
+}
+
+.class-0ne-point-zero-003 {
+    font-size: 1.3vw;
+    text-align: left;
+    padding-left: 3vw;
+}
+
+.class-0ne-point-zero-004 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pointer-00ne {
+    height: 0.7vw;
+    width: 12vw;
+    background: linear-gradient(to right, blue, white, white);
+    border-radius: 10px;
 }
 
 /* New Page */
