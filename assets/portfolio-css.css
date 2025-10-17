@@ -323,6 +323,8 @@ a {
 .project-main-container {
     height: 90%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 /* two-class */
@@ -364,6 +366,13 @@ a {
 
 .class-0ne-point-zero-001 {
     font-family: 'Courier New', Courier, monospace;
+}
+
+.image-class {
+    height: 4vw;
+    width: 4vw;
+    margin-left: 2vw;
+    margin-top: 1vw;
 }
 
 .class-0ne-point-zero-002 {
@@ -651,5 +660,89 @@ img {
         width: 15vw;
         font-size: 2.1vw;
     }
+
     /* skills section */
+    .Project {
+        height: auto;
+        gap: 10px;
+
+    }
+
+    .project-main-container {
+        gap: 20px;
+    }
+
+    .part-one-of-project-class {
+        flex-direction: column;
+        gap: 20px;
+
+    }
+
+    .part-two-of-project-class-0001 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .part-of-time-001 {
+        height: 300px;
+        width: 300px;
+        margin-left: 60px;
+    }
+
+    .image-class {
+        height: 10vw;
+        width: 10vw;
+    }
+
+    .class-0ne-point-zero-002 {
+        font-size: 20px;
+    }
+
+    .class-0ne-point-zero-003 {
+        font-size: 15px;
+    }
+
+    .pointer-00ne {
+        height: 2vw;
+        width: 19vw;
+    }
+
+    /* Contact section start  */
+    .Contact {
+        height: auto;
+    }
+
+    .contact-tag {
+        font-size: 20px;
+    }
+
+    .contact-wrapper {
+        height: auto;
+        width: 90%;
+        margin-left: 3vw;
+    }
+
+    .contact-item {
+        flex-direction: column;
+    }
+
+    .contact-info {
+        margin: 1px;
+        text-align: center;
+    }
+
+    /* last page start  */
+    .last-icon-social-media {
+        flex-direction: row;
+    }
+
+    .lastone {
+        font-size: 10px;
+    }
+
+    .image-icon-social {
+        height: 4vw;
+        width: 4vw;
+    }
+
 }
