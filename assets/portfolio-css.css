@@ -542,6 +542,10 @@ img {
 }
 
 @media (max-width:477px) {
+    body{
+        overflow-x: hidden;
+        
+    }
     .header {
         height: 30px;
     }
@@ -665,7 +669,7 @@ img {
     .Project {
         height: auto;
         gap: 10px;
-
+        background-color: gray;
     }
 
     .project-main-container {
