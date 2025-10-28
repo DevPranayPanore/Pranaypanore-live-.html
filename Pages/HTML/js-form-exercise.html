@@ -14,7 +14,11 @@
             color: white;
             height: 350px;
             width: 490px;
-            font-size: 20px;
+            font-size: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 10px;
         }
         .button {
             height: 50px;
@@ -74,20 +78,20 @@
  -->
 
         <label for="courses">select your course</label>
-        <select name="Cources" id="90">
+        <select name="Cources" id="class-90">
             <optgroup label="BackEnd" id="class-90">
                 <option value="Paython">python</option>
                 <option value="Java">Java</option>
                 <option value="C">C</option>
             </optgroup>
 
-            <optgroup label="Frontend" id="class-012">
+            <optgroup label="Frontend" id="class-90">
                 <option value="Designing">Designing</option>
                 <option value="Web layout">Web layout</option>
                 <option value="Javascript">Javascript</option>
             </optgroup>
 
-            <optgroup label="Communication" id="class-012">
+            <optgroup label="Communication" id="class-90">
                 <option value="English">English</option>
                 <option value="Soft-skill">Soft-skill</option>
                 <option value="Interview -practice">Interview -practice</option>
@@ -95,25 +99,25 @@
         </select><br>
         <br>
 
-        <label for="communication">Range your communication skills:</label>
-        <input type="range" name="communication" min="0" max="10" id="class-012">
+      
 
 
         <!-- input type radio -->
-        <input type="radio" name="gender " id="class-012">
+         <label for="Gender:" >Gender:-</label>
+        <input type="radio" name="gender " id="class-29" >
         <label>male</label>
-        <input type="radio" name="gender">
+        <input type="radio" name="gender"id="class-29">
         <label>Female</label> <br>
         <br>
 
-        <label><select hobbies:></label>
-        <input type="checkbox">
+        <labe >Hobbies:-</label>
+        <input type="checkbox" id="class-10">
         <lebal>Reading</lebal>
-        <input type="checkbox">
+        <input type="checkbox" id="class-10">
         <lebal>writing</lebal>
-        <input type="checkbox">
+        <input type="checkbox" id="class-10">
         <lebal>playing</lebal>
-        <input type="checkbox">
+        <input type="checkbox" id="class-10">
         <lebal>swimming</lebal><br>
         <br>
 
@@ -134,7 +138,9 @@
         let n= (document.getElementById("class-009").value);
         let o= (document.getElementById("class-233").value);
         let p= (document.getElementById("class-90").value);
-        document.getElementById("pranay-001").innerHTML = "Name :" + x + " <br>last Name :" + y +"<br> Age :"+ a + "<br> Birth Day :"+ g + "<br> Email:" +  m + "<br> Number :"+n+ "<br>  Address"+ o+ " <br> Course :";
+        let t= (document.getElementById("class-29").value);
+        let j= (document.getElementById("class-10").value);
+        document.getElementById("pranay-001").innerHTML = "Name :" + x + " <br>last Name :" + y +"<br> Age :"+ a + "<br> Birth Day :"+ g + "<br> Email:" +  m + "<br> Number :"+n+ "<br>  Address:-"+ o+ " <br> Course :"+p + "<br> Gender:"+ t +"<br> Hobbies:-"+j;
     }
 </script>
 

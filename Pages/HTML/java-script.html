@@ -14,7 +14,7 @@
             background-color: aqua;
         }
 
-        .pranay-001 {
+        .pranay-0001 {
 
             height: 300px;
             width: 300px;
@@ -25,6 +25,27 @@
         }
 
         .one {
+            height: 80%;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            border: 1px black solid;
+            border-radius: 5px;
+        }
+        .twopass {
+            height: 80%;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            border: 1px black solid;
+            border-radius: 5px;
+        }
+        .threepass {
+            height: 80%;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            border: 1px black solid;
+            border-radius: 5px;
+        }
+        .fourpass {
             height: 80%;
             width: 100%;
             background-color: rgb(255, 255, 255);
@@ -89,28 +110,31 @@
             let n = x - y;
             let v = x / y;
 
-            document.getElementById("pranay-001").innerHTML = "sum :" + d + "<br> Difference :" + c + "<br> mult :" + n + "<br> div :" + v;
-
+            document.getElementsByClassName("one").innerHTML = "sum :" + d + "<br> Difference :" + c + "<br> mult :" + n + "<br> div :" + v;
+            document.getElementsByClassName("twopass").innerHTML = "sum :" + d + "<br> Difference :" + c + "<br> mult :" + n + "<br> div :" + v;
+            document.getElementsByClassName("threepass").innerHTML = "sum :" + d + "<br> Difference :" + c + "<br> mult :" + n + "<br> div :" + v;
+            document.getElementsByClassName("fourpass").innerHTML = "sum :" + d + "<br> Difference :" + c + "<br> mult :" + n + "<br> div :" + v;
         }
 
     </script>
 </head>
 
 <body>
-    <div class="pranay-001">
-        <div class="one" id="pranay-001"></div>
-
-
+    <div class="pranay-0001">
+        <div class="one" ></div>
+        <div class="twopass" ></div>
+        <div class="threepass"></div>
+        <div class="fourpass"></div>
         <div class="two">
             <div class="input">
-              <form action="">
-                <label for=""></label>
-                <input type="text" name="" required id="pranay">
-                <input type="text" name="" id="pranay-00001">
-                <div class="button"><button class="button" onclick="showoutput()">div</button></div>
-              </form>
+                <form action="">
+                    <label for=""></label>
+                    <input type="text" name="" required id="pranay">
+                    <input type="text" name="" id="pranay-00001">
+                    <div class="button"><button class="button" type="button" onclick="showoutput()">div</button></div>
+                </form>
             </div>
-           
+
         </div>
     </div>
 </body>
