@@ -16,12 +16,11 @@
 
         .pranay-0001 {
 
-            height: 300px;
-            width: 300px;
+            height: 600px;
+            width: 600px;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-
         }
 
         .one {
@@ -30,27 +29,34 @@
             background-color: rgb(255, 255, 255);
             border: 1px black solid;
             border-radius: 5px;
+            font-size: 20px;
         }
+
         .twopass {
             height: 80%;
             width: 100%;
             background-color: rgb(255, 255, 255);
             border: 1px black solid;
             border-radius: 5px;
+            font-size: 20px;
         }
+
         .threepass {
             height: 80%;
             width: 100%;
             background-color: rgb(255, 255, 255);
             border: 1px black solid;
             border-radius: 5px;
+            font-size: 20px;
         }
+
         .fourpass {
             height: 80%;
             width: 100%;
             background-color: rgb(255, 255, 255);
             border: 1px black solid;
             border-radius: 5px;
+            font-size: 20px;
         }
 
         .two-01 {
@@ -60,7 +66,6 @@
             border: 1px black solid;
             border-radius: 5px;
         }
-
 
         .three {
             height: 80%;
@@ -86,11 +91,17 @@
 
         }
 
+        input{
+            height: 40px;
+            width: 400px;
+            font-size: 23px;
+        }
         .button {
             height: 50px;
             width: 100px;
             background-color: red;
             color: whitesmoke;
+            font-size: 20px;
         }
     </style>
     <script>
@@ -109,35 +120,29 @@
             let c = x * y;
             let n = x - y;
             let v = x / y;
-
-            document.getElementsByClassName("one").innerHTML = "sum :" + d + "<br> Difference :" + c + "<br> mult :" + n + "<br> div :" + v;
-            document.getElementsByClassName("twopass").innerHTML = "sum :" + d + "<br> Difference :" + c + "<br> mult :" + n + "<br> div :" + v;
-            document.getElementsByClassName("threepass").innerHTML = "sum :" + d + "<br> Difference :" + c + "<br> mult :" + n + "<br> div :" + v;
-            document.getElementsByClassName("fourpass").innerHTML = "sum :" + d + "<br> Difference :" + c + "<br> mult :" + n + "<br> div :" + v;
+            document.getElementById("one").innerHTML = "sum :" + d + "<br> Difference :" + c + "<br> mult :" + n + "<br> div :" + v;
+            document.getElementById("twopass").innerHTML = "sum :" + d + "<br> Difference :" + c + "<br> mult :" + n + "<br> div :" + v;
+            document.getElementById("threepass").innerHTML = "sum :" + d + "<br> Difference :" + c + "<br> mult :" + n + "<br> div :" + v;
+            document.getElementById("fourpass").innerHTML = "sum :" + d + "<br> Difference :" + c + "<br> mult :" + n + "<br> div :" + v;
         }
-
     </script>
 </head>
-
 <body>
     <div class="pranay-0001">
-        <div class="one" ></div>
-        <div class="twopass" ></div>
-        <div class="threepass"></div>
-        <div class="fourpass"></div>
+        <div class="one" id="one"></div>
+        <div class="twopass" id="twopass"></div>
+        <div class="threepass" id="threepass"></div>
+        <div class="fourpass" id="fourpass"></div>
         <div class="two">
-            <div class="input">
-                <form action="">
-                    <label for=""></label>
-                    <input type="text" name="" required id="pranay">
-                    <input type="text" name="" id="pranay-00001">
-                    <div class="button"><button class="button" type="button" onclick="showoutput()">div</button></div>
-                </form>
+            <div class="input"><br>
+                <label for=""></label>
+                <input type="text" name="" required id="pranay">
+                <br><br>
+                <input type="text" name="" id="pranay-00001">
+                <div class="button"><button class="button" type="button" onclick="showoutput()">Div</button></div>
             </div>
-
         </div>
     </div>
 </body>
 </body>
-
 </html>
