@@ -11,27 +11,31 @@
             width: 100px;
         }
     </style>
-    <script>
-        function onbulb() {
-            document.getElementById("fail").hidden=true;    
-            document.getElementById("pass").hidden=false;
-        }
-        function offbulb() {
-            document.getElementById("pass").hidden=true;
-            document.getElementById("fail").hidden=false;
-        }
-    </script>
+    
 </head>
 
 <body>
     <button onclick="onbulb()">On </button>
     <button onclick="offbulb()">Off</button><br><br>
-    <img style="height: 200px; width: 200px ;" id="pass" src="../../assets/image/ON-bulb.jpg"
-        alt="">
-    <img style="height: 200px; width: 200px; " id="fail" src="../../assets/image/Off Bulb.jpg"
-        alt="">
+    <img style="height: 200px; width: 200px ;" id="pass"
+        src="https://cdn.mos.cms.futurecdn.net/8URLqwFeJihbNpn3gByhg3.jpg" alt="On bulb photo">
+    <img style="height: 200px; width: 200px; " id="fail"
+        src="https://c7.uihere.com/files/825/807/809/bulb-electricity-energy-glass.jpg" alt="Off bulb photo">
 
+
+
+
+
+        <script>
+            function onbulb() {
+                document.getElementById("fail").hidden = true;
+                document.getElementById("pass").hidden = false;
+            }
+            function offbulb() {
+                document.getElementById("pass").hidden = true;
+                document.getElementById("fail").hidden = false;
+            }
+        </script>
 </body>
 
 </html>
-
