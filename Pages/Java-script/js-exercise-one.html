@@ -53,10 +53,16 @@
     </style>
     <script>
         function monday() {
-            let y = document.getElementById("intaken").value;
-            let x = document.getElementById("intaken-one").value;
-            r = y / x * 100;
-            document.getElementById("panya").innerHTML = r + " % ";
+            let x = Number(document.getElementById("intaken").value);
+            let y = Number(document.getElementById("intaken-one").value);
+            let a = Number(document.getElementById("intaken-two").value);
+            r = (x + y + a) / 3;
+            let l = Number(document.getElementById("intaken").value);
+            let j = Number(document.getElementById("intaken-one").value);
+            t = (l + j) / 2;
+            m = (r + l) / 2;
+            document.getElementById("panya").innerHTML = "The first average is :" + r + "<br> The second average:-" + t + "<br>The total Average:-" + m;
+
         }
     </script>
 </head>
@@ -68,8 +74,11 @@
 
         <input type="text" id="intaken"><br>
         <input type="text" id="intaken-one"><br>
+        <input type="text" id="intaken-two"><br>
         <button onclick="monday()">Click</button>
     </div>
+    <input type="text" id="intaken-three"><br>
+    <input type="text" id="intaken-six"><br>
 </body>
 
 </html>
