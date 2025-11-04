@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
-
-
+        button {
+            height: 44px;
+            width: 200px;
+        }
     </style>
 </head>
 
@@ -16,21 +17,24 @@
     <div id="panya">
 
     </div>
-
-
-
-
-
-
-
+    <input type="text" id="panya-00">
+    <button onclick="pranay()">click</button>
 
 </body>
 <script>
+    //input
 
-    let x = "Yesh";
-    document.getElementById("panya").innerHTML = x;
-    document.getElementById("panya").style = "color:red";
+    let a = prompt ("enter a number");
+    function pranay() {
 
+        let x = document.getElementById("panya-00").value;
+        //output
+        
+        let s = (a * x);
+        document.getElementById("panya").innerHTML = s;
+
+
+    }
 
 
 
