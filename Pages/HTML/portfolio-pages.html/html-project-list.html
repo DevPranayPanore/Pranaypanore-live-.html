@@ -26,7 +26,7 @@
         }
 
         .part-01 {
-            height: 95%;
+            height: 100%;
             width: 100%;
         }
 
@@ -57,7 +57,7 @@
             background-color: gray;
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 2fr 1fr 1fr;
+            grid-template-rows: 3fr 1.8fr 0.8fr;
         }
 
         .heading-01 {
@@ -85,7 +85,9 @@
 
         .gasp {
             font-size: 2vw;
-            text-align: center;
+         
+            color: whitesmoke;
+
         }
 
         .part-two-off-this-section {
@@ -131,13 +133,123 @@
             background-size: cover;
             border-radius: 10px 10px 0px 0px;
         }
+        .inside-two{
+            background-color: #000000;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa5SVcrhktcXf4tIfmSZczsA-hxn2stPIGfQ&s);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 10px 10px 0px 0px;
+        }
+        .inside-three{
+            background-color: #000000;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT-s7SdpBKjIBbAmv7M3hL3LRy_aYwPITqgQ&s);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 10px 10px 0px 0px;
+        }
+        .inside-four{
+            background-color: #000000;
+            background-image: url(https://images.indianexpress.com/2025/09/Top-10-richest-people-in-the-world.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 10px 10px 0px 0px;
+        }
+           /* Navigation */
+           .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1.2rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .portfolio-name {
+            font-size: 1.8rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .tag-nav {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .tag-nav a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .tag-nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            transition: width 0.3s ease;
+        }
+
+        .tag-nav a:hover::after {
+            width: 100%;
+        }
+
+        .tag-nav a:hover {
+            color: #667eea;
+        }
+
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background: #333;
+            margin: 3px 0;
+            transition: 0.3s;
+        }
     </style>
 </head>
 
 <body>
     <div class="main-container">
-        <div class="heading-01">HTML-Project</div>
         <div class="part-01">
+        <div class="header">
+            <div class="portfolio-name">Pranay Panore</div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="tag-nav" id="navMenu">
+                <a href="#Home">Home</a>
+                <a href="#About">About</a>
+                <a href="#Skills">Skills</a>
+                <a href="#Project">Project</a>
+                <a href="#Contact">Contact</a>
+            </div>
+        </div>
+        <div class="heading-01">HTML-Project</div>
+        
             <div class="display-01">
                 <div class="project-01">
                     <div class="photo-01"> </div>
@@ -152,25 +264,25 @@
                     </div>
                 </div>
                 <div class="project-01">
-                    <div class="inside-card-001"> </div>
+                    <div class="inside-two"> </div>
                     <div class="part-two-off-this-section"><span class="gasp-001">
                         </span><br><br>
-                        <span class="gasp">""</span>
+                        <span class="gasp">Computer Science Student Guide</span>
                     </div>
                     <div class="second-part">
-                        <a style="color: whitesmoke;" href="./Pages/HTML/the-mobile-world-three.html"><button
+                        <a style="color: whitesmoke;" href="../project-list/ Computer Science Student Guide-project.html"><button
                                 class="project-button black">View Project</button></a>
                         <button class="project-button">View Code</button>
                     </div>
                 </div>
                 <div class="project-01">
-                    <div class="inside-card-001"> </div>
+                    <div class="inside-three"> </div>
                     <div class="part-two-off-this-section"><span class="gasp-001">
                         </span><br><br>
-                        <span class="gasp">""</span>
+                        <span class="gasp">Superhero Training Manual</span>
                     </div>
                     <div class="second-part">
-                        <a style="color: whitesmoke;" href="./Pages/HTML/the-mobile-world-three.html"><button
+                        <a style="color: whitesmoke;" href="../project-list/Superhero tranining Manual-project.html"><button
                                 class="project-button black">View Project</button></a>
                         <button class="project-button">View Code</button>
                     </div>
@@ -178,13 +290,13 @@
             </div>
             <div class="display-002">
                 <div class="project-01">
-                    <div class="inside-card-001"> </div>
+                    <div class="inside-four"> </div>
                     <div class="part-two-off-this-section"><span class="gasp-001">
                         </span><br><br>
-                        <span class="gasp">""</span>
+                        <span class="gasp">Top Richest Persons</span>
                     </div>
                     <div class="second-part">
-                        <a style="color: whitesmoke;" href="./Pages/HTML/the-mobile-world-three.html"><button
+                        <a style="color: whitesmoke;" href="../project-list/Top 05 Richest People.html"><button
                                 class="project-button black">View Project</button></a>
                         <button class="project-button">View Code</button>
                     </div>
