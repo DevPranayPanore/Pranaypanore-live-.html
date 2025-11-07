@@ -147,6 +147,7 @@
             margin-bottom: 1rem;
             color: #e6e6e6;
         }
+
         .home-two {
             font-size: 20px;
             margin-bottom: 1rem;
@@ -653,6 +654,826 @@
                 font-size: 2rem;
             }
         }
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow-x: hidden;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1.2rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .portfolio-name {
+            font-size: 1.8rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: slideInLeft 0.8s ease;
+        }
+
+        .tag-nav {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .tag-nav a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+            animation: fadeInDown 0.8s ease backwards;
+        }
+
+        .tag-nav a:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .tag-nav a:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .tag-nav a:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+
+        .tag-nav a:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+
+        .tag-nav a:nth-child(5) {
+            animation-delay: 0.5s;
+        }
+
+        .tag-nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            transition: width 0.3s ease;
+        }
+
+        .tag-nav a:hover::after {
+            width: 100%;
+        }
+
+        .tag-nav a:hover {
+            color: #667eea;
+        }
+
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background: #333;
+            margin: 3px 0;
+            transition: 0.3s;
+        }
+
+        /* Enhanced Home Section */
+        .Home {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 100px 5% 50px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Animated Background Elements */
+        .bg-animation {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            z-index: 0;
+        }
+
+        .particle {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            animation: float-particles 15s infinite ease-in-out;
+        }
+
+        .particle:nth-child(1) {
+            width: 80px;
+            height: 80px;
+            left: 10%;
+            top: 20%;
+            animation-delay: 0s;
+            animation-duration: 12s;
+        }
+
+        .particle:nth-child(2) {
+            width: 120px;
+            height: 120px;
+            right: 15%;
+            top: 10%;
+            animation-delay: 2s;
+            animation-duration: 18s;
+        }
+
+        .particle:nth-child(3) {
+            width: 60px;
+            height: 60px;
+            left: 20%;
+            bottom: 15%;
+            animation-delay: 4s;
+            animation-duration: 14s;
+        }
+
+        .particle:nth-child(4) {
+            width: 100px;
+            height: 100px;
+            right: 10%;
+            bottom: 20%;
+            animation-delay: 1s;
+            animation-duration: 16s;
+        }
+
+        .particle:nth-child(5) {
+            width: 70px;
+            height: 70px;
+            left: 50%;
+            top: 30%;
+            animation-delay: 3s;
+            animation-duration: 13s;
+        }
+
+        /* Gradient Orbs */
+        .gradient-orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.3;
+            animation: pulse 8s infinite ease-in-out;
+        }
+
+        .gradient-orb-1 {
+            width: 400px;
+            height: 400px;
+            background: rgba(255, 255, 255, 0.3);
+            top: -100px;
+            left: -100px;
+            animation-delay: 0s;
+        }
+
+        .gradient-orb-2 {
+            width: 500px;
+            height: 500px;
+            background: rgba(118, 75, 162, 0.4);
+            bottom: -150px;
+            right: -150px;
+            animation-delay: 2s;
+        }
+
+        .second-one {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 4rem;
+            max-width: 1400px;
+            z-index: 1;
+            position: relative;
+        }
+
+        .home-page-second {
+            flex: 1;
+            color: white;
+            animation: fadeInLeft 1s ease;
+        }
+
+        .home-tags {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+            line-height: 1.2;
+            animation: slideInUp 0.8s ease;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .home-tags .highlight {
+            background: linear-gradient(135deg, #fff 0%, #f0f0f0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: inline-block;
+            animation: glow 2s ease-in-out infinite;
+        }
+
+        .home-link {
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            color: rgba(255, 255, 255, 0.95);
+            font-weight: 600;
+            animation: slideInUp 0.8s ease 0.2s backwards;
+        }
+
+        .home-two {
+            font-size: 1.1rem;
+            margin-bottom: 2.5rem;
+            color: rgba(255, 255, 255, 0.85);
+            line-height: 1.8;
+            max-width: 600px;
+            animation: slideInUp 0.8s ease 0.4s backwards;
+        }
+
+        /* CTA Buttons */
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+            animation: slideInUp 0.8s ease 0.6s backwards;
+        }
+
+        .cta-btn {
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .cta-primary {
+            background: white;
+            color: #667eea;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-primary:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .cta-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .cta-secondary:hover {
+            background: white;
+            color: #667eea;
+            transform: translateY(-5px);
+        }
+
+        /* Social Links */
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 2rem;
+            animation: slideInUp 0.8s ease 0.8s backwards;
+        }
+
+        .social-icon {
+            width: 45px;
+            height: 45px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .social-icon:hover {
+            background: white;
+            transform: translateY(-5px) rotate(10deg);
+            border-color: white;
+        }
+
+        .social-icon img {
+            width: 20px;
+            height: 20px;
+            filter: brightness(0) invert(1);
+            transition: filter 0.3s ease;
+        }
+
+        .social-icon:hover img {
+            filter: brightness(0) invert(0);
+        }
+
+        .photo-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: fadeInRight 1s ease;
+            position: relative;
+        }
+
+        /* Enhanced Profile Image */
+        .profile-wrapper {
+            position: relative;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .profile-img {
+            width: 450px;
+            height: 450px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 8px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Rotating Border */
+        .rotating-border {
+            position: absolute;
+            width: 480px;
+            height: 480px;
+            border-radius: 50%;
+            border: 3px solid transparent;
+            border-top-color: rgba(255, 255, 255, 0.6);
+            border-right-color: rgba(255, 255, 255, 0.4);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: rotate 4s linear infinite;
+            z-index: 1;
+        }
+
+        .rotating-border-2 {
+            position: absolute;
+            width: 510px;
+            height: 510px;
+            border-radius: 50%;
+            border: 2px solid transparent;
+            border-bottom-color: rgba(255, 255, 255, 0.5);
+            border-left-color: rgba(255, 255, 255, 0.3);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: rotate-reverse 6s linear infinite;
+            z-index: 1;
+        }
+
+        /* Scroll Indicator */
+        .scroll-indicator {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            animation: bounce 2s infinite;
+        }
+
+        .scroll-indicator::before {
+            content: '';
+            display: block;
+            width: 30px;
+            height: 50px;
+            border: 2px solid rgba(255, 255, 255, 0.6);
+            border-radius: 25px;
+            position: relative;
+        }
+
+        .scroll-indicator::after {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 6px;
+            height: 6px;
+            background: white;
+            border-radius: 50%;
+            animation: scroll-wheel 2s infinite;
+        }
+
+        /* Stats Counter */
+        .stats-container {
+            display: flex;
+            gap: 3rem;
+            margin-top: 3rem;
+            animation: slideInUp 0.8s ease 1s backwards;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: white;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.8);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* About Section (keeping original styles) */
+        .About {
+            padding: 100px 5%;
+            background: #f8f9fa;
+        }
+
+        .about-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+        }
+
+        .about-image img {
+            width: 400px;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .about-image img:hover {
+            transform: scale(1.05);
+        }
+
+        .about-content {
+            flex: 1;
+        }
+
+        .about-tag {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .para-size {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        /* Animations */
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        @keyframes float-particles {
+
+            0%,
+            100% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+
+            25% {
+                transform: translate(30px, -30px) rotate(90deg);
+            }
+
+            50% {
+                transform: translate(0, -60px) rotate(180deg);
+            }
+
+            75% {
+                transform: translate(-30px, -30px) rotate(270deg);
+            }
+        }
+
+        @keyframes rotate {
+            from {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+
+            to {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+
+        @keyframes rotate-reverse {
+            from {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+
+            to {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+                opacity: 0.3;
+            }
+
+            50% {
+                transform: scale(1.1);
+                opacity: 0.5;
+            }
+        }
+
+        @keyframes glow {
+
+            0%,
+            100% {
+                text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+            }
+
+            50% {
+                text-shadow: 0 0 40px rgba(255, 255, 255, 0.8);
+            }
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateX(-50%) translateY(0);
+            }
+
+            50% {
+                transform: translateX(-50%) translateY(-15px);
+            }
+        }
+
+        @keyframes scroll-wheel {
+            0% {
+                opacity: 1;
+                transform: translateX(-50%) translateY(0);
+            }
+
+            100% {
+                opacity: 0;
+                transform: translateX(-50%) translateY(20px);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 968px) {
+            .second-one {
+                flex-direction: column-reverse;
+                text-align: center;
+                gap: 3rem;
+            }
+
+            .home-tags {
+                font-size: 3rem;
+            }
+
+            .home-link {
+                font-size: 1.8rem;
+            }
+
+            .profile-img {
+                width: 350px;
+                height: 350px;
+            }
+
+            .rotating-border {
+                width: 380px;
+                height: 380px;
+            }
+
+            .rotating-border-2 {
+                width: 410px;
+                height: 410px;
+            }
+
+            .cta-buttons {
+                justify-content: center;
+            }
+
+            .social-links {
+                justify-content: center;
+            }
+
+            .stats-container {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: flex;
+            }
+
+            .tag-nav {
+                position: fixed;
+                top: 70px;
+                right: -100%;
+                width: 250px;
+                height: calc(100vh - 70px);
+                background: white;
+                flex-direction: column;
+                padding: 2rem;
+                box-shadow: -5px 0 20px rgba(0, 0, 0, 0.1);
+                transition: right 0.3s ease;
+            }
+
+            .tag-nav.active {
+                right: 0;
+            }
+
+            .home-tags {
+                font-size: 2.5rem;
+            }
+
+            .home-link {
+                font-size: 1.5rem;
+            }
+
+            .home-two {
+                font-size: 1rem;
+            }
+
+            .profile-img {
+                width: 300px;
+                height: 300px;
+            }
+
+            .rotating-border {
+                width: 330px;
+                height: 330px;
+            }
+
+            .rotating-border-2 {
+                width: 360px;
+                height: 360px;
+            }
+
+            .stats-container {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+
+            .about-container {
+                flex-direction: column;
+            }
+
+            .about-image img {
+                width: 100%;
+                max-width: 400px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .portfolio-name {
+                font-size: 1.3rem;
+            }
+
+            .home-tags {
+                font-size: 2rem;
+            }
+
+            .home-link {
+                font-size: 1.3rem;
+            }
+
+            .profile-img {
+                width: 250px;
+                height: 250px;
+            }
+
+            .rotating-border {
+                width: 280px;
+                height: 280px;
+            }
+
+            .rotating-border-2 {
+                width: 310px;
+                height: 310px;
+            }
+
+            .cta-btn {
+                padding: 0.8rem 2rem;
+                font-size: 0.9rem;
+            }
+
+            .about-tag {
+                font-size: 2rem;
+            }
+        }
     </style>
 </head>
 
@@ -674,18 +1495,71 @@
         </div>
     </div>
 
-    <!-- Home Section -->
+    <!-- Enhanced Home Section -->
     <div class="Home" id="Home">
+        <!-- Animated Background -->
+        <div class="bg-animation">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="gradient-orb gradient-orb-1"></div>
+            <div class="gradient-orb gradient-orb-2"></div>
+        </div>
+
         <div class="second-one">
             <div class="home-page-second">
-                <h1 class="home-tags">I'm Pranay Panore</h1>
+                <h1 class="home-tags">Hi, I'm <span class="highlight">Pranay Panore</span></h1>
                 <h2 class="home-link">Full Stack Developer</h2>
-                <h2 class="home-two">A full-stack developer is a software engineer,
-                    who is proficient in both front-end and back-end web development.</h2>
+               
+                <div class="cta-buttons">
+                    <a href="#Contact" class="cta-btn cta-primary">Get In Touch</a>
+                    <a href="#Project" class="cta-btn cta-secondary">View Projects</a>
+                </div>
 
+                <div class="social-links">
+                    <div class="social-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/128/174/174857.png" alt="LinkedIn">
+                    </div>
+                    <div class="social-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/128/733/733553.png" alt="GitHub">
+                    </div>
+                    <div class="social-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/128/733/733579.png" alt="Twitter">
+                    </div>
+                    <div class="social-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/128/174/174855.png" alt="Instagram">
+                    </div>
+                </div>
+
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">6+</span>
+                        <span class="stat-label">Technologies</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">1+</span>
+                        <span class="stat-label">Year Learning</span>
+                    </div>
+                </div>
             </div>
 
+            <div class="photo-container">
+                <div class="profile-wrapper">
+                    <div class="rotating-border"></div>
+                    <div class="rotating-border-2"></div>
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=450&h=450&fit=crop"
+                        class="profile-img" alt="Pranay Panore">
+                </div>
+            </div>
         </div>
+
+        <div class="scroll-indicator"></div>
     </div>
 
     <!-- About Section -->
@@ -710,154 +1584,6 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <div class="Project" id="Skills">
-        <div class="project-tags">✨Professional Skills</div>
-        <div class="project-main-container">
-            <div class="part-of-time-001">
-                <img class="image-class" src="https://img.icons8.com/?size=48&id=20909&format=png" alt="HTML5">
-                <div class="class-0ne-point-zero-002">HTML5</div>
-                <div class="class-0ne-point-zero-003">Semantic markup, accessibility, responsive design</div>
-                <div class="pointer-00ne"></div>
-            </div>
-            <div class="part-of-time-001">
-                <img class="image-class" src="https://img.icons8.com/?size=48&id=7gdY5qNXaKC0&format=png" alt="CSS3">
-                <div class="class-0ne-point-zero-002">CSS3</div>
-                <div class="class-0ne-point-zero-003">Flexbox, Grid, animations, responsive layouts</div>
-                <div class="pointer-00ne"></div>
-            </div>
-            <div class="part-of-time-001">
-                <img class="image-class" src="https://img.icons8.com/?size=48&id=108784&format=png" alt="JavaScript">
-                <div class="class-0ne-point-zero-002">JavaScript</div>
-                <div class="class-0ne-point-zero-003">ES6+, DOM manipulation, async/await, promises</div>
-                <div class="pointer-00ne"></div>
-            </div>
-            <div class="part-of-time-001">
-                <img class="image-class" src="https://img.icons8.com/?size=48&id=TpULddJc4gTh&format=png" alt="C/C++">
-                <div class="class-0ne-point-zero-002">C / C++</div>
-                <div class="class-0ne-point-zero-003">System programming, algorithms, memory management</div>
-                <div class="pointer-00ne"></div>
-            </div>
-            <div class="part-of-time-001">
-                <img class="image-class" src="https://img.icons8.com/?size=48&id=v8RpPQUwv0N8&format=png" alt="Python">
-                <div class="class-0ne-point-zero-002">Python</div>
-                <div class="class-0ne-point-zero-003">Data processing, automation, scripting, libraries</div>
-                <div class="pointer-00ne"></div>
-            </div>
-            <div class="part-of-time-001">
-                <img class="image-class" src="https://img.icons8.com/?size=48&id=13679&format=png" alt="Java">
-                <div class="class-0ne-point-zero-002">Java</div>
-                <div class="class-0ne-point-zero-003">OOP, enterprise applications, multithreading</div>
-                <div class="pointer-00ne"></div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Projects Section -->
-    <div class="skills-page" id="Project">
-        <div class="project-tags">✨My Projects</div>
-
-        <div class="part-one-of-project">
-            <div class="part-of-time-009">
-                <div class="inside-card-001"></div>
-                <div class="part-two-off-this-section">
-                    <span class="gasp-001">View Project</span><br><br>
-                    <span class="gasp">You can create simple yet effective HTML projects to practice your skills. Most
-                        of these projects, like building a static website, an online resume.</span>
-                </div>
-                <div class="second-part">
-                    <a href="./Pages/HTML/portfolio-pages.html/html-project-list.html"> <button class="project-button black">View
-                            Project</button></a>
-                    <button class="project-button">View Code</button>
-                </div>
-            </div>
-            <div class="part-of-time-009">
-                <div class="inside-card-002"></div>
-                <div class="part-two-off-this-section">
-                    <span class="gasp-001">CSS Projects</span><br><br>
-                    <span class="gasp">Beginner-level CSS projects that can be styled with just three to four lines of
-                        CSS code often involve modifying simple HTML elements.</span>
-                </div>
-                <div class="second-part">
-                    <a href="./Pages/HTML/portfolio-pages.html/css-project-at-portfolio.html"> <button
-                            class="project-button black">View Project</button></a>
-                    <button class="project-button">View Code</button>
-                </div>
-            </div>
-            <div class="part-of-time-009">
-                <div class="inside-card-003"></div>
-                <div class="part-two-off-this-section">
-                    <span class="gasp-001">JS Projects</span><br><br>
-                    <span class="gasp">The most basic "projects" in JavaScript are typically one-liners or simple
-                        functions, which are the building blocks of more complex applications.</span>
-                </div>
-                <div class="second-part">
-                    <a href="./Pages/HTML/portfolio-pages.html/javascript-project.html"><button class="project-button black">View
-                            Project</button></a>
-                    <button class="project-button">View Code</button>
-                </div>
-            </div>
-            <div class="part-of-time-009">
-                <div class="inside-card-004"></div>
-                <div class="part-two-off-this-section">
-                    <span class="gasp-001">Live Project</span><br><br>
-                    <span class="gasp">This live project was independently developed by me to address brief
-                        problem/purpose. It features key technologies, and is currently deployed and accessible for
-                        real-time use.</span>
-                </div>
-                <div class="second-part">
-                    <a href="./Pages/HTML/the-mobile-world-three.html"><button class="project-button black">View
-                            Project</button></a>
-                    <button class="project-button">View Code</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Contact Section -->
-    <section class="Contact" id="Contact">
-        <h2 class="contact-tag">✨Get In Touch</h2>
-        <div class="contact-wrapper">
-            <div class="contact-item">
-                <img class="Icon" src="https://cdn-icons-png.flaticon.com/128/126/126341.png" alt="Phone">
-                <div class="contact-info">
-                    <h4>Phone</h4>
-                    <a href="tel:+9699151494" class="phone-number">+9699151494</a>
-                </div>
-            </div>
-            <div class="contact-item">
-                <img class="Icon" src="https://cdn-icons-png.flaticon.com/128/6244/6244710.png" alt="Email">
-                <div class="contact-info">
-                    <h4>Email</h4>
-                    <a href="mailto:pranaypanore2@email.com" class="contact-link">pranaypanore2@email.com</a>
-                </div>
-            </div>
-            <div class="contact-item">
-                <img class="Icon" src="https://cdn-icons-png.flaticon.com/128/684/684908.png" alt="Location">
-                <div class="contact-info">
-                    <h4>Location</h4>
-                    <a href="https://maps.google.com/?q=Katol, Nagpur, Maharashtra" class="contact-link"
-                        target="_blank">Katol, Nagpur, Maharashtra</a>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- Footer -->
-    <section>
-        <div class="last-icon-social-media">
-            <img src="https://cdn-icons-png.flaticon.com/128/174/174857.png" class="image-icon-social" alt="LinkedIn">
-            <img src="https://cdn-icons-png.flaticon.com/128/174/174855.png" class="image-icon-social" alt="Instagram">
-            <img src="https://cdn-icons-png.flaticon.com/128/733/733579.png" class="image-icon-social" alt="Twitter">
-            <img src="https://cdn-icons-png.flaticon.com/128/733/733553.png" class="image-icon-social" alt="GitHub">
-            <img src="https://cdn-icons-png.flaticon.com/128/145/145802.png" class="image-icon-social" alt="Facebook">
-        </div>
-        <div class="last-page">
-            <h5 class="lastone">© 2025 Pranay Panore. All rights reserved. Pranay@Enjoy Programming</h5>
-        </div>
-    </section>
-
     <script>
         // Mobile menu toggle
         function toggleMenu() {
@@ -873,15 +1599,215 @@
         });
 
         // Smooth scrolling
-        document.querySelectorAll('.tag-nav a').forEach(anchor => {
+        document.querySelectorAll('.tag-nav a, .cta-btn').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+                const href = this.getAttribute('href');
+                if (href.startsWith('#')) {
+                    e.preventDefault();
+                    document.querySelector(href).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
             });
         });
+
+        // Animate stats on scroll
+        const observerOptions = {
+            threshold: 0.5
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.stat-item').forEach(stat => {
+            stat.style.opacity = '0';
+            stat.style.transform = 'translateY(20px)';
+            stat.style.transition = 'all 0.6s ease';
+            observer.observe(stat);
+        });
     </script>
+</body>
+
+</html>
+
+<!-- Skills Section -->
+<div class="Project" id="Skills">
+    <div class="project-tags">✨Professional Skills</div>
+    <div class="project-main-container">
+        <div class="part-of-time-001">
+            <img class="image-class" src="https://img.icons8.com/?size=48&id=20909&format=png" alt="HTML5">
+            <div class="class-0ne-point-zero-002">HTML5</div>
+            <div class="class-0ne-point-zero-003">Semantic markup, accessibility, responsive design</div>
+            <div class="pointer-00ne"></div>
+        </div>
+        <div class="part-of-time-001">
+            <img class="image-class" src="https://img.icons8.com/?size=48&id=7gdY5qNXaKC0&format=png" alt="CSS3">
+            <div class="class-0ne-point-zero-002">CSS3</div>
+            <div class="class-0ne-point-zero-003">Flexbox, Grid, animations, responsive layouts</div>
+            <div class="pointer-00ne"></div>
+        </div>
+        <div class="part-of-time-001">
+            <img class="image-class" src="https://img.icons8.com/?size=48&id=108784&format=png" alt="JavaScript">
+            <div class="class-0ne-point-zero-002">JavaScript</div>
+            <div class="class-0ne-point-zero-003">ES6+, DOM manipulation, async/await, promises</div>
+            <div class="pointer-00ne"></div>
+        </div>
+        <div class="part-of-time-001">
+            <img class="image-class" src="https://img.icons8.com/?size=48&id=TpULddJc4gTh&format=png" alt="C/C++">
+            <div class="class-0ne-point-zero-002">C / C++</div>
+            <div class="class-0ne-point-zero-003">System programming, algorithms, memory management</div>
+            <div class="pointer-00ne"></div>
+        </div>
+        <div class="part-of-time-001">
+            <img class="image-class" src="https://img.icons8.com/?size=48&id=v8RpPQUwv0N8&format=png" alt="Python">
+            <div class="class-0ne-point-zero-002">Python</div>
+            <div class="class-0ne-point-zero-003">Data processing, automation, scripting, libraries</div>
+            <div class="pointer-00ne"></div>
+        </div>
+        <div class="part-of-time-001">
+            <img class="image-class" src="https://img.icons8.com/?size=48&id=13679&format=png" alt="Java">
+            <div class="class-0ne-point-zero-002">Java</div>
+            <div class="class-0ne-point-zero-003">OOP, enterprise applications, multithreading</div>
+            <div class="pointer-00ne"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Projects Section -->
+<div class="skills-page" id="Project">
+    <div class="project-tags">✨My Projects</div>
+
+    <div class="part-one-of-project">
+        <div class="part-of-time-009">
+            <div class="inside-card-001"></div>
+            <div class="part-two-off-this-section">
+                <span class="gasp-001">View Project</span><br><br>
+                <span class="gasp">You can create simple yet effective HTML projects to practice your skills. Most
+                    of these projects, like building a static website, an online resume.</span>
+            </div>
+            <div class="second-part">
+                <a href="./portfolio-pages.html/html-project-list.html"> <button class="project-button black">View
+                        Project</button></a>
+                <button class="project-button">View Code</button>
+            </div>
+        </div>
+        <div class="part-of-time-009">
+            <div class="inside-card-002"></div>
+            <div class="part-two-off-this-section">
+                <span class="gasp-001">CSS Projects</span><br><br>
+                <span class="gasp">Beginner-level CSS projects that can be styled with just three to four lines of
+                    CSS code often involve modifying simple HTML elements.</span>
+            </div>
+            <div class="second-part">
+                <a href="./portfolio-pages.html/css-project-at-portfolio.html"> <button
+                        class="project-button black">View Project</button></a>
+                <button class="project-button">View Code</button>
+            </div>
+        </div>
+        <div class="part-of-time-009">
+            <div class="inside-card-003"></div>
+            <div class="part-two-off-this-section">
+                <span class="gasp-001">JS Projects</span><br><br>
+                <span class="gasp">The most basic "projects" in JavaScript are typically one-liners or simple
+                    functions, which are the building blocks of more complex applications.</span>
+            </div>
+            <div class="second-part">
+                <a href="./portfolio-pages.html/javascript-project.html"><button class="project-button black">View
+                        Project</button></a>
+                <button class="project-button">View Code</button>
+            </div>
+        </div>
+        <div class="part-of-time-009">
+            <div class="inside-card-004"></div>
+            <div class="part-two-off-this-section">
+                <span class="gasp-001">Live Project</span><br><br>
+                <span class="gasp">This live project was independently developed by me to address brief
+                    problem/purpose. It features key technologies, and is currently deployed and accessible for
+                    real-time use.</span>
+            </div>
+            <div class="second-part">
+                <a href="./the-mobile-world-three.html"><button class="project-button black">View
+                        Project</button></a>
+                <button class="project-button">View Code</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Section -->
+<section class="Contact" id="Contact">
+    <h2 class="contact-tag">✨Get In Touch</h2>
+    <div class="contact-wrapper">
+        <div class="contact-item">
+            <img class="Icon" src="https://cdn-icons-png.flaticon.com/128/126/126341.png" alt="Phone">
+            <div class="contact-info">
+                <h4>Phone</h4>
+                <a href="tel:+9699151494" class="phone-number">+9699151494</a>
+            </div>
+        </div>
+        <div class="contact-item">
+            <img class="Icon" src="https://cdn-icons-png.flaticon.com/128/6244/6244710.png" alt="Email">
+            <div class="contact-info">
+                <h4>Email</h4>
+                <a href="mailto:pranaypanore2@email.com" class="contact-link">pranaypanore2@email.com</a>
+            </div>
+        </div>
+        <div class="contact-item">
+            <img class="Icon" src="https://cdn-icons-png.flaticon.com/128/684/684908.png" alt="Location">
+            <div class="contact-info">
+                <h4>Location</h4>
+                <a href="https://maps.google.com/?q=Katol, Nagpur, Maharashtra" class="contact-link"
+                    target="_blank">Katol, Nagpur, Maharashtra</a>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- Footer -->
+<section>
+    <div class="last-icon-social-media">
+        <img src="https://cdn-icons-png.flaticon.com/128/174/174857.png" class="image-icon-social" alt="LinkedIn">
+        <img src="https://cdn-icons-png.flaticon.com/128/174/174855.png" class="image-icon-social" alt="Instagram">
+        <img src="https://cdn-icons-png.flaticon.com/128/733/733579.png" class="image-icon-social" alt="Twitter">
+        <img src="https://cdn-icons-png.flaticon.com/128/733/733553.png" class="image-icon-social" alt="GitHub">
+        <img src="https://cdn-icons-png.flaticon.com/128/145/145802.png" class="image-icon-social" alt="Facebook">
+    </div>
+    <div class="last-page">
+        <h5 class="lastone">© 2025 Pranay Panore. All rights reserved. Pranay@Enjoy Programming</h5>
+    </div>
+</section>
+
+<script>
+    // Mobile menu toggle
+    function toggleMenu() {
+        const navMenu = document.getElementById('navMenu');
+        navMenu.classList.toggle('active');
+    }
+
+    // Close menu when clicking on a link
+    document.querySelectorAll('.tag-nav a').forEach(link => {
+        link.addEventListener('click', () => {
+            document.getElementById('navMenu').classList.remove('active');
+        });
+    });
+
+    // Smooth scrolling
+    document.querySelectorAll('.tag-nav a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
 </body>
 
 </html>

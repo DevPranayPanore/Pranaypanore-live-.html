@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(0, 0, 0);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+            overflow-y: hidden;
+
+        }
+
+        .filter {
+            height: 500px;
+            width: 800px;
+            background-color: blanchedalmond;
+            font-size: 30px;
+            text-align: center;
+
+        }
+
+        .the-one {
+            font-size: 40px;
+        }
+
+        .pointer-01 {
+            height: 400px;
+            width: 800px;
+            background-color: rgb(235, 141, 0);
+            font-size: 30px;
+            color: white;
+        }
+
+        .button {
+            height: 50px;
+            width: 100px;
+            background-color: red;
+            color: whitesmoke;
+        }
+
+        .filter-0002 {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="filter">
+        <span class="the-one"> Welcome to Universal Calender</span>
+        <div class="pointer-01" id="Pointer-009"></div>
+
+    </div>
+    <div class="filter-0002">
+        <div class="button"><button class="button" id="sun" onclick="pranay()">Sunday</button></div>
+        <div class="button"><button class="button" id="Mon" onclick="Monday()">Monday</button></div>
+        <div class="button"><button class="button" id="tus" onclick="Tuesday()">Tuesday</button></div>
+        <div class="button"><button class="button" id="web" onclick="Wednesday()">Wednesday</button></div>
+        <div class="button"><button class="button" id="thus" onclick="Thursday()">Thursday</button></div>
+        <div class="button"><button class="button" id="fri" onclick="Friday()">Friday</button></div>
+        <div class="button"><button class="button" id="sat" onclick="Saturday()">Saturday</button></div>
+
+    </div>
+</body>
+<script>
+    function pranay() {
+        let x = document.getElementById("sun").innerHTML;
+        document.getElementById("Pointer-009").innerHTML = "Today is Sunday!";
+    }
+    function Monday() {
+        let y = document.getElementById("Mon").innerHTML;
+        document.getElementById("Pointer-009").innerHTML = "Today is Monday!";
+    }
+    function Tuesday() {
+        let q = document.getElementById("tus").innerHTML;
+        document.getElementById("Pointer-009").innerHTML = "Today is Tuesday!";
+    }
+    function Wednesday() {
+        let w = document.getElementById("web").innerHTML;
+        document.getElementById("Pointer-009").innerHTML = "Today is Wednesday!";
+    }
+    function Thursday() {
+        let e = document.getElementById("thus").innerHTML;
+        document.getElementById("Pointer-009").innerHTML = "Today is Thursday!";
+    }
+    function Friday() {
+        let r = document.getElementById("fri").innerHTML;
+        document.getElementById("Pointer-009").innerHTML = "Today is Friday!";
+    }
+    function Saturday() {
+        let t = document.getElementById("sat").innerHTML;
+        document.getElementById("Pointer-009").innerHTML = "Today is Saturday!";
+    }
+
+
+
+
+
+
+</script>
+
+</html>

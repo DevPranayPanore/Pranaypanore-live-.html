@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            height: 50px;
+            width: 100px;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <button onclick="onbulb()">On </button>
+    <button onclick="offbulb()">Off</button><br><br>
+    <img style="height: 200px; width: 200px ;" id="pass"
+        src="https://cdn.mos.cms.futurecdn.net/8URLqwFeJihbNpn3gByhg3.jpg" alt="On bulb photo">
+    <img style="height: 200px; width: 200px; " id="fail"
+        src="https://c7.uihere.com/files/825/807/809/bulb-electricity-energy-glass.jpg" alt="Off bulb photo">
+
+
+
+
+
+        <script>
+            function onbulb() {
+                document.getElementById("fail").hidden = true;
+                document.getElementById("pass").hidden = false;
+            }
+            function offbulb() {
+                document.getElementById("pass").hidden = true;
+                document.getElementById("fail").hidden = false;
+            }
+        </script>
+</body>
+
+</html>
