@@ -40,7 +40,22 @@ a {
 .portfolio-name {
     width: 25%;
     font-size: 30px;
-    color: rgb(0, 0, 0);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: father 0.8s ease 0.2s both;
+}
+
+@keyframes father {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .part-of-time {
@@ -56,6 +71,19 @@ a {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     padding-top: 0.3vw;
+    animation: pranay 0.6s ease;
+}
+
+@keyframes pranay {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 
@@ -63,40 +91,54 @@ a {
 /* Home page */
 
 .Home {
-    height: 53vw;
+    height: 56vw;
     width: 100%;
     background-image: url(https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg?semt=ais_hybrid&w=740&q=80);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-   
-    
+
+
 
 
 }
-.second-one{
+
+.second-one {
     height: 100%;
     width: 100%;
     background-color: #000000a1;
     display: flex;
-    flex-direction:row ;
-    
+    flex-direction: row;
+
 }
 
 .home-page-second {
     height: 100%;
     width: 50%;
-  
+    animation: pointers 1s ease;
+
 }
 
 .home-tags {
     font-size: 50px;
     color: rgb(255, 255, 255);
     margin-left: 180px;
-    padding-top: 15vw;
-   
-
+    padding-top: 12vw;
 }
+
+@keyframes pointers {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
 
 
 .home-link {
@@ -110,7 +152,8 @@ a {
     color: rgb(209, 209, 209);
     margin-left: 180px;
 }
-.div-one{
+
+.div-one {
     height: 100%;
     width: 50%;
     display: flex;
@@ -119,20 +162,39 @@ a {
     justify-content: center;
 }
 
-.photo-page-or-container{
-    width: 500px;
-    height: 500px;
+.photo-page-or-container {
+    width: 400px;
+    height: 400px;
     background-color: #000000;
     border-radius: 20px;
-    border-left: blue solid 2px;
-    border-right:palevioletred solid 2px;
+    border-left: blue solid 3px;
+    border-right: palevioletred solid 3px;
+    background-image: url(https://img.freepik.com/free-photo/portrait-smiling-charming-young-man-grey-t-shirt-standing-against-plain-background_23-2148213406.jpg?semt=ais_hybrid&w=740&q=80);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: fadeInUp 0.6s ease both;
+    animation-delay: calc(var(card-index) * 0.1s);
 }
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 /* new page */
 /* about page */
 
 .About {
-    background: linear-gradient(to right, rgb(228, 228, 228), rgb(255, 255, 255));
+    background-color: white;
     padding: 80px 20px;
     color: #000000bf;
     font-family: 'Poppins', sans-serif;
@@ -267,6 +329,7 @@ a {
 
 }
 
+
 .project-button {
     height: 3.1vw;
     width: 8vw;
@@ -331,7 +394,7 @@ a {
 .Project {
     width: 100%;
     height: 53vw;
-    background: linear-gradient(to right, rgb(228, 228, 228), rgb(255, 255, 255));
+    background-color: white;
     display: flex;
     flex-direction: column;
 
@@ -386,8 +449,23 @@ a {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    animation: fadeInUp 0.6s ease both;
+    animation-delay: calc(var(--card-index) * 0.1s);
 
 }
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 .part-of-time-001:hover {
     transition: all 0.3s ease;
@@ -426,8 +504,29 @@ a {
 .pointer-00ne {
     height: 0.7vw;
     width: 12vw;
-    background: linear-gradient(to right, blue, white, white);
+   
+    background-color: white;
     border-radius: 10px;
+}
+.main-one-of-color{
+    height: 100%;
+    width: 96%;
+    border-radius: 10px;
+    background-color: #007BFF;
+}
+
+.main-one-of-color-1{
+    height: 100%;
+    width: 90%;
+    border-radius: 10px;
+    background-color: #007BFF;
+}
+
+.main-one-of-color-2{
+    height: 100%;
+    width: 20%;
+    border-radius: 10px;
+    background-color: #007BFF;
 }
 
 /* New Page */
@@ -440,102 +539,13 @@ a {
     margin-bottom: 0;
 }
 
-.Icon {
-    width: 50px;
-    height: 50px;
-    text-decoration: none;
-}
-
-img {
-    width: 350px;
-    height: 300px;
-
-}
 
 .contact-tag {
     text-align: center;
     font-size: 2vw;
-    padding-bottom: 2vw;
+    margin-bottom: vw;
+    position: relative;
     color: rgb(255, 255, 255);
-}
-
-.contact-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #000000;
-    justify-content: center;
-    align-items: center;
-    gap: 5vw;
-    margin-bottom: 40px;
-    height: 10vw;
-    width: 80vw;
-    margin-left: 9vw;
-    border-radius: 30px;
-}
-
-.contact-item {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 300px;
-}
-
-.contact-item img {
-    width: 40px;
-    height: 40px;
-    filter: brightness(0) invert(1);
-}
-
-.contact-info h4 {
-    margin: 0;
-    font-size: 18px;
-    color: #ffffff;
-}
-
-.contact-info p {
-    margin: 2px 0 0 0;
-    font-size: 16px;
-    color: #ffffff;
-}
-
-.phone-number {
-    color: #007BFF;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.phone-number:hover {
-    text-decoration: underline;
-}
-
-
-.contact-link:hover {
-    text-decoration: underline;
-}
-
-.contact-link {
-    color: #007BFF;
-    text-decoration: none;
-    font-weight: bold;
-
-}
-
-.contact-link:hover {
-    text-decoration: underline;
-}
-
-.contact-text {
-    color: #333;
-    font-family: Arial, sans-serif;
-}
-
-.map-container iframe {
-    width: 100%;
-    height: 300px;
-    border: none;
-    border-radius: 10px;
 }
 
 /* last page */
@@ -571,10 +581,11 @@ img {
 }
 
 @media (max-width:477px) {
-    body{
+    body {
         overflow-x: hidden;
-        
+
     }
+
     .header {
         height: 30px;
     }
@@ -593,8 +604,19 @@ img {
     }
 
     /* home start */
-    .home {
-        height: 100vh;
+    .Home {
+        height: auto;
+    }
+
+    .second-one {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .photo-page-or-container {
+        height: 200px;
+        width: 200px;
+
     }
 
     .home-tags {
