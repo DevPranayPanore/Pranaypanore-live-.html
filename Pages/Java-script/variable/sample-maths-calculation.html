@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="main">
+        <p id="main"> </p>
+        <input type="text" name="" id="input">
+        <button id="" onclick="pranay()">Sumbit</button>
+    </div>
+</body>
+<script>
+    b = 0;
+    document.getElementById("main").innerHTML = b;
+    function pranay() {
+        let Balance = 1000;
+        let Withdraw = document.getElementById("input").value;
+        Balance = Balance - Number(Withdraw);
+        document.getElementById("main").innerHTML = Balance;
+
+
+
+
+
+
+
+    }
+
+
+
+</script>
+
+</html>
