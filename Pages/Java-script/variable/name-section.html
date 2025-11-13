@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main {
+            height: 400px;
+            width: 500px;
+            background-color: aqua;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-left: 5px solid rgb(22, 248, 22);
+            border-right: 5px solid rgb(252, 0, 0);
+            border-radius: 20px;
+        }
+        .div{
+            height: 100px;
+            width: 400px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+
+input{
+    height: 35px;
+    width: 200px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+
+        button {
+            height: 40px;
+            width: 100px;
+            font-size: 20px;
+            background-color: brown;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="div" ><p    id="panya"></p></div><br>
+        <input type="text" name="" id="inputone" placeholder="input"><br>
+        <input type="text" name="" id="inputwo" placeholder="input"><br>
+        <button onclick="pranay()">click</button>
+    </div>
+</body>
+<script>
+    function pranay() {
+        let s = document.getElementById("inputone").value;
+        let w = document.getElementById("inputwo").value;
+        a = s+w;
+   
+
+document.getElementById("panya").innerHTML="Youe input is -"+  a;
+       
+    }
+</script>
+
+</html>
