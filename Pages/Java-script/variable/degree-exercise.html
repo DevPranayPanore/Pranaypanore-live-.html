@@ -1,11 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-color: aqua;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main {
+            height: 500px;
+            width: 500px;
+            background-color: blanchedalmond;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+
+        }
+
+        label {
+            font-size: 20px;
+        }
+
+        input {
+            height: 45px;
+            width: 350px;
+            font-size: 20px;
+        }
+
+        button {
+            height: 40px;
+            width: 300px;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        .panya-01 {
+            height: 100px;
+            width: 500px;
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
-    sxdfgsg
+    <div class="main">
+        <h1>
+            Celsius to Fahrenheit
+        </h1>
+        <label for="">Take Input</label>
+        <input type="text" name="" id="output"><br>
+        <button id="panya" onclick="pranay()"> Celsius to Fahrenheit</button><br>
+        <button id="panya-001" onclick="panore()"> Fahrenheit to Celsius</button><br>
+
+        <div class="panya-01" id="panya-023"></div>
+        <p id="panya65"></p>
+
+
+
+    </div>
+    <script>
+        function pranay() {
+            let a = Number(document.getElementById("output").value);
+            let f = (a * 9 / 5) + 32;
+            document.getElementById("panya-023").innerHTML = "Celsius to Fahrenheit :" + f;
+
+        }
+        function panore() {
+            let s = Number(document.getElementById("output").value);
+            let c = (s - 32) * 5 / 9;
+            document.getElementById("panya65").innerHTML = "Fahrenheit to Celsius :" + c;
+
+        }
+    </script>
 </body>
+
 </html>
