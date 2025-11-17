@@ -16,8 +16,8 @@
         }
 
         .main {
-            height: 400px;
-            width: 500px;
+            height: 600px;
+            width: 700px;
             background-color: aqua;
             display: flex;
             flex-direction: column;
@@ -27,49 +27,76 @@
             border-right: 5px solid rgb(252, 0, 0);
             border-radius: 20px;
         }
-        .div{
+
+        .div {
             height: 100px;
             width: 400px;
             background-color: white;
             border-radius: 10px;
+            font-size: 20px;
         }
 
+        label {
+            font-size: 25px;
+        }
 
-input{
-    height: 35px;
-    width: 200px;
-    font-size: 15px;
-    border-radius: 10px;
-}
+        input {
+            height: 45px;
+            width: 400px;
+            font-size: 15px;
+            border-radius: 10px;
+        }
 
 
         button {
             height: 40px;
-            width: 100px;
+            width: 200px;
             font-size: 20px;
-            background-color: brown;
+            background-color: rgb(26, 132, 38);
             border-radius: 10px;
+        }
+
+        pre {
+            background-color: black;
+            color: white;
+            font-size: 20px;
         }
     </style>
 </head>
 
 <body>
     <div class="main">
-        <div class="div" ><p    id="panya"></p></div><br>
-        <input type="text" name="" id="inputone" placeholder="input"><br>
-        <input type="text" name="" id="inputwo" placeholder="input"><br>
-        <button onclick="pranay()">click</button>
+        <!-- heading name -->
+        <h1>Name Combiner</h1>
+        <!-- first name -->
+        <label for="">First Name :</label><br>
+        <input type="text" name="" id="inputone" placeholder="First Name"><br>
+        <!-- last name -->
+        <label for="">Last Name :</label><br>
+        <input type="text" name="" id="inputwo" placeholder="Last Name"><br>
+        <!-- button -->
+        <button onclick="pranay()">Combine Names</button><br>
+        <!-- display -->
+        <div class="div">
+            <p id="panya"></p>
+        </div><br>
+        <!-- pre use tag -->
+        <div class="panore">
+            <pre id="panore"></pre>
+        </div>
     </div>
 </body>
 <script>
     function pranay() {
+        // Input ome
         let s = document.getElementById("inputone").value;
+        // INput Two
         let w = document.getElementById("inputwo").value;
-        a = s+w;
-   
+        a = s + " " + w;
+        // out Put// 
+        document.getElementById("panya").innerHTML = "Full Name :-" + a;
+        document.getElementById("panore").innerHTML = "Full Name :-" + a;
 
-document.getElementById("panya").innerHTML="Youe input is -"+  a;
-       
     }
 </script>
 
