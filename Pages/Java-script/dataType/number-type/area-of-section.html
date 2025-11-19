@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main {
+            width: 600px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: aqua;
+            border-radius: 50px;
+            box-shadow: 10px  10px rgb(45, 45, 45);
+        }
+
+        p {
+            height: 200px;
+            width: 400px;
+            background-color: aliceblue;
+            text-align: center;
+            border-radius: 50px;
+            font-size: 25px;
+        }
+        button{
+            height: 30px;
+            width: 250px;
+            background-color: greenyellow;
+            font-size: 20px;
+        }
+        input{
+            height: 40px;
+            width: 300px;
+            background-color: blanchedalmond;
+            text-align: center;
+            font-size: 18px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <!-- body -->
+    <div class="main">
+        <h1>Circle Area Calculater</h1>
+        <label for="">Enter Radius</label>
+        <input type="text" name="" id="Radius" placeholder="Enter a Radius"><br>
+        <button onclick="pranay()">Find Area</button>
+        <p id="panya"></p>
+
+
+
+    </div>
+</body>
+<!-- script -->
+<script>
+    // function
+    function pranay() {
+        // input
+        let a = Number(document.getElementById("Radius").value);
+        const pie = 3.14;
+        let area = Number(3.14) * a * a;
+        // output
+        document.getElementById("panya").innerHTML = area;
+
+    }
+</script>
+
+</html>

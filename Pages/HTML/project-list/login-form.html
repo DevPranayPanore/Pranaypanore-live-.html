@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>NEW Project</title>
+    <style>
+        * {
+            font-family: Nunito Sans;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            padding: 0;
+            margin: 0;
+        }
+
+        .main-container {
+            height: 812px;
+            width: 100%;
+            background-image: url(https://aicdn.picsart.com/57c1533c-97f4-4f62-86d0-2097cc3061c1.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            height: 500px;
+            width: 580px;
+            background-color: rgba(0, 0, 0, 0.694);
+            text-align: center;
+            border-radius: 0px 30px;
+        }
+
+        .part-12 {
+            padding-right: 50px;
+            color: aliceblue;
+            text-decoration: none;
+            gap: 30px;
+            padding-left: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(255, 255, 255);
+            font-size: 45px;
+        }
+
+        input {
+            font-size: 20px;
+            background-color: rgb(147, 209, 147);
+            border-radius: 8px;
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+
+        button {
+            height: 35px;
+            width: 300px;
+            font-size: 20px;
+            border-radius: 8px;
+            background-color: rgb(157, 211, 247);
+            cursor: pointer;
+        }
+
+        .part-45 {
+            height: 35px;
+            width: 350px;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="container">
+            <h1>Login</h1>
+            <form action="">
+                <br>
+                <input class="part-45" type="text" placeholder="Username " required ><br><br><br>
+                <input class="part-45" type="password" placeholder="Password " required><br><br>
+                <input type="checkbox"><label class="part-12" for="">Remember me</label>
+                <a class="part-12" href="./forgotpassword.html">Forgot password?</a><br><br>
+                <button>Login</button><br><br><br>
+                <label style="color: whitesmoke;" for="">Don't have an account? <a
+                        style="color: white; text-decoration: none;"
+                        href="./create-new account.html">Register</a></label>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

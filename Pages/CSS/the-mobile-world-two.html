@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            scrollbar-width: 10px;
+            overflow-x: hidden;
+
+        }
+
+        /* media quary */
+        @media (min-width:300px)and(max-width:600px) {
+
+            .main-container {
+                height: 100vh;
+                width: 100vw;
+                margin: 0;
+                padding: 0;
+
+            }
+
+            .header {
+                width: 100%;
+                height: 40px;
+                background-color: bisque;
+                color: white;
+                margin: 0;
+                padding: 0;
+            }
+
+            .heading {
+                width: 100%;
+                height: 760px;
+                padding: 0;
+                margin: 0;
+            }
+
+            .footer {
+                width: 100%;
+                height: 760px;
+                padding: 0;
+                margin: 0;
+            }
+
+            .contact {
+                width: 100%;
+                height: 760px;
+                padding: 0;
+                margin: 0;
+            }
+        }
+
+        @media (min-width:600px)and(max-width:1000px) {
+
+            .main-container {
+                height: 100vh;
+                width: 100vw;
+                margin: 0;
+                padding: 0;
+
+            }
+
+            .header {
+                width: 100%;
+                height: 40px;
+                background-color: bisque;
+                color: white;
+                margin: 0;
+                padding: 0;
+            }
+
+
+            .heading {
+                width: 100%;
+                height: 760px;
+                padding: 0;
+                margin: 0;
+            }
+
+            .footer {
+                width: 100%;
+                height: 760px;
+                padding: 0;
+                margin: 0;
+            }
+
+            .contact {
+                width: 100%;
+                height: 760px;
+                padding: 0;
+                margin: 0;
+            }
+        }
+
+        @media (min-width:1000px)and(max-width:1400px) {
+
+            .main-container {
+                height: 100vh;
+                width: 100vw;
+                margin: 0;
+                padding: 0;
+
+            }
+
+            .header {
+                width: 100%;
+                height: 40px;
+                background-color: bisque;
+                color: white;
+                margin: 0;
+                padding: 0;
+            }
+
+            .heading {
+                width: 100%;
+                height: 760px;
+                padding: 0;
+                margin: 0;
+            }
+
+            .footer {
+                width: 100%;
+                height: 760px;
+                padding: 0;
+                margin: 0;
+            }
+
+            .contact {
+                width: 100%;
+                height: 760px;
+                padding: 0;
+                margin: 0;
+            }
+        }
+
+        /* main-container */
+
+        .main-container {
+            height: 100vh;
+            width: 100vw;
+            margin: 0;
+            padding: 0;
+
+
+        }
+
+        /* class-first of main - container */
+        .header {
+            width: 100%;
+            height: 50px;
+            background-color: whitesmoke;
+            color: rgb(36, 36, 36);
+            margin: 0;
+            padding: 0;
+            position: fixed;
+            top: 0;
+            z-index: 1;
+            text-align: right;
+        }
+
+        .point-2 {
+            height: 45px;
+            width: 45px;
+            border-radius: 50%;
+            background-color: black;
+            position: absolute;
+            margin-left: 30px;
+            background-image: url(data:image/jpeg;base64,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);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+
+        }
+
+        .point-1 {
+            font-size: 20px;
+            padding-right: 50px;
+
+        }
+
+        .point-5 {
+            margin-right: 600px;
+            font-size: 30px;
+            letter-spacing: 2px;
+            animation: mymove 5s infinite;
+
+        }
+
+        @keyframes mymove {
+            20% {
+                color: rgb(215, 58, 58);
+            }
+
+            40% {
+                color: rgb(18, 223, 172);
+            }
+
+            60% {
+                color: rgb(42, 165, 56);
+            }
+
+            80% {
+                color: rgb(165, 95, 42);
+            }
+        }
+
+        /* class second of main - container  */
+        .heading {
+            width: 100%;
+            height: 775px;
+            padding: 0;
+            margin: 0;
+            background-color: rgb(0, 0, 0);
+            background-image: url(../../assets/images/DeWatermark.ai_1756460298612-pica.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+
+        }
+
+        .title-1 {
+            color: rgb(242, 242, 242);
+            font-size: 66px;
+            padding-top: 210px;
+            padding-left: 380px;
+            letter-spacing: 8px;
+            position: absolute;
+            font-family: "Gabriela", serif;
+            font-weight: 400;
+            font-style: normal;
+
+        }
+
+        .title-2 {
+            color: rgb(242, 242, 242);
+            font-size: 20px;
+            letter-spacing: 3px;
+            padding-top: 340px;
+        }
+
+        /* class three of main - container   */
+        .footer {
+            width: 100%;
+            height: 760px;
+            padding: 0;
+            margin: 0;
+            background-color: white;
+            color: black;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .newone {
+            font-size: 38px;
+            padding-left: 20px;
+            color: rgb(59, 59, 59);
+            position: absolute;
+        }
+
+        /* class-1 */
+        .pointer-1 {
+            height: 10%;
+            width: 100%;
+        }
+
+        .pointer-3 {
+            height: 0%;
+            width: 95%;
+            border: 1px solid black;
+            margin-left: 25px;
+        }
+
+        /* class-2 */
+        .pointer-2 {
+            height: 89%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        /* class of class-2 box */
+        .class {
+            height: 75%;
+            width: 22%;
+            background-color: gray;
+            text-align: center;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 10px 10px 10px rgb(197, 197, 197);
+
+        }
+
+        .class:hover {
+            width: 22%;
+            height: 75%;
+            opacity: 90%;
+            transform: scale(1.05);
+            transition: transform 0.4s ease;
+            border-radius: 15px;
+
+        }
+
+        .pointer {
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+
+        }
+
+        .pointer:hover {
+            height: 100%;
+            width: 100%;
+            opacity: 100%;
+            background-color: rgba(42, 42, 42, 0.125);
+            border-radius: 15px;
+            background: linear-gradient(to top, rgba(144, 238, 144, 0.476), rgba(0, 0, 0, 0.014));
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(66, 66, 66);
+        }
+
+        a:hover {
+            text-decoration: underline;
+            background-color: rgb(195, 195, 195);
+            border-radius: 7px;
+        }
+
+        /* class four of main - container  */
+        .contact {
+            width: 100%;
+            height: 920px;
+            padding: 0;
+            margin: 0;
+            background-color: rgb(239, 239, 239);
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        /* class-one of contact section  */
+        .parlament-1 {
+            height: 20%;
+            width: 100%;
+
+        }
+
+        .fonter-1 {
+            font-size: 38px;
+            padding-left: 20px;
+            color: rgb(59, 59, 59);
+        }
+
+        .parlament {
+            height: 0px;
+            width: 95%;
+            border: solid black 1px;
+            margin-left: 20px;
+
+        }
+
+
+        /* class-two of contact section  */
+
+        .parlament-2 {
+            height: 80%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        /* new class */
+        .gallery-8 {
+            height: 50%;
+            width: 100%;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            font-family: monospace;
+        }
+
+        .ashish-1 {
+            width: 30%;
+            height: 95%;
+            background-color: wheat;
+            box-shadow: 10px 10px 10px grey;
+            border-radius: 10px;
+
+        }
+
+        .ashish-2 {
+            width: 30%;
+            height: 95%;
+            background-color: rgb(191, 245, 179);
+            box-shadow: 10px 10px 10px grey;
+            border-radius: 10px;
+        }
+
+        .ashish-3 {
+            width: 30%;
+            height: 95%;
+            background-color: rgb(245, 203, 179);
+            box-shadow: 10px 10px 10px grey;
+            border-radius: 10px;
+        }
+
+
+        .about {
+            width: 100%;
+            height: 750px;
+        }
+
+        /* New class for new section */
+        .gallery-00 {
+            height: 50%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            font-family: monospace;
+        }
+
+        .amit-1 {
+            height: 95%;
+            width: 30%;
+            background-color: rgb(225, 133, 221);
+            box-shadow: 10px 10px 10px grey;
+            border-radius: 10px;
+        }
+
+        .amit-2 {
+            height: 95%;
+            width: 30%;
+            background-color: rgb(182, 197, 141);
+            box-shadow: 10px 10px 10px grey;
+            border-radius: 10px;
+        }
+
+        .amit-3 {
+            height: 95%;
+            width: 30%;
+            background-color: rgb(137, 191, 230);
+            box-shadow: 10px 10px 10px grey;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- main-container -->
+    <div class="main-container">
+        <!-- header div -->
+        <div class="header">
+            <div class="point-2"></div>
+            <span class="poin5t-">The Mobile World </span>
+            <span class="point-1"><a href="#Home">Home</a></span>
+            <span class="point-1"><a href="#Service">Service</a></span>
+            <span class="point-1"><a href="#About">About</a></span>
+            <span class="point-1"><a href="#Contact">Contact</a></span>
+        </div>
+        <!-- heading div -->
+        <div class="heading" id="Home">
+            <div style="background-color: rgba(5, 4, 4, 0.537) ; height: 100%;width: 100%;">
+                <h1 class="title-1">The Mobile World </h1>
+                <p class="title-2">One of the most trustable and famous shop </p>
+            </div>
+        </div>
+        <!-- footer div -->
+        <div class="footer" id="Service">
+            <div class="pointer-1">
+                <h1 class="newone">Our Services</h1>
+                <h3 style="position: absolute;margin-left: 1200px;margin-top: 40px;">
+                    <a href="">Book Our Services</a>
+                </h3>
+            </div><br><br>
+            <div class="pointer-3"></div><br><br><br><br>
+            <div class="pointer-2">
+                <div class="class bg-image"
+                    style="background-image:url(https://t4.ftcdn.net/jpg/04/33/37/07/360_F_433370760_aEdLEQE6IuYJPCXAlFJT0yasr5Tff2P5.jpg) ;">
+                    <div class="pointer">
+                        <h1
+                            style="position: absolute;margin-top: 270px; margin-left: 20px; color: rgb(232, 17, 2);letter-spacing: 2px;font-size: 30px;">
+                            Mobile Repairing</h1>
+                        <p style="margin-top: 310px;">"Fast, reliable repairs with high-quality parts and expert
+                            technicians."</p>
+                    </div>
+                </div>
+                <div class="class bg-image"
+                    style="background-image:url(https://www.kovaimobilestheservicecenter.com/assets/img/service/software-installation.webp) ;">
+                    <div class="pointer">
+                        <h1
+                            style="position: absolute;margin-top: 270px; margin-left: 20px; color:rgb(232, 17, 2);letter-spacing: 2px;font-size: 30px;">
+                            Mobile Software</h1>
+                        <p style="margin-top: 310px;">"Expert software troubleshooting and optimization for a smooth,
+                            fast experience."</p>
+                    </div>
+                </div>
+                <div class="class bg-image"
+                    style="background-image:url(https://geeks2you.com/wp-content/themes/yootheme/cache/46/Laptop-Repair-vs.-Replacement_-When-to-Choose-What-467fc7ec.jpeg) ;">
+                    <div class="pointer">
+                        <h1
+                            style="position: absolute;margin-top: 270px; margin-left: 20px; color: rgb(232, 17, 2);letter-spacing: 2px;font-size: 30px;">
+                            Laptop Repairing</h1>
+                        <p style="margin-top: 310px;">Professional laptop repairs with expert technicians for all your
+                            hardware and software needs."</p>
+                    </div>
+                </div>
+                <div class="class bg-image"
+                    style="background-image: url(https://img1.wsimg.com/isteam/stock/wN68brx/:/rs=w:365,h:365,cg:true,m/cr=w:365,h:365);">
+                    <div class="pointer">
+                        <h1
+                            style="position: absolute;margin-top: 270px; margin-left: 20px; color: rgb(232, 17, 2);letter-spacing: 2px;font-size: 30px;">
+                            Free Home Delivery</h1>
+                        <p style="margin-top: 340px;"> "Free delivery on all repairs—fast and convenient service right
+                            to your door."</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <!-- contact div -->
+        <div class="contact" id="product">
+            <div class="parlament-1">
+                <p class="fonter-1"> Selling Product</p>
+                <div class="parlament"></div>
+            </div>
+            <div class="parlament-2">
+                <div class="gallery-8">
+                    <div class="ashish-1">
+                        <h1 style="padding-left: 100px;">Mobile Phone</h1>
+                    </div>
+                    <div class="ashish-2">
+                        <h1>Headphone </h1>
+                    </div>
+                    <div class="ashish-3">
+                        <h1> Speaker</h1>
+                    </div>
+                </div>
+                <div class="gallery-00">
+                    <div class="amit-1"></div>
+                    <div class="amit-2"></div>
+                    <div class="amit-3"></div>
+                </div>
+
+            </div>
+        </div>
+        <!-- new class for new section -->
+        <div class="about"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            height: 50px;
+            width: 100px;
+        }
+    </style>
+    <script>
+        function onbulb() {
+            document.getElementById("fail").style.display = "none"
+            document.getElementById("pass").style.display = "block";
+        }
+        function offbulb() {
+            document.getElementById("pass").style.display = "none"
+            document.getElementById("fail").style.display = "block";
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="onbulb()">On </button>
+    <button onclick="offbulb()">Off</button><br><br>
+    <img style="height: 200px; width: 200px ; display:none ;" id="pass" src="../../assets/image/on bulb image.jpg"
+        alt="">
+    <img style="height: 200px; width: 200px; display: none;" id="fail" src="../../assets/image/off bulb image.png "
+        alt="">
+
+</body>
+
+</html>
