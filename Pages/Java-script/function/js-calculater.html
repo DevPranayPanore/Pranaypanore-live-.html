@@ -4,111 +4,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculater</title>
+    <title>calculator</title>
     <style>
-        body {
-            height: 100vh;
+        .main-container {
             width: 100vw;
-            display: flex;
-            justify-content: center;
-            align-content: center;
-            background-color: black;
+            height: 100vh;
         }
 
-        .main-container {
-            height: 800px;
-            width: 600px;
-            background-color: rgb(73, 117, 156);
+        .container {
+            width: 16vw;
+            height: 50vh;
+            background-color: rgba(0, 0, 0, 0.701);
+            margin-left: 40%;
+            margin-top: 5%;
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-content: center;
+            border-radius: 40px;
         }
 
-        .display-area {
-            height: 36%;
-            width: 90%;
-            background-color: white;
-
+        .display-container {
+            width: 16vw;
+            height: 10vh;
+            background-color: wheat;
         }
 
-        p {
-            width: 100%;
-            font-weight: 600;
-            margin: 20px;
-            font-size: 40px;
+        .input-container {
+            width: 16vw;
+            height: 40vh;
+            background-color: black;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: baseline;
+            justify-content: space-around;
         }
 
         button {
-            border: none;
-            height: 60px;
-            width: 80px;
-            border-radius: 5px;
-
-            flex-wrap: wrap;
-            row-gap: 10px;
-            column-gap: 10px;
-
-        }
-        .display-one{
-            height: 58%;
-            width: 90%;
+            width: 4vw;
+            height: 8vh;
+            border-radius: 100%;
             background-color: gray;
+            border: none;
+            font-size: 25px;
+            color: white;
         }
     </style>
 </head>
 
 <body>
     <div class="main-container">
-        <div class="display-area">
-            <p id="display"></p>
-
-        </div>
-        <div class="display-one">
-            <button class="button-1" onclick="clickone()">1</button>
-            <button class="button-2" onclick="clicktwo()">2</button>
-            <button class="button-3" onclick="clickthree()">3</button>
-            <button class="button-4" onclick="clickfour()">4</button>
-            <button class="button-1" onclick="clickfive()">5</button>
-            <button class="button-2" onclick="clicksix()">6</button>
-            <button class="button-3" onclick="clickseven()">7</button>
-            <button class="button-4" onclick="clickeight()">8</button>
-            <button class="button-3" onclick="clicknine()">9</button>
-            <button class="button-4" onclick="clickzero()">0</button>
+        <div class="container">
+            <div class="display-container">
+                <p id="display"></p>
+            </div>
+            <div class="input-container">
+                <button onclick="clickOne()">*</button>
+                <button onclick="clickTwo()">AC</button>
+                <button onclick="clickThree()">%</button>
+                <button onclick="clickFour()" style="background-color: darkgoldenrod;">/</button>
+                <button onclick="clickFive()">7</button>
+                <button onclick="clickSix()">8</button>
+                <button onclick="clickSeven()">9</button>
+                <button onclick="clickEight()" style="background-color: darkgoldenrod;">*</button>
+                <button onclick="clickNine()">4</button>
+                <button onclick="clickTen()">5</button>
+                <button onclick="clickEleven()">6</button>
+                <button onclick="clickTweal()" style="background-color: darkgoldenrod;">-</button>
+                <button onclick="clickThirteen()">1</button>
+                <button onclick="clickFourteen()">2</button>
+                <button onclick="clickFifteen()">3</button>
+                <button onclick="clickSixteen()" style="background-color: darkgoldenrod;">+</button>
+                <button onclick="clickNone()">%</button>
+                <button onclick="clickNtwo()">0</button>
+                <button onclick="clickNthree()">.</button>
+                <button onclick="clickNfour()" style="background-color: darkgoldenrod;">=</button>
+            </div>
         </div>
     </div>
+    <script>
+        function clickOne() {
+            document.getElementById("display").innerHTML += "*";
+        }
+        function clickTwo() {
+            document.getElementById("display").innerHTML += "AC";
+        }
+        function clickThree() {
+            document.getElementById("display").innerHTML += "%";
+        }
+        function clickFour() {
+            document.getElementById("display").innerHTML += "/";
+        }
+        function clickFive() {
+            document.getElementById("display").innerHTML += "7";
+        }
+        function clickSix() {
+            document.getElementById("display").innerHTML += "8";
+        }
+        function clickSeven() {
+            document.getElementById("display").innerHTML += "9";
+        }
+        function clickEight() {
+            document.getElementById("display").innerHTML += "*";
+        }
+        function clickNine() {
+            document.getElementById("display").innerHTML += "4";
+        }
+        function clickTen() {
+            document.getElementById("display").innerHTML += "5";
+        }
+        function clickEleven() {
+            document.getElementById("display").innerHTML += "6";
+        }
+        function clickTweal() {
+            document.getElementById("display").innerHTML += "-";
+        }
+        function clickThirteen() {
+            document.getElementById("display").innerHTML += "1";
+        }
+        function clickFourteen() {
+            document.getElementById("display").innerHTML += "2";
+        }
+        function clickFifteen() {
+            document.getElementById("display").innerHTML += "3";
+        }
+        function clickSixteen() {
+            document.getElementById("display").innerHTML += "+";
+        }
+        function clickNone() {
+            document.getElementById("display").innerHTML += "%";
+        }
+        function clickNtwo() {
+            document.getElementById("display").innerHTML += "0";
+        }
+        function clickNthree() {
+            document.getElementById("display").innerHTML += ".";
+        }
+        function clickNfour() {
+            document.getElementById("display").innerHTML += "=";
+        }
+
+
+    </script>
+
 </body>
-<script>
-    function clickone() {
-        document.getElementById("display").innerHTML += 1;
-    }
-    function clicktwo() {
-        document.getElementById("display").innerHTML += 2;
-    }
-    function clickthree() {
-        document.getElementById("display").innerHTML += 3;
-    }
-    function clickfour() {
-        document.getElementById("display").innerHTML += 4;
-    }
-    function clickfive() {
-        document.getElementById("display").innerHTML += 5;
-    }
-    function clicksix() {
-        document.getElementById("display").innerHTML += 6;
-    }
-    function clickseven() {
-        document.getElementById("display").innerHTML += 7;
-    }
-    function clickeight() {
-        document.getElementById("display").innerHTML += 8;
-    }
-    function clicknine() {
-        document.getElementById("display").innerHTML += 9;
-    }
-    function clickzero() {
-        document.getElementById("display").innerHTML += 0;
-    }
-</script>
 
 </html>
