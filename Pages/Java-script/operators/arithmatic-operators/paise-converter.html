@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <input type="text" name="" id="pointer">
+        <button onclick="point()">Convert</button>
+        <p id="panya"></p>
+        <p id="panya-001"></p>
+        <p id="panya-002"></p>
+    </div>
+</body>
+<script>
+    function point() {
+        let x = document.getElementById("pointer").value;
+        let d = x * 16;
+        let s = x / 0.50;
+        let v = x / 0.25;
+        document.getElementById("panya").innerHTML = d;
+        document.getElementById("panya-001").innerHTML = s;
+        document.getElementById("panya-002").innerHTML = v;
+
+
+    }
+</script>
+
+</html>
