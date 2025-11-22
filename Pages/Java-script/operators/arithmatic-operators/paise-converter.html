@@ -5,11 +5,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            background-color: aqua;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .main {
+            height: 500px;
+            width: 500px;
+            background-color: wheat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+
+        }
+
+        input {
+            height: 50px;
+            width: 350px;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            font-size: 25px;
+            border-radius: 20px;
+        }
+        button{
+            height: 45px;
+            width: 300px;
+            font-size: 25px;
+            color: blue;
+        }
+        p{
+            background-color: cadetblue;
+            color: black;
+            font-size: 20px;
+        }
+        h1{
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body>
     <div class="main">
-        <input type="text" name="" id="pointer">
+        <h1>Paise Converter</h1><br><br>
+        <input type="text" name="" id="pointer"><br><br>
         <button onclick="point()">Convert</button>
         <p id="panya"></p>
         <p id="panya-001"></p>
@@ -18,7 +66,7 @@
 </body>
 <script>
     function point() {
-        let x = document.getElementById("pointer").value;
+        let x = Number(document.getElementById("pointer").value);
         let d = x * 16;
         let s = x / 0.50;
         let v = x / 0.25;

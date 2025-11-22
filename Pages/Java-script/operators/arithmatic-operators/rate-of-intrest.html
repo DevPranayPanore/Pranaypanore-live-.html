@@ -5,13 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=.main, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            background-color: blanchedalmond;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .main {
+            height: 500px;
+            width: 500px;
+            background-color: aqua;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        h1 {
+            background-color: rgb(34, 255, 0);
+
+        }
+
+        input {
+            height: 50px;
+            width: 350px;
+            font-size: 25px;
+        }
+
+        button {
+            height: 45px;
+            width: 300px;
+        }
+        p{
+            background-color: bisque;
+            font-size: 25px;
+        }
+    </style>
+
+
 </head>
 
 <body>
     <div class="main">
-        <input type="text" id="pranay">
-        <input type="text" id="pranay-001">
-        <input type="text" id="pranay-002">
+        <h1>Rate of Intrest</h1>
+        <input type="text" id="pranay"><br>
+        <input type="text" id="pranay-001"><br>
+        <input type="text" id="pranay-002"><br>
 
         <button onclick="option()">CLick</button>
         <p id="panya"></p>
