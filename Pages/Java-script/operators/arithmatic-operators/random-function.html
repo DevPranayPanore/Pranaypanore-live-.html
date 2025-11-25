@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="main">
+        <h1 id="num1"></h1>
+        <h1 id="num2"></h1>
+        <label id="display"></label>
+        <br>
+        <input type="number" id="input">
+        <br>
+        <button onclick="pranay()">submit</button><br>
+        <h1 id="display-01"></h1>
+        <button onclick="panore()">Reload</button>
+
+
+    </div>
+
+</body>
+<script>
+    // let number = Math.floor(Math.random() * 10);
+    // let number1 = Math.floor(Math.random() * 10);
+    // let b = number * number1;
+    // let ans = prompt(number + "x" + number1 + "=?");
+    // let result = b == ans;
+    // alert(result);
+
+    let number = Math.floor(Math.random(num1) * 10);
+    let number1 = Math.floor(Math.random(num2) * 10);
+    let b = number * number1;
+
+    document.getElementById("num1").innerHTML = number;
+    document.getElementById("num2").innerHTML = number1;
+    document.getElementById("display").innerHTML = "Multiply" + number + "x" + number1 + "=?";
+
+    function pranay() {
+
+        let x = document.getElementById("input").value;
+        let y = x == b;
+        document.getElementById("display-01").innerHTML = y;
+    }
+    function panore() {
+        location.reload();
+    }
+</script>
+
+</html>
