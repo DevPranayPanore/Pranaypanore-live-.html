@@ -5,26 +5,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            background-color: cadetblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .main {
+            height: 700px;
+            width: 700px;
+            background-color: bisque;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50px;
+            border-left: 4px solid blueviolet;
+            border-right: 4px solid blueviolet;
+
+        }
+
+        .main-09 {
+            height: 200px;
+            width: 600px;
+            text-align: center;
+        }
+
+        h1 {
+            background-color: rgb(0, 173, 101);
+            font-size: 30px;
+        }
+
+        label {
+            font-size: 40px
+        }
+
+        input {
+            height: 50px;
+            width: 500px;
+            font-size: 30px;
+        }
+
+        button {
+            height: 50px;
+            width: 350px;
+            font-size: 25px;
+            background-color: green;
+            color: white;
+        }
+
+        h2 {
+            text-decoration: dotted rgb(0, 0, 0) underline;
+            font-size: 45px;
+            color: transparent;
+            background: linear-gradient(to right, rgb(172, 166, 0), rgb(4, 213, 0), rgb(248, 0, 0));
+            -webkit-background-clip: text;
+
+        }
+    </style>
 </head>
+<!-- body -->
 
 <body>
 
-
+    <!-- MAin Container  -->
     <div class="main">
-        <h1 id="num1"></h1>
-        <h1 id="num2"></h1>
+        <h2>Multiplication Quiz</h2>
+        <div class="main-09">
+            <h1 id="num1"></h1>
+            <h1 id="num2"></h1>
+        </div>
+        <!-- input one  -->
         <label id="display"></label>
         <br>
         <input type="number" id="input">
         <br>
+        <!-- Two Button -->
         <button onclick="pranay()">submit</button><br>
         <h1 id="display-01"></h1>
-        <button onclick="panore()">Reload</button>
+        <button style="background-color: red;" onclick="panore()">Reload</button>
 
 
     </div>
 
 </body>
+<!-- js script -->
 <script>
     // let number = Math.floor(Math.random() * 10);
     // let number1 = Math.floor(Math.random() * 10);
@@ -33,20 +104,24 @@
     // let result = b == ans;
     // alert(result);
 
+    // INput one
     let number = Math.floor(Math.random(num1) * 10);
     let number1 = Math.floor(Math.random(num2) * 10);
     let b = number * number1;
+    // using number
 
-    document.getElementById("num1").innerHTML = number;
-    document.getElementById("num2").innerHTML = number1;
+    document.getElementById("num1").innerHTML = "Display random Number - one:-" + "'" + number + " '";
+    document.getElementById("num2").innerHTML = "Display random Number - Two-" + "'" + number1 + " '";
     document.getElementById("display").innerHTML = "Multiply" + number + "x" + number1 + "=?";
 
+    // user function getting out put
     function pranay() {
 
         let x = document.getElementById("input").value;
         let y = x == b;
         document.getElementById("display-01").innerHTML = y;
     }
+    // using Another function reload
     function panore() {
         location.reload();
     }
