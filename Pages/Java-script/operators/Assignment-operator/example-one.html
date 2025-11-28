@@ -5,14 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Example One</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            background-color: blanchedalmond;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        .main {
+            height: 500px;
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(208, 208, 208);
+            border-radius: 30px;
+            box-shadow: 4px 4px 10px 10px gray;
+        }
+
+        button {
+            height: 45px;
+            width: 230px;
+            border-radius: 20px;
+            background-color: green;
+        }
+
+        h1 {
+            font-size: 40px;
+            color: rgb(167, 45, 167);
+            text-decoration: underline dashed;
+        }
+
+        p {
+            color: red;
+            font-weight: 900;
+            font-size: 30px;
+        }
+
+        h2 {
+            background-color: rgba(165, 42, 42, 0.562);
+        }
+    </style>
 </head>
 
 <body>
     <div class="main">
-        <h2>MAth MArks :-40</h2>
+
+        <h>Student Marks Calculater</h1>
+        <h2>Math Marks :-40</h2>
         <h2>Science marls to Add :- 35</h2>
         <p id="panya"></p>
-        <button onclick="pranay()"> click</button>
+        <button onclick="pranay()">Add ` </button>
     </div>
 </body>
 <script>

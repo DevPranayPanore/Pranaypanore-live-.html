@@ -5,20 +5,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            background-color: thistle;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .main {
+            height: 500px;
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(95, 160, 106);
+
+        }
+
+        button {
+            height: 46px;
+            width: 250px;
+            border-radius: 20px;
+            background-color: red;
+            color: white;
+            font-size: 25px;
+
+        }
+        h1{
+            font-size: 40px;
+            background-color: bisque;
+
+        }
+        p{
+            font-size: 30px;
+            background-color: rgb(60, 87, 130);
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Orignal salary :$5000</h1>
-    <h1> Deduction Amount :- $500</h1>
-    <p id="display"></p>
-    <button onclick="pranay()">Click</button>
+    <div class="main">
+        <h1>Employee Salary Deduction</h1>
+        <h2>Orignal salary :$5000</h2>
+        <h2> Deduction Amount :- $500</h2>
+      
+        <button onclick="pranay()">Click</button>
+        <p id="display"></p>
+    </div>
 </body>
 <script>
     function pranay() {
         let a = 5000;
         a -= 500;
-        document.getElementById("display").innerHTML ="Your Salery :-$"+ a;
+        document.getElementById("display").innerHTML = "Your Salery :-$" + a;
     }
-    
+
 </script>
+
 </html>
