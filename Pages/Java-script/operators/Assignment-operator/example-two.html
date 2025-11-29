@@ -17,6 +17,8 @@
 
         }
 
+        /* main div  css  */
+
         .main {
             height: 500px;
             width: 500px;
@@ -25,9 +27,13 @@
             justify-content: center;
             align-items: center;
             background-color: rgb(95, 160, 106);
-
+            border-radius: 30px;
+            border-left: 4px solid blueviolet;
+            border-right: 4px solid rgb(6, 223, 2);
+            box-shadow: 4px 4px 10px 10px gray;
         }
 
+        /* button css  */
         button {
             height: 46px;
             width: 250px;
@@ -37,30 +43,48 @@
             font-size: 25px;
 
         }
-        h1{
-            font-size: 40px;
+
+        /* main heading css */
+        h1 {
+            font-size: 35px;
             background-color: bisque;
+            color: red;
+            text-decoration: underline dashed;
+            font-family: Georgia, 'Times New Roman', Times, serif;
 
         }
-        p{
+
+
+        p {
             font-size: 30px;
             background-color: rgb(60, 87, 130);
+            color: white;
+        }
+
+        h2 {
+            background-color: aqua;
         }
     </style>
 </head>
 
+<!-- body -->
+
 <body>
+    <!-- main-container -->
     <div class="main">
-        <h1>Employee Salary Deduction</h1>
+        <!-- main heading -->
+        <h1>Employee Salary Deduction</h1><br><br>
         <h2>Orignal salary :$5000</h2>
         <h2> Deduction Amount :- $500</h2>
-      
-        <button onclick="pranay()">Click</button>
+        <!-- Button  -->
+        <button onclick="salary()">Click</button>
+        <!-- display -->
         <p id="display"></p>
     </div>
 </body>
 <script>
-    function pranay() {
+    // function problem
+    function salary() {
         let a = 5000;
         a -= 500;
         document.getElementById("display").innerHTML = "Your Salery :-$" + a;
