@@ -9,43 +9,98 @@
         body {
             height: 100vh;
             width: 100vw;
-            background-color: tan;
+            background-color: rgb(218, 157, 78);
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            background-image: url(https://www.shutterstock.com/shutterstock/videos/3526713133/thumb/1.jpg?ip=x480);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+        }
 
+        .main {
+            height: 500px;
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.748);
+            border-radius: 20px;
+        }
+
+        span {
+            font-size: 38px;
+            font-weight: 600;
+            color: transparent;
+            background: linear-gradient(to right, rgb(0, 58, 248), rgb(213, 21, 0));
+            -webkit-background-clip: text;
+            text-decoration: underline solid brown;
+        }
+
+        label {
+            font-size: 24px;
+            color: rgba(253, 0, 0, 0.789);
+
+        }
+
+        input {
+            height: 44px;
+            width: 300px;
+            font-size: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        button {
+            height: 39px;
+            width: 270px;
+            background-color: blue;
+            color: white;
+            border-radius: 10px;
+        }
+
+        .dispaly {
+            height: 100px;
+            width: 400px;
+            border-radius: 30px;
+            border: 1px solid blue;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
         }
     </style>
 </head>
 
 <body>
     <div class="main">
-        <h1>Temperature Checker </h1>
+        <span>Temperature Checker </span>
         <br><br>
         <label for="">Temperature under(ºC) > 30</label><br>
-        <input type="text">
 
-
-
-
-
-
-
+        <input type="text " id="text" placeholder="Enter your Temperature"><br>
+        <button onclick="Temperature()">Check</button>
+        <br><br>
+        <div class="dispaly" id="display"></div>
     </div>
-
-
     <script>
-        let age = 25;
+        function Temperature() {
+            let age = document.getElementById("text").value;
 
-        if (age > 30) {
-            p = "IT's To hot ! 🔥"
+
+            if (age > 30) {
+                p = "It's to hot ! 🔥"
+            }
+            else {
+
+                p = "It's Cool! 💠"
+            }
+            document.getElementById("display").innerHTML = p
         }
-        else {
-
-            p = "It's Cool! 💠"
-        }
-
 
     </script>
 
