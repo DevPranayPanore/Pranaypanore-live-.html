@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="">Cart Total ($)</label><br>
+    <input type="text" id="cartTotal"><br><br>
+    <input type="checkbox" name="" id="checkbox">
+    <label for="">User is a member</label><br><br>
+    <button onclick="discount12()">Check Discount</button>
+</body>
+<script>
+    function discount12() {
+        let discount = Number(document.getElementById("cartTotal").value);
+        let y = document.getElementById("checkbox").checked;
+        if (discount >= 100 && y) {
+            alert("Discount applied ")
+        }
+        else {
+            alert("Not applied  Discount")
+        }
+    }
+</script>
+
+</html>
