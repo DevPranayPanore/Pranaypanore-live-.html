@@ -6,13 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body {
+            height: 98vh;
+            width: 98vw;
+            background-image: url(https://us.123rf.com/450wm/saiful007/saiful0071711/saiful007171100478/90158506-lumi%C3%A8re-vecteur-bleu-clair-fond-low-poly-motif-de-polygone-faible-illustration-de-fond-poly.jpg?ver=6);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
 
+        .main {
+            height: 500px;
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(151, 151, 151, 0.72);
+            border-radius: 20px;
+        }
+
+        .pointer {
+            height: 300px;
+            width: 300px;
+            font-size: 30px;
+            text-align: center;
+        }
     </style>
 </head>
 
 <body>
     <div class="main">
-
+        <div class="pointer" id="dispaly"></div>
 
 
     </div>
@@ -26,13 +55,16 @@
     let b = prompt();
 
 
-    if ((age <=  a) && (height ==  b) ) {
-        alert(" eligible")
+    if ((age <= a) && (height == b)) {
+
+        document.getElementById("dispaly").innerHTML = (" eligible");
 
     }
-        else{
-        alert("Not Eligible")
-        }
+    else {
+
+        document.getElementById("dispaly").innerHTML = (" Not Eligible");
+    }
+
 
 </script>
 
