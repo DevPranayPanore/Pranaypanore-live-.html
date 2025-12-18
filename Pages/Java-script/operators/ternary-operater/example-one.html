@@ -5,15 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /* CSS Start  */
+        body {
+            height: 98vh;
+            width: 98vw;
+            background-image: url(https://us.123rf.com/450wm/saiful007/saiful0071711/saiful007171100478/90158506-lumi%C3%A8re-vecteur-bleu-clair-fond-low-poly-motif-de-polygone-faible-illustration-de-fond-poly.jpg?ver=6);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Main Container  */
+        .main {
+            height: 500px;
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;    
+            background-color: rgba(151, 151, 151, 0.72);
+            border-radius: 20px;
+        }
+    </style>
 </head>
 
 <body>
-
+    <div class="main">
+        <label for=""> Check Number is even or odd</label><br>
+        <input type="text" name="" id="input"><br><br>
+        <button onclick="evenodd()">Check the Number</button><br><br>
+        <div class="display" id="Dispaly"></div>
+    </div>
 </body>
 <script>
-    let number=prompt("Enter  a number");
-    let result=(number%2)==0?"It is  Even True Function ":"It is odd  False Function ";
-    alert(result);
+    function evenodd() {
+        let number = document.getElementById("input").value;
+        let result = (number % 2) == 0 ? "It is  Even True Function " : "It is odd  False Function ";
+        document.getElementById("Dispaly").innerHTML = (result);
+    }
 </script>
 
 </html>
