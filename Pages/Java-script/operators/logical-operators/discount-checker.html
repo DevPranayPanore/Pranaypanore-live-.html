@@ -19,6 +19,7 @@
             justify-content: center;
             align-items: center;
         }
+
         /* Main Container  */
 
         .main {
@@ -31,16 +32,47 @@
             background-color: rgba(151, 151, 151, 0.72);
             border-radius: 20px;
         }
+
+        /* checkbox */
+        .checkbox {
+            height: 20px;
+            width: 20px;
+        }
+
+        /* Input  */
+        input {
+            height: 45px;
+            width: 290px;
+            border-radius: 10px;
+            font-size: 25px;
+        }
+
+        /* Button */
+        button {
+            height: 44px;
+            width: 200px;
+            border-radius: 10px;
+            background-color: thistle;
+            font-size: 20px;
+        }
+
+        h1 {
+            background-color: rgb(173, 84, 84);
+            color: white;
+        }
     </style>
 </head>
 
 <body>
+    <!-- main-container -->
     <div class="main">
         <h1>Discount Of Cart </h1><br>
+        <!-- input -->
         <label for="">Cart Total ($)</label><br>
-        <input type="text" id="cartTotal"><br><br>
+        <input type="text" id="cartTotal" required><br><br>
+        <!-- checkbox-box -->
         <span>
-            <input type="checkbox" name="" id="checkbox">
+            <input class="checkbox" type="checkbox" name="required" id="checkbox" checked>
             <label for="">User is a member</label>
         </span><br><br>
         <button onclick="discount12()">Check Discount</button>
