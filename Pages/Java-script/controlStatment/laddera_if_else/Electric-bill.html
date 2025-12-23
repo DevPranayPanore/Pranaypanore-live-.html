@@ -32,41 +32,85 @@
             border-radius: 20px;
             box-shadow: 2px 2px 10px 2px black;
         }
+
+        /* Input  */
+        input {
+            height: 45px;
+            width: 290px;
+            border-radius: 10px;
+            font-size: 25px;
+        }
+
+        /* Button */
+        button {
+            height: 44px;
+            width: 200px;
+            border-radius: 10px;
+            background-color: thistle;
+            font-size: 20px;
+        }
+
+        label {
+            font-size: 20px;
+        }
+
+        h1 {
+            font-size: 45px;
+            background-color: rgb(173, 84, 84);
+            color: white;
+        }
+
+        .display {
+            height: 150px;
+            width: 350px;
+            background-color: whitesmoke;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 29px;
+        }
     </style>
 </head>
 
 <body>
     <div class="main">
+        <h1>Electric-Bill</h1>
         <label for="">Enter a Electric Units</label>
-        <input type="text" name="" id="">
+        <input type="number" name="" id="input">
         <br><br>
-        <Button>Get Bill</Button>
+        <Button onclick="bill()">Get Bill</Button>
         <br><br>
-        <div class="display"></div>
+        <div class="display">
+            <p id="display"></p>
+        </div>
 
     </div>
 </body>
 <script>
-    let units = prompt("Enter a Units");
-    let point = "";
-    if ((units <= 50)) {
-        point=(units * 7);
+    function bill() {
+        let units = document.getElementById("input").value;
+        let point = "";
+        if ((units <= 50)) {
+            point = (units * 7);
 
-    }
-    else if (units <= 150) {
-        point=((50 * 7) + (units - 50) * 8) ;
-    }
-    else if (units <= 250) {
-        point=((100 * 8) + (units - 150));
-    }
-    else {
-        point=(units * 15)
-    }
+        }
+        else if (units <= 150) {
+            point = ((50 * 7) + (units - 50) * 8);
+        }
+        else if (units <= 250) {
+            point = ((100 * 8) + (units - 150));
+        }
+        else {
+            point = (units * 15)
+        }
 
-    let surchange = point * 0.20;
-    let total=surchange+point;
+        let surchange = point * 0.20;
+        let total = surchange + point;
 
-    alert(total);
+        document.getElementById("display").innerHTML = ("₹" + total);
+    }
 </script>
 
 </html>
