@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            height: 40px;
+            width: 200px;
+        }
+
+        .panya {
+            height: 590px;
+            width: 700px;
+            color: white;
+        }
+
+        .main-class {
+            height: 800px;
+            width: 400px;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            color: white;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+
+        .image-one {
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            background-color: white;
+        }
+
+        .personal {
+            height: 500px;
+            width: 400px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main-class">
+        <img class="image-one" id="ProfileImage" src="" alt="">
+        <div class="personal">
+            <span id="name"></span><br>
+            <span id="age"></span><br>
+            <span id="college"></span><br>
+            <span id="myClass"></span><br>
+            <span id="phoneNumber"></span><br>
+            <span id="branch"></span><br>
+            <span id="email"></span><br>
+            <span id="fatherName"></span><br>
+            <span id="motherName"></span><br>
+            <span id="familyContact"></span><br>
+            <span id="hobbie"></span><br>
+            <span id="skills"></span><br>
+            <span id="favoriteActor"></span><br>
+            <span id="favoriteRoleModel"></span><br>
+            <span id="favoriteColor"></span><br>
+            <span id="favoriteSir"></span><br>
+            <span id="address"></span><br>
+            <span id="gender"></span><br>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+        let profileImage = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqAByPNqUu3Rxx6xg8dl4bD0fDW1ub4eYqSg&s";
+        let name = "Name:- Pranay Panore ";
+        let age = "Age:- 20";
+        let college = "College:- NIT, college of Eng Nagpur ";
+        let myClass = "Class:- Btech (1st Year) ";
+        let phoneNumber = "Phonenumber:- 9699151494 ";
+        let branch = "Branch:- IT Information Technology";
+        let email = "Email:- pranaypanore2@gmail.com"
+        let fatherName = "Fathername:- Yograj Panore ";
+        let motherName = "Mothername:- Minakshi Panore";
+        let familyContact = "Familycontact:- 8459418733";
+        let hobbie = "Hobbie:- Playing Kabbadi";
+        let skills = "Skills:- Html language , Css language ";
+        let favoriteActor = "FavActor:-My Father ";
+        let favoriteRoleModel = "Favrolemodle:-Warren Buffett";
+        let favoriteColor = " Favcolor:-Golden";
+        let favoriteSir = "Favsir:- Pankaj Sir";
+        let address = "Address:- Mendki Katol Nagpur";
+        let gender = "Gender:- Male";
+
+        document.getElementById("ProfileImage").src=profileImage;
+
+        document.getElementById("name").innerHTML = name;
+        document.getElementById("age").innerHTML = age;
+        document.getElementById("college").innerHTML = college;
+        document.getElementById("myClass").innerHTML = myClass;
+        document.getElementById("phoneNumber").innerHTML = phoneNumber;
+        document.getElementById("branch").innerHTML = branch;
+        document.getElementById("email").innerHTML = email;
+        document.getElementById("fatherName").innerHTML = fatherName;
+        document.getElementById("motherName").innerHTML = motherName;
+        document.getElementById("familyContact").innerHTML = familyContact;
+        document.getElementById("hobbie").innerHTML = hobbie;
+        document.getElementById("skills").innerHTML = skills;
+        document.getElementById("favoriteActor").innerHTML = favoriteActor;
+        document.getElementById("favoriteColor").innerHTML = favoriteColor;
+        document.getElementById("favoriteRoleModel").innerHTML = favoriteRoleModel;
+        document.getElementById("address").innerHTML = address;
+        document.getElementById("favoriteSir").innerHTML = favoriteSir;
+        document.getElementById("address").innerHTML = address;
+        document.getElementById("gender").innerHTML = gender;
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

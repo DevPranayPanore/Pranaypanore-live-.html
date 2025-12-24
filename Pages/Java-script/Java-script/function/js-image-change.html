@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Files of JS</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            padding: 0;
+            margin: 0;
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-one {
+            height: 700px;
+            width: 800px;
+            background-color: rgb(158, 183, 89);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            height: 44px;
+            width: 150px;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+
+        .card-image {
+            height: 400px;
+            width: 700px;
+            background-color: aqua;
+
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-one">
+        <div class="card-image">
+            <img src="https://bmwindia.co.in/offers/m5/images/header-mob.jpg" height="" alt="" id="Image">
+        </div><br>
+        <button id="" onclick="changeimage()">Image-1</button><br>
+        <button id="" onclick="secondimage()">Image-2</button><br>
+        <button id="" onclick="thirdimage()">Image-3</button>
+    </div>
+
+
+
+
+    <script>
+        function changeimage() {
+            document.getElementById("Image").src = "https://rendezvous-dubai.com/wp-content/uploads/2023/04/G-class-Rendez-vous-dubai-1.jpg";
+
+
+        }
+        function secondimage() {
+            document.getElementById("Image").src = "https://images.timesdrive.in/thumb/msid-151200695,thumbsize-1394244,width-450,height-254,resizemode-75/151200695.jpg";
+
+
+        }
+        function thirdimage() {
+            document.getElementById("Image").src = "https://static-cdn.cars24.com/prod/new-car-cms/Land-Rover/Range-Rover/2024/10/03/c37f0e60-2361-44eb-b57b-617019860be7-Range_Rover_Ranthambore_Editon_Front_Hero_48487498_IN-_1_.jpg?w=557&dpr=3&optimize=low&format=auto&quality=50";
+
+
+        }
+    </script>
+</body>
+
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input </title>
+    <style>
+        body {
+            height: 98vh;
+            width: 98vw;
+            background-image: url(https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Colorful-Geometric-Simple-Background-Image.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Main Container  */
+
+        .main {
+            height: 500px;
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(151, 151, 151, 0.72);
+            border-radius: 20px;
+        }
+
+        .diss-one {
+            height: 100px;
+            width: 400px;
+            font-size: 30px;
+            text-align: center;
+            background-color: whitesmoke;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h1></h1>
+        <label for=""></label><br>
+        <input type="text" name="" id=""><br><br>
+        <label for=""></label><br>
+        <input type="text" name="" id=""><br><br>
+
+        <div class="diss-one" id="display-two"></div>
+
+    </div>
+
+</body>
+<script>
+    let num1 = prompt("Enter a Number ");
+    let num2 = prompt("Enter a Number ");
+    let r = (num1 | num2);
+    if (num1 < num2) {
+        document.getElementById("display-two").innerHTML = (num2 + " is nearset from " + r);
+    }
+    else {
+        document.getElementById("display-two").innerHTML = (num1 + " is nearset from " + r);
+    }
+</script>
+
+</html>

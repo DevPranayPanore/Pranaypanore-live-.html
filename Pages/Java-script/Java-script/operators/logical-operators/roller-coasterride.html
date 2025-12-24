@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* body */
+        body {
+            height: 98vh;
+            width: 98vw;
+            background-image: url(https://us.123rf.com/450wm/saiful007/saiful0071711/saiful007171100478/90158506-lumi%C3%A8re-vecteur-bleu-clair-fond-low-poly-motif-de-polygone-faible-illustration-de-fond-poly.jpg?ver=6);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* main container */
+        .main {
+            height: 500px;
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(151, 151, 151, 0.72);
+            border-radius: 20px;
+        }
+
+        /*Div of display*/
+        .pointer {
+            height: 80px;
+            width: 300px;
+            font-size: 30px;
+            text-align: center;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        /* Input  */
+        input {
+            height: 45px;
+            width: 290px;
+            border-radius: 10px;
+        }
+
+        /* Button */
+        button {
+            height: 44px;
+            width: 200px;
+            border-radius: 10px;
+            background-color: thistle;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- main container -->
+    <div class="main">
+        <h1>Roller coaster - Ride </h1>
+        <br><br>
+        <label for="">Enter Your Age:- </label>
+        <input type="number" name="" id="input"><br><br>
+        <label for="">Enter Your Height:-</label>
+        <input type="number" name="" id="input-one"><br><br>
+        <button onclick="Roller()">Check</button><br><br>
+        <div class="pointer" id="dispaly"></div>
+
+
+    </div>
+
+</body>
+<!-- JS -->
+<script>
+    // constant
+    const age = 12;
+    const height = 140;
+    // function
+    function Roller() {
+        let a = Number(document.getElementById("input").value);
+        let b = Number(document.getElementById("input-one").value);
+        if ((age <= a) && (height <= b)) {
+            document.getElementById("dispaly").innerHTML = (" Eligible");
+        }
+        else {
+            document.getElementById("dispaly").innerHTML = (" Not Eligible");
+        }
+    }
+</script>
+
+</html>

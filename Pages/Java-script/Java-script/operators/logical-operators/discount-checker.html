@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* CSS start  */
+        body {
+            height: 98vh;
+            width: 98vw;
+            background-image: url(https://us.123rf.com/450wm/saiful007/saiful0071711/saiful007171100478/90158506-lumi%C3%A8re-vecteur-bleu-clair-fond-low-poly-motif-de-polygone-faible-illustration-de-fond-poly.jpg?ver=6);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Main Container  */
+
+        .main {
+            height: 500px;
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(151, 151, 151, 0.72);
+            border-radius: 20px;
+        }
+
+        /* checkbox */
+        .checkbox {
+            height: 20px;
+            width: 20px;
+        }
+
+        /* Input  */
+        input {
+            height: 45px;
+            width: 290px;
+            border-radius: 10px;
+            font-size: 25px;
+        }
+
+        /* Button */
+        button {
+            height: 44px;
+            width: 200px;
+            border-radius: 10px;
+            background-color: thistle;
+            font-size: 20px;
+        }
+
+        h1 {
+            background-color: rgb(173, 84, 84);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- main-container -->
+    <div class="main">
+        <h1>Discount Of Cart </h1><br>
+        <!-- input -->
+        <label for="">Cart Total ($)</label><br>
+        <input type="text" id="cartTotal" required><br><br>
+        <!-- checkbox-box -->
+        <span>
+            <input class="checkbox" type="checkbox" name="required" id="checkbox" checked>
+            <label for="">User is a member</label>
+        </span><br><br>
+        <button onclick="discount12()">Check Discount</button>
+
+    </div>
+
+</body>
+<script>
+    function discount12() {
+        let discount = Number(document.getElementById("cartTotal").value);
+        let y = document.getElementById("checkbox").checked;
+        if (discount >= 100 && y) {
+            alert("Discount applied ")
+        }
+        else {
+            alert("Not applied  Discount")
+        }
+    }
+</script>
+
+</html>

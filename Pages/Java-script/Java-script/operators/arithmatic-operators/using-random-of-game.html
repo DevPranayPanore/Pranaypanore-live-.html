@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <input type="number" name="" id="input"><br>
+        <button onclick="gameon() ">Click</button>
+    </div>
+    <script>
+        function gameon() {
+            let a = Number(document.getElementById("input").value);
+            // let num = Math.random() * 10;
+            // let number = Math.floor(num);
+            let number = Math.floor(Math.random() * 10);
+
+            let sum = a == number;
+            alert(number);
+            alert(sum);
+
+        }
+
+    </script>
+</body>
+
+</html>
