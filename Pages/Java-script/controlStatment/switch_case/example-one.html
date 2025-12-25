@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    // let box = prompt()
+    // switch (2 + 2 == 4) {
+    //     case box == 1:
+    //         alert("One");
+    //         break;
+    //     case box == 2:
+    //         alert("Two");
+    //         break;
+    //     default:
+    //         alert("Number")
+    // }
+    function grade() {
+        let marks = prompt("Enter a Marks")
+        let grade = ""
+        switch (true) {
+            case (marks >= 90):
+                grade = "A grade";
+                break;
+            case (marks >= 75):
+                grade = "B grade";
+                break;
+            case (marks >= 50):
+                grade = "C grade";
+                break;
+            case (marks >= 35):
+                grade = "D grade";
+                break;
+            default:
+                grade = "Fail";
+        }
+        alert(grade);
+    }
+    grade()
+</script>
+
+</html>
