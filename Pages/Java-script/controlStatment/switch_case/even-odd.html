@@ -5,14 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            background-color: wheat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main {
+            height: 600px;
+            width: 400px;
+            background-color: rgba(16, 164, 0, 0.474);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+        }
+    </style>
 </head>
 
 <body>
-
+    <div class="main"><br><br>
+        <label for=""></label>
+<input type="text">
+    </div>
 </body>
 <script>
     function evenodd() {
-        let number = prompt();
+        let number = document.getElementById();
         let result = ""
         switch (number % 2) {
             case 0:
@@ -25,7 +50,7 @@
                 ("Invalid Number")
 
         }
-        alert(result);  
+        alert(result);
 
     }
     evenodd()

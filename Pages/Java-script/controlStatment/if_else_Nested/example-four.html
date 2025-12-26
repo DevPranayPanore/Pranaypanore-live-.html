@@ -5,50 +5,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(185, 185, 185);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .din-mail {
+            height: 500px;
+            width: 400px;
+            background-color: aqua;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        label {
+            font-size: 25px;
+        }
+    </style>
 </head>
 
 <body>
-    <!--  -->
-    <label for="">Docter is avialable ?</label><br>
-    <input type="radio" name="check" id="yes-docter" value="yes">
+    <div class="din-mail">
+        <span>
+            <!--  -->
+            <label for="yes">Docter is avialable ?
 
-    <input type="radio" name="check" id="no-docter" value="NO"><br><br>
+            </label><br>
+            <label for="">Yes</label>
+            <input type="radio" name="yes" id="yes-docter" value="yes">
+            <label for="">No</label>
+            <input type="radio" name="yes" id="no-docter" value="NO"><br><br>
+        </span>
+        <span>
+            <label for="check">Patient Register?</label><br>
+            <label for="">Yes</label>
+            <input type="radio" name="check" id="register-yes" value="Yes">
+            <label for="">No</label>
+            <input type="radio" name="check" id="register-no" value="No"><br><br>
+        </span>
+        <span>
+            <label for="done">Payment is done ?</label><br>
+            <label for="">Yes</label>
+            <input type="radio" name="done" id="payment-yes" value="Yes">
+            <label for="">No</label>
+            <input type="radio" name="done" id="payment-no" value="No"><br><br>
+        </span>
 
-    <label for="">Patient Register?</label><br>
-
-    <input type="radio" name="check" id="register-yes">
-
-    <input type="radio" name="check" id="register-no"><br><br>
-
-    <label for="">Payment is done ?</label><br>
-
-    <input type="radio" name="check" id="payment-yes">
-
-    <input type="radio" name="check" id="payment-no"><br><br>
-
-    <button onclick="register()">Check</button><br><br>
-    <div class="display">
-        <p id="output"></p>
+        <button onclick="register()">Check</button><br><br>
+        <div class="display">
+            <p id="output"></p>
+        </div>
     </div>
 </body>
 <script>
     let y = "Docter unavilable";
     function register() {
-        if () {
-            if (document.getElementById("yes-docter").checked) {
-                if ()
-
+        if ((document.getElementById("yes-docter").checked)) {
+            if (document.getElementById("register-yes").checked) {
+                if (document.getElementById("payment-yes").checked) {
+                    alert("Payment Is Done");
+                }
+                else {
+                    alert("Payment Not Done Yet");
+                }
             }
-            else (){
-
+            else {
+                alert("Registration Not Done");
             }
-
         }
         else {
-            document.getElementById("output").innerHTML = y;
+            alert(y);
         }
     }
-
 </script>
 
 </html>

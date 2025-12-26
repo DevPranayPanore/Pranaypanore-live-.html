@@ -13,14 +13,14 @@
 <script>
     let hours = prompt();
     switch (true) {
-        case (hours >= 5 || hours <= 11):
+        case (hours >= 5 && hours <= 11):
             alert("Good Morning");
             break;
-        case (hours >= 12 || hours <= 17):
+        case (hours >= 12 && hours <= 17):
             alert("Good afternoon");
             break;
 
-        case (hours >= 18 || hours <= 21):
+        case (hours >= 18 && hours <= 21):
             alert("Good evening");
             break;
         default:
