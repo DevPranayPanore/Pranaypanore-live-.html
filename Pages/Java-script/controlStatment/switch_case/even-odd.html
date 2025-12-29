@@ -26,19 +26,55 @@
             align-items: center;
             border-radius: 20px;
         }
+
+        input {
+            height: 45px;
+            width: 290px;
+            font-size: 25px;
+        }
+
+        label {
+            font-size: 25px;
+        }
+
+        .div-display {
+            height: 100px;
+            width: 350px;
+            background-color: whitesmoke;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+        }
+
+        .output {
+            font-size: 25px;
+            color: black;
+        }
+
+        button {
+            height: 40px;
+            width: 300px;
+        }
     </style>
 </head>
 
 <body>
     <div class="main"><br><br>
-        <label for=""></label>
-<input type="text">
+        <label for="">Enter a Number :</label>
+        <input type="text" id="input">
+        <br>
+        <button onclick="evenodd()">Check Even Or Odd</button><br><br>
+        <div class="div-display">
+            <p class="output" id="output"></p>
+        </div>
     </div>
 </body>
 <script>
     function evenodd() {
-        let number = document.getElementById();
-        let result = ""
+        let number = document.getElementById("input").value;
+        let result = " ";
         switch (number % 2) {
             case 0:
                 result = "Even"
@@ -50,10 +86,10 @@
                 ("Invalid Number")
 
         }
-        alert(result);
+        document.getElementById("output").innerHTML = (result);
 
     }
-    evenodd()
+
 </script>
 
 </html>

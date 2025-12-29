@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizza Menu</title>
+    <title>Document</title>
+
     <style>
         body {
             height: 100vh;
@@ -60,52 +60,15 @@
         }
     </style>
 </head>
-
 <body>
-    <div class="main-one">
-        <h1>🍕 Pizza Menu</h1>
-
-        <button class="one" onclick="selectPizza('Small')">
-            🍕 Small Pizza ₹150
-        </button>
-
-        <button class="Two" onclick="selectPizza('Medium')">
-            🍕🍕 Medium Pizza ₹250
-        </button>
-
-        <button class="Three" onclick="selectPizza('Large')">
-            🍕🍕🍕 Large Pizza ₹350
-        </button>
-
-        <div class="output">
-            <p id="output">Select a pizza</p>
-        </div>
-    </div>
-
-    <script>
-        function selectPizza(size) {
-            let message = "";
-
-            switch (size) {
-                case "Small":
-                    message = "You selected Small Pizza 🍕 : ₹150";
-                    break;
-
-                case "Medium":
-                    message = "You selected Medium Pizza 🍕🍕 : ₹250";
-                    break;
-
-                case "Large":
-                    message = "You selected Large Pizza 🍕🍕🍕 : ₹350";
-                    break;
-
-                default:
-                    message = "Please select a pizza";
-            }
-
-            document.getElementById("output").innerHTML = message;
-        }
-    </script>
+    
 </body>
-
-</html>
+<script>
+    function getpizza(){
+        switch(pizzaprice){                                         
+            case 150:
+                alert("You selected small pizza")
+        }
+    }
+</script>
+</html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
