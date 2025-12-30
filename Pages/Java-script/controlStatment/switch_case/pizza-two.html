@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -60,15 +61,60 @@
         }
     </style>
 </head>
+
 <body>
-    
+
+    <div class="main-one">
+        <h1>🍕 Pizza Menu</h1>
+
+        <button class="one" onclick=smallpizza()>
+            🍕 Small Pizza ₹150
+        </button>
+
+        <button class="Two" onclick=mediumpizza()>
+            🍕🍕 Medium Pizza ₹250
+        </button>
+
+        <button class="Three" onclick=largepizza()>
+            🍕🍕🍕 Large Pizza ₹350
+        </button>
+
+        <div class="output">
+            <p id="output">Select a pizza</p>
+        </div>
+    </div>
+
 </body>
 <script>
-    function getpizza(){
-        switch(pizzaprice){                                         
+
+    let pizzaprice = 0;
+
+    function getpizza() {
+        switch (pizzaprice) {
             case 150:
-                alert("You selected small pizza")
+                alert("You selected small pizza");
+                break;
+            case 250:
+                alert("You Selected Medium pizza");
+                break;
+            default:
+                alert("You selected Large Pizza")
         }
+        document.getElementById("output").innerHTML;
+
+    }
+    function smallpizza() {
+        pizzaprice = 150;
+        getpizza();
+    }
+    function largepizza() {
+        pizzaprice = 350;
+        getpizza();
+    }
+    function mediumpizza() {
+        pizzaprice = 250;
+        getpizza();
     }
 </script>
-</html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+
+</html>       
