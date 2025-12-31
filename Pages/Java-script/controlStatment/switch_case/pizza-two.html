@@ -92,13 +92,13 @@
     function getpizza() {
         switch (pizzaprice) {
             case 150:
-                alert("You selected small pizza");
+                document.getElementById("output").innerHTML = ("You selected small pizza");
                 break;
             case 250:
-                alert("You Selected Medium pizza");
+                document.getElementById("output").innerHTML = ("You Selected Medium pizza");
                 break;
             default:
-                alert("You selected Large Pizza")
+                document.getElementById("output").innerHTML = ("You selected Large Pizza")
         }
         document.getElementById("output").innerHTML;
 
