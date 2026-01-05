@@ -4,71 +4,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>On off toggle</title>
+    <title>light on / off toggle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <style>
         body {
-            height: 100vh;
+            padding: 0px;
+            margin: 0px;
+            font-family: Roboto;
+            color: white;
+        }
+
+        .main {
             width: 100vw;
-            margin: 0;
-            padding: 0;
-            background-color: rgb(193, 218, 218);
+            height: 100vh;
+            background-color: #1c2143;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
         }
 
-        .main-container {
-            height: 70%;
+        .box {
             width: 30%;
-            display: flex;
-            flex-direction: column;
             background-color: white;
-            border-radius: 20px;
-            box-shadow: 2px 2px 10px 2px gray;
+            height: 70%;
+            border-radius: 10px;
+
+
         }
 
-        .heading {
-            height: 25%;
+        .header {
             width: 100%;
+            height: 20%;
+            background-color: #1e1b2c;
             text-align: center;
+            align-content: center;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+
+        .span1 {
+            font-size: 180%;
+            font-weight: 600;
+        }
+
+        .para1 {
+            font-size: 70%;
+        }
+
+        .img {
+            width: 100%;
+            height: 40%;
+            background-color: #1e1b2c;
+            display: flex;
+            justify-content: center;
+        }
+
+        .buttons01 {
+            width: 100%;
+            height: 10%;
+            background-color: #1e1b2c;
+            gap: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn1 {
+            width: 30%;
+            height: 80%;
+            border-radius: 25px;
+            border: none;
+            color: white;
+            background-color: blue;
+            background: linear-gradient(to bottom right, purple, blue, rgb(31, 70, 199));
+        }
+
+        .btn2 {
+            width: 40%;
+            height: 50%;
+            border: solid 1px;
+            border-radius: 20px;
+            color: rgb(182, 168, 168);
+            text-align: center;
+            align-content: center;
+            background-color: #1e1b2c;
 
         }
-        .display-box{
-            height: 25%;
+
+        .big-box {
             width: 100%;
-            
+            height: 30%;
+            background-color: #1e1b2c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+
         }
-        .button-box{
-            height: 25%;
-            width: 100%;
-           
+
+        .para2 {
+            font-size: 80%;
+
         }
-        .howtouse-box{
-            height: 25%;
-            width: 100%;
-          
+
+        .name1 {
+
+            width: 80%;
+            height: 80%;
+            background-color: rgb(8, 8, 50);
+            text-align: center;
+            align-content: center;
+            border-radius: 10px;
+
         }
     </style>
 </head>
 
 <body>
-    <div class="main-container">
-        <div class="heading">
-            <h2>Light ON / OFF Toggle</h2>
-            A clean,intractive demonstration of light state switching
+    <div class="main" id="big">
+        <div class="box">
+            <div class="header" id="box1"><span class="span1">Light ON / OFF Toggle </span>
+                <p class="para1">A Clean, interactive demonstration of light state <br>Switching</p>
+            </div>
+            <div class="img" id="box2"><img id="image1"
+                    src="https://cliply.co/wp-content/uploads/2019/06/371906590_RESPONSIVE_SMARTPHONE_400.png"
+                    width="50%" height="100%" alt=""></div>
+            <div class="buttons01" id="box3"><button class="btn1" onclick="bulbon()" id="btn1">⏻ Turn ON</button>
+                <button class="btn2" onclick="bulboff()" id="btn2">💡 light is currently OFF</button>
+            </div>
+            <div class="big-box" id="box4">
+                <div class="name1" id="box5"><span><b>How To use</b></span>
+                    <p class="para2">Click the button above to toggle the light between ON and OFF states. Observe how
+                        the bulb changes visually and how the page adapts to each state</p>
+                </div>
+            </div>
         </div>
-        <span class="display-box"></span>
-        <span class="button-box"></span>
-        <span class="howtouse-box">
-
-        </span>
     </div>
+
+    <script>
+
+        let ison = true;
+        function bulbon() {
+            ison = !ison;
+
+            document.getElementById("big").style.background = ison ? "whitesmoke" : "#1c2143"; document.getElementById("image1").src = ison ? "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaid_4RYtltEqLboG7VbIlPnRPtU0KobWttQTjqVKW51zVuyVR" :
+                "https://cliply.co/wp-content/uploads/2019/06/371906590_RESPONSIVE_SMARTPHONE_400.png";
+            document.getElementById("box1").style.background = ison ? "white" : "#1e1b2c";
+            document.getElementById("box1").style.color = ison ? "black" : "white";
+            document.getElementById("box2").style.background = ison ? "white" : "#1e1b2c";
+            document.getElementById("box3").style.background = ison ? "white" : "#1e1b2c";
+            document.getElementById("box4").style.background = ison ? "white" : "#1e1b2c";
+            document.getElementById("box5").style.background = ison ? "grey" : "rgb(8, 8, 50)"
+        }
+
+
+    </script>
 </body>
-<script>
-    function onoff() {
-        let
-    }
-</script>
 
 </html>
