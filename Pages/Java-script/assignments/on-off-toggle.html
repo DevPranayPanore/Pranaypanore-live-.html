@@ -2,166 +2,133 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>light on / off toggle</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Light ON/OFF Toggle</title>
     <style>
         body {
-            padding: 0px;
-            margin: 0px;
-            font-family: Roboto;
-            color: white;
-        }
-
-        .main {
             width: 100vw;
             height: 100vh;
-            background-color: #1c2143;
+        }
+
+        .main-container {
+            width: 100%;
+            height: 100%;
             display: flex;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .container {
+            width: 30%;
+            height: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px 2px rgb(0, 0, 0);
+        }
+
+        img {
+            border-radius: 50%;
+        }
+
+        .btn {
+            width: 100%;
+            height: 7%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        button {
+            width: 40%;
+            height: 100%;
+            border: 0 solid;
+            border-radius: 20px;
+
+        }
+
+        .b {
+            background-color: rgba(0, 0, 255, 0.693);
+            color: white;
+
         }
 
         .box {
-            width: 30%;
-            background-color: white;
-            height: 70%;
-            border-radius: 10px;
-
-
-        }
-
-        .header {
             width: 100%;
             height: 20%;
-            background-color: #1e1b2c;
             text-align: center;
-            align-content: center;
-            border-top-right-radius: 10px;
-            border-top-left-radius: 10px;
-        }
-
-        .span1 {
-            font-size: 180%;
-            font-weight: 600;
-        }
-
-        .para1 {
-            font-size: 70%;
-        }
-
-        .img {
-            width: 100%;
-            height: 40%;
-            background-color: #1e1b2c;
-            display: flex;
-            justify-content: center;
-        }
-
-        .buttons01 {
-            width: 100%;
-            height: 10%;
-            background-color: #1e1b2c;
-            gap: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .btn1 {
-            width: 30%;
-            height: 80%;
-            border-radius: 25px;
-            border: none;
-            color: white;
-            background-color: blue;
-            background: linear-gradient(to bottom right, purple, blue, rgb(31, 70, 199));
-        }
-
-        .btn2 {
-            width: 40%;
-            height: 50%;
-            border: solid 1px;
-            border-radius: 20px;
-            color: rgb(182, 168, 168);
-            text-align: center;
-            align-content: center;
-            background-color: #1e1b2c;
-
-        }
-
-        .big-box {
-            width: 100%;
-            height: 30%;
-            background-color: #1e1b2c;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-bottom-right-radius: 10px;
-            border-bottom-left-radius: 10px;
-
-        }
-
-        .para2 {
-            font-size: 80%;
-
-        }
-
-        .name1 {
-
-            width: 80%;
-            height: 80%;
-            background-color: rgb(8, 8, 50);
-            text-align: center;
-            align-content: center;
-            border-radius: 10px;
-
+            background-color: rgba(137, 170, 255, 0.129);
+            border-radius: 30px;
         }
     </style>
 </head>
+<!-- body container -->
 
 <body>
-    <div class="main" id="big">
-        <div class="box">
-            <div class="header" id="box1"><span class="span1">Light ON / OFF Toggle </span>
-                <p class="para1">A Clean, interactive demonstration of light state <br>Switching</p>
-            </div>
-            <div class="img" id="box2"><img id="image1"
-                    src="https://cliply.co/wp-content/uploads/2019/06/371906590_RESPONSIVE_SMARTPHONE_400.png"
-                    width="50%" height="100%" alt=""></div>
-            <div class="buttons01" id="box3"><button class="btn1" onclick="bulbon()" id="btn1">⏻ Turn ON</button>
-                <button class="btn2" onclick="bulboff()" id="btn2">💡 light is currently OFF</button>
-            </div>
-            <div class="big-box" id="box4">
-                <div class="name1" id="box5"><span><b>How To use</b></span>
-                    <p class="para2">Click the button above to toggle the light between ON and OFF states. Observe how
-                        the bulb changes visually and how the page adapts to each state</p>
-                </div>
+    <div class="main-container" id="main">
+        <div class="container" id="container">
+            <h1>Light ON/OFF Toggle</h1>
+            <p>A clean, interactive demonstration of light state switching</p>
+            <img width="60%" height="40%" id="img" />
+            <br />
+            <div class="btn">
+                <button class="b" id="button" onclick="changeTheme()"></button>
+                <button class="b" id="button2"></button>
+            </div><br>
+            <div class="box">
+                <h3>How to use:</h3>
+                <p>Click the button above to toggle the light between ON and OFF states. Observe how the bulb changes
+                    visually and how the page adapts to each state</p>
             </div>
         </div>
     </div>
-
     <script>
+        // input part 
+        let bgColor = "white";
+        let bgContainer = "white";
+        let textColor = "black";
+        let buttonText = "Trun OFF";
+        let button2 = "Light is currently ON";
+        let bulbOnImage =
+            "https://cliply.co/wp-content/uploads/2019/06/371906590_RESPONSIVE_SMARTPHONE_400.png";
+        let bulbOFFImage =
+            "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaid_4RYtltEqLboG7VbIlPnRPtU0KobWttQTjqVKW51zVuyVR";
+        let src = bulbOFFImage;
+        // output 
 
-        let ison = true;
-        function bulbon() {
-            ison = !ison;
+        document.getElementById("main").style.backgroundColor = bgContainer;
+        document.getElementById("container").style.backgroundColor = bgColor;
+        document.getElementById("button").innerHTML = buttonText;
+        document.getElementById("img").src = bulbOFFImage;
+        document.getElementById("button2").innerHTML = button2;
 
-            document.getElementById("big").style.background = ison ? "whitesmoke" : "#1c2143"; document.getElementById("image1").src = ison ? "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaid_4RYtltEqLboG7VbIlPnRPtU0KobWttQTjqVKW51zVuyVR" :
-                "https://cliply.co/wp-content/uploads/2019/06/371906590_RESPONSIVE_SMARTPHONE_400.png";
-            document.getElementById("box1").style.background = ison ? "white" : "#1e1b2c";
-            document.getElementById("box1").style.color = ison ? "black" : "white";
-            document.getElementById("box2").style.background = ison ? "white" : "#1e1b2c";
-            document.getElementById("box3").style.background = ison ? "white" : "#1e1b2c";
-            document.getElementById("box4").style.background = ison ? "white" : "#1e1b2c";
-            document.getElementById("box5").style.background = ison ? "grey" : "rgb(8, 8, 50)"
+        // function
+        function changeTheme() {
+            bgColor == "white" ? (bgColor = "#212121") : (bgColor = "white");
+            bgContainer == "white"
+                ? bgContainer = "#3B4953" : bgContainer = "white";
+            textColor = textColor === "black" ? "white" : "black";
+            buttonText == "Trun OFF"
+                ? buttonText = "Trun ON" : buttonText = "Trun OFF";
+            button2 == "Light is currently ON"
+                ? button2 = "Light is currently OFF" : button2 = "Light is currently ON";
+            bgColor == "white" ? (src = bulbOFFImage) : (src = bulbOnImage);
+
+
+            // call the function
+            document.getElementById("img").src = src;
+
+            document.getElementById("container").style.backgroundColor = bgColor;
+            document.getElementById("container").style.color = textColor;
+            document.getElementById("main").style.backgroundColor = bgContainer;
+            document.getElementById("button").innerHTML = buttonText;
+            document.getElementById("button2").innerHTML = button2;
+            document.getAnimations("display").i;
         }
-
-
     </script>
 </body>
 
