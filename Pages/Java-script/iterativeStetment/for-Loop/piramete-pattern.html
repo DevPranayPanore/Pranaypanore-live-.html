@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let i = 1;
+        let n = 7;
+        while (i <= n) {
+            let row = "";
+            let j = 1;
+            while (j <= n - i) {
+                row += " ";
+                j++;
+
+            }
+            let start = 1;
+            while (start <= i) {
+                row += " *"
+                start++;
+
+            }
+            console.log(row);
+            i++;
+        }
+        // second
+        let a = 1;
+        let x = 7;
+        while (a <= x) {
+            let row = "";
+            let b = 1;
+            while (b <= a-1 ) {
+                row += " ";
+                b++;
+
+            }
+            let s = 1;
+            while (s <= x -a+1 ) {
+                row += " *"
+                s++;
+
+            }
+            console.log(row);
+            a++;
+        }
+
+    </script>
+</body>
+
+</html>
