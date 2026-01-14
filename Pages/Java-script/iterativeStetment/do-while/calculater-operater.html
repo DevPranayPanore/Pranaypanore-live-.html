@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let input = prompt("Enter an operation \n 1.add \n2.sub\n3.div\n4.mult \n5.exit")
+        do {
+            if ("add" === input) {
+                let a = prompt("Enter a number 1");
+                let b = prompt("Enter a Number 2 ");
+                let sum = Number(a) + Number(b);
+                alert("The sum of given number is : " + sum)
+                break;
+            }
+            else if ("sub" === input) {
+                let a = prompt("Enter a number 1");
+                let b = prompt("Enter a Number 2 ");
+                let sub = Number(a) - Number(b);
+                alert("The sub  of given number is : " + sub)
+            }
+            else if ("div" === input) {
+                let a = prompt("Enter a number 1");
+                let b = prompt("Enter a Number 2 ");
+                let div = Number(a) / Number(b);
+                alert("The div of given number is : " + div)
+            }
+            else if ("mult" === input) {
+                let a = prompt("Enter a number 1");
+                let b = prompt("Enter a Number 2 ");
+                let mult = Number(a) * Number(b);
+                alert("The mult of given number is : " + mult)
+            }
+            else if ("exit" === input) {
+                break;
+                alert("Operation is End ")
+            
+
+
+            }
+            else {
+                alert("Invalid Operation")
+            }
+            
+        } while (true)
+    </script>
+</body>
+
+</html>
