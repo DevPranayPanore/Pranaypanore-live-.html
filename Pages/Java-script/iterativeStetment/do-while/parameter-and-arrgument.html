@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="onlink()">Click me</button>
+</body>
+<script>
+    function onlink() {
+        let a = prompt("Enter a Number  1 :")
+        let b = prompt("Enter a Number  2 :")
+        onpart(b, a)
+    }
+    function onpart(pranay, sujal) {
+        console.log("Pranay nu : " + pranay)
+        console.log("Sujal nu : " + sujal)
+        let add = Number(pranay) + Number(sujal);
+        let sub = Number(pranay) - Number(sujal);
+
+        console.log(add)
+        console.log(sub)
+
+
+    }
+</script>
+
+</html>
