@@ -12,39 +12,50 @@
         }
 
         .container {
-            width: 16vw;
-            height: 50vh;
+            width: 30vw;
+            height: 65vh;
             background-color: rgba(0, 0, 0, 0.701);
             margin-left: 40%;
             margin-top: 5%;
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            align-items: center;
             border-radius: 40px;
         }
 
         .display-container {
-            width: 16vw;
-            height: 10vh;
+            width: 25vw;
+            height: 20vh;
             background-color: wheat;
-        }
-
-        .input-container {
-            width: 16vw;
-            height: 40vh;
-            background-color: black;
             display: flex;
             flex-direction: row;
-            flex-wrap: wrap;
-            align-content: baseline;
-            justify-content: space-around;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .display {
+            width: 90%;
+            height: 90%;
+            background-color: aliceblue;
+        }
+
+
+        .input-container {
+            width: 25vw;
+            height: 60vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+
         }
 
         button {
-            width: 4vw;
-            height: 8vh;
-            border-radius: 100%;
+            width: 5vw;
+            height: 10vh;
+
             background-color: gray;
-            border: none;
+            border: 1px black solid;
             font-size: 25px;
             color: white;
         }
@@ -55,94 +66,65 @@
     <div class="main-container">
         <div class="container">
             <div class="display-container">
-                <p id="display"></p>
+                <p id="display" class="display"></p>
             </div>
             <div class="input-container">
-                <button onclick="clickOne()">*</button>
-                <button onclick="clickTwo()">AC</button>
-                <button onclick="clickThree()">%</button>
-                <button onclick="clickFour()" style="background-color: rgb(159, 214, 119);">/</button>
-                <button onclick="clickFive()">7</button>
-                <button onclick="clickSix()">8</button>
-                <button onclick="clickSeven()">9</button>
-                <button onclick="clickEight()" style="background-color: darkgoldenrod;">*</button>
-                <button onclick="clickNine()">4</button>
-                <button onclick="clickTen()">5</button>
-                <button onclick="clickEleven()">6</button>
-                <button onclick="clickTweal()" style="background-color: darkgoldenrod;">-</button>
-                <button onclick="clickThirteen()">1</button>
-                <button onclick="clickFourteen()">2</button>
-                <button onclick="clickFifteen()">3</button>
-                <button onclick="clickSixteen()" style="background-color: darkgoldenrod;">+</button>
-                <button onclick="clickNone()">%</button>
-                <button onclick="clickNtwo()">0</button>
-                <button onclick="clickNthree()">.</button>
-                <button onclick="clickNfour()" style="background-color: darkgoldenrod;">=</button>
+                <button onclick="clickOne('*')">*</button>
+                <button onclick="allclear()">AC</button>
+                <button onclick=" clickOne('%')">%</button>
+                <button onclick=" clickOne('/ ')" style="background-color: rgb(159, 214, 119);">/</button>
+                <button onclick=" clickOne('7')">7</button>
+                <button onclick=" clickOne('8')">8</button>
+                <button onclick="  clickOne('9')">9</button>
+                <button onclick=" clickOne('x')" style="background-color: darkgoldenrod;">x</button>
+                <button onclick=" clickOne('4')">4</button>
+                <button onclick=" clickOne('5')">5</button>
+                <button onclick=" clickOne('6')">6</button>
+                <button onclick=" clickOne('-')" style="background-color: darkgoldenrod;">-</button>
+                <button onclick=" clickOne('1')">1</button>
+                <button onclick=" clickOne('2')">2</button>
+                <button onclick=" clickOne('3')">3</button>
+                <button onclick=" clickOne('+')" style="background-color: darkgoldenrod;">+</button>
+                <button onclick=" clickOne('%')">%</button>
+                <button onclick=" clickOne('0')">0</button>
+                <button onclick=" clickOne('.')">.</button>
+                <button onclick=" clickOne('=')" style="background-color: darkgoldenrod;">=</button>
             </div>
         </div>
     </div>
     <script>
-        function clickOne() {
-            document.getElementById("display").innerHTML += "*";
-        }
-        function clickTwo() {
-            document.getElementById("display").innerHTML += "AC";
-        }
-        function clickThree() {
-            document.getElementById("display").innerHTML += "%";
-        }
-        function clickFour() {
-            document.getElementById("display").innerHTML += "/";
-        }
-        function clickFive() {
-            document.getElementById("display").innerHTML += "7";
-        }
-        function clickSix() {
-            document.getElementById("display").innerHTML += "8";
-        }
-        function clickSeven() {
-            document.getElementById("display").innerHTML += "9";
-        }
-        function clickEight() {
-            document.getElementById("display").innerHTML += "*";
-        }
-        function clickNine() {
-            document.getElementById("display").innerHTML += "4";
-        }
-        function clickTen() {
-            document.getElementById("display").innerHTML += "5";
-        }
-        function clickEleven() {
-            document.getElementById("display").innerHTML += "6";
-        }
-        function clickTweal() {
-            document.getElementById("display").innerHTML += "-";
-        }
-        function clickThirteen() {
-            document.getElementById("display").innerHTML += "1";
-        }
-        function clickFourteen() {
-            document.getElementById("display").innerHTML += "2";
-        }
-        function clickFifteen() {
-            document.getElementById("display").innerHTML += "3";
-        }
-        function clickSixteen() {
-            document.getElementById("display").innerHTML += "+";
-        }
-        function clickNone() {
-            document.getElementById("display").innerHTML += "%";
-        }
-        function clickNtwo() {
-            document.getElementById("display").innerHTML += "0";
-        }
-        function clickNthree() {
-            document.getElementById("display").innerHTML += ".";
-        }
-        function clickNfour() {
-            document.getElementById("display").innerHTML += "=";
+        let getnumber = 0
+        document.getElementById("display").innerHTML = 0;
+        let num1 = 0;
+        let num2 = 0
+        const clickOne = (text) => {
+            document.getElementById("display").innerHTML += text;
+            getnumber += text;
+            additionOn = false;
+            if (text == '+') {
+                additionOn = true;
+            }
+            if (additionOn) {
+                num1 = getnumber;
+            }
+            if (text != '+') {
+                num2 = getnumber;
+            }
+            console.log(getnumber);
+            console.log("num 1 :" + num1);
+            console.log("num 2 :" + num2);
         }
 
+        const allclear = () => {
+            document.getElementById("display").innerHTML = " ";
+            getnumber = ""
+            num1 = 0;
+            num2 = 0;
+        }
+
+        const add = () => {
+
+        }
 
     </script>
 
