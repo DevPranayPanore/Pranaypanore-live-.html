@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="./calculater.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <div class="display-container">
+                <p id="display" class="display"></p>
+            </div>  
+            <div class="input-container">
+                <button onclick="clickOne('*')">*</button>
+                <button onclick="allclear()">AC</button>
+                <button onclick=" clickOne('%')">%</button>
+                <button onclick=" clickOne('/ ')" style="background-color: rgb(159, 214, 119);">/</button>
+                <button onclick=" clickOne('7')">7</button>
+                <button onclick=" clickOne('8')">8</button>
+                <button onclick="  clickOne('9')">9</button>
+                <button onclick=" clickOne('x')" style="background-color: darkgoldenrod;">x</button>
+                <button onclick=" clickOne('4')">4</button>
+                <button onclick=" clickOne('5')">5</button>
+                <button onclick=" clickOne('6')">6</button>
+                <button onclick=" clickOne('-')" style="background-color: darkgoldenrod;">-</button>
+                <button onclick=" clickOne('1')">1</button>
+                <button onclick=" clickOne('2')">2</button>
+                <button onclick=" clickOne('3')">3</button>
+                <button onclick=" clickOne('+')" style="background-color: darkgoldenrod;">+</button>
+                <button onclick=" clickOne(',')">,</button>
+                <button onclick=" clickOne('0')">0</button>
+                <button onclick=" clickOne('.')">.</button>
+                <button onclick=" clickOne('=')" style="background-color: darkgoldenrod;">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="./calculater.js"></script>
+
+</body>
+
+</html>
